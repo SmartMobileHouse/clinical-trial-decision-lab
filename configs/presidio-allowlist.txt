@@ -40,6 +40,7 @@ Max #part of a model name
 Morph #provider
 Ollama #software
 OpenRouter #service
+Zenodo #archive service
 Docker #software
 Git #software
 PyInstaller #software

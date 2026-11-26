@@ -9,6 +9,7 @@ authors:
 version: 0.1.0
 date-released: 2026-11-26
 license: MIT
+doi: 10.5281/zenodo.24562228
 repository-code: "https://github.com/SmartMobileHouse/clinical-trial-decision-lab"
 url: "https://smartmobilehouse.com/research/clinical-trial-decision-lab/"
 abstract: >-

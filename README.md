@@ -13,6 +13,7 @@
 <div align="center">
 
 [![License](https://img.shields.io/github/license/SmartMobileHouse/clinical-trial-decision-lab)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24562228.svg)](https://doi.org/10.5281/zenodo.24562228)
 [![Smart Mobile House](https://img.shields.io/badge/built%20by-Smart%20Mobile%20House-1F3A38)](https://smartmobilehouse.com)
 
 </div>
@@ -128,6 +129,7 @@ Live runs need `--allow-external-requests` and a `--max-cost-usd` estimate. The 
 - [x] Adapters for decision models and structured-output LLMs, with a spending guard for live runs
 - [x] Synthetic eligibility-and-consent benchmark: dataset, reference labels, rules baseline, metrics
 - [x] Publication checks for data rights, provenance, restricted files and secrets
+- [x] Hosted CI and a Zenodo archive of the code
 - [ ] AI model runs on the synthetic benchmark
 - [ ] Public release of the hosted models' per-paper answers
 
@@ -181,7 +183,7 @@ If you use this benchmark or its results, please cite the report:
 
 > Pietruszewski, J. (2026). *Clinical Trial Decision Lab: Where AI Decision Models Earn Their Place in Clinical-Trial Evidence Work, and Where They Do Not* (report version 1.0). Smart Mobile House. https://smartmobilehouse.com/research/clinical-trial-decision-lab/
 
-GitHub's **Cite this repository** button gives APA and BibTeX.
+The code is archived on Zenodo: [doi:10.5281/zenodo.24562228](https://doi.org/10.5281/zenodo.24562228) (all versions). GitHub's **Cite this repository** button gives APA and BibTeX.
 
 ```bibtex
 @techreport{pietruszewski2026clinicaltrialdecisionlab,
@@ -195,10 +197,12 @@ GitHub's **Cite this repository** button gives APA and BibTeX.
 }
 
 @software{pietruszewski2026clinicaltrialdecisionlab_code,
-  author = {Pietruszewski, Jerzy},
-  title  = {Clinical Trial Decision Lab: a reproducible benchmark of AI decision models for clinical-trial evidence work},
-  year   = {2026},
-  url    = {https://github.com/SmartMobileHouse/clinical-trial-decision-lab}
+  author    = {Pietruszewski, Jerzy},
+  title     = {Clinical Trial Decision Lab: a reproducible benchmark of AI decision models for clinical-trial evidence work},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.24562228},
+  url       = {https://github.com/SmartMobileHouse/clinical-trial-decision-lab}
 }
 ```
 
