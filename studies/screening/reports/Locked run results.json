@@ -1,0 +1,302 @@
+{
+ "sample": {
+  "families": 79,
+  "records": 1210,
+  "included": 605
+ },
+ "systems_not_run": [],
+ "systems": {
+  "decider": {
+   "label": "Decider 1.3",
+   "balanced_accuracy": 0.6089788024914607,
+   "interval": [
+    0.5792897327707455,
+    0.6388060076351215
+   ],
+   "accuracy_included": 0.7121358247940527,
+   "accuracy_excluded": 0.5058217801888688,
+   "record_accuracy": 0.6099173553719008,
+   "auc": 0.6846741578722441,
+   "brier_valid_only": 0.29314879882554373,
+   "invalid_or_missing": 0,
+   "cost_usd_first_pass": 0.016201080000000014
+  },
+  "nimble": {
+   "label": "Nimble 4.1",
+   "balanced_accuracy": 0.612002712477396,
+   "interval": [
+    0.5819143058067109,
+    0.6409056660638939
+   ],
+   "accuracy_included": 0.7046463733172594,
+   "accuracy_excluded": 0.5193590516375326,
+   "record_accuracy": 0.6181818181818182,
+   "auc": 0.6860042883773294,
+   "brier_valid_only": 0.24177905593151836,
+   "invalid_or_missing": 0,
+   "cost_usd_first_pass": 0.032886160000000005
+  },
+  "gemini": {
+   "label": "Gemini Decision 1",
+   "balanced_accuracy": 0.6068163552340767,
+   "interval": [
+    0.5808845690174804,
+    0.632856138235885
+   ],
+   "accuracy_included": 0.7960618846694796,
+   "accuracy_excluded": 0.4175708257986739,
+   "record_accuracy": 0.6140495867768595,
+   "auc": 0.7022777973120801,
+   "brier_valid_only": 0.2808749095313654,
+   "invalid_or_missing": 0,
+   "cost_usd_first_pass": 0.07848649999999997
+  },
+  "gpt": {
+   "label": "GPT-6 Luna (probability)",
+   "balanced_accuracy": 0.6290787623066104,
+   "interval": [
+    0.5999171187462327,
+    0.6585920233072132
+   ],
+   "accuracy_included": 0.6419379144062688,
+   "accuracy_excluded": 0.6162196102069519,
+   "record_accuracy": 0.6330578512396694,
+   "auc": 0.6923099900414924,
+   "brier_valid_only": 0.3180023214876033,
+   "invalid_or_missing": 0,
+   "cost_usd_first_pass": 0.09204319999999978
+  },
+  "haiku": {
+   "label": "Claude Haiku 5.5 (probability)",
+   "balanced_accuracy": 0.5993419730761502,
+   "interval": [
+    0.5685126582278481,
+    0.6287371910789632
+   ],
+   "accuracy_included": 0.5843630701225638,
+   "accuracy_excluded": 0.6143208760297367,
+   "record_accuracy": 0.6057851239669422,
+   "auc": 0.6664438749597354,
+   "brier_valid_only": 0.2889839669421488,
+   "invalid_or_missing": 0,
+   "cost_usd_first_pass": 0.1499182000000001
+  },
+  "logistic": {
+   "label": "Logistic regression (classic)",
+   "balanced_accuracy": 0.547875226039783,
+   "interval": [
+    0.5231665662045409,
+    0.5725763512155917
+   ],
+   "accuracy_included": 0.4591420534458509,
+   "accuracy_excluded": 0.6366083986337151,
+   "record_accuracy": 0.5512396694214876,
+   "auc": 0.610564846308894,
+   "brier_valid_only": 0.25210987319029676,
+   "invalid_or_missing": 0,
+   "cost_usd_first_pass": 0.0
+  },
+  "xgboost": {
+   "label": "XGBoost (classic)",
+   "balanced_accuracy": 0.6041817359855335,
+   "interval": [
+    0.5772553747237291,
+    0.6319218404661443
+   ],
+   "accuracy_included": 0.5132660237090617,
+   "accuracy_excluded": 0.6950974482620053,
+   "record_accuracy": 0.6066115702479339,
+   "auc": 0.6329236133037369,
+   "brier_valid_only": 0.23951855435862232,
+   "invalid_or_missing": 0,
+   "cost_usd_first_pass": 0.0
+  }
+ },
+ "keyword_auc": 0.5745507857972069,
+ "q1": {
+  "difference": -0.020099959815149684,
+  "interval": [
+   -0.049562989752863176,
+   0.008026923849708668
+  ],
+  "margin": -0.05,
+  "verdict": "NON-INFERIORITY ESTABLISHED"
+ },
+ "q2": {
+  "decider_per_1000": 0.013389322314049597,
+  "gpt_per_1000": 0.07606876033057833,
+  "ratio": 0.17601604463990878,
+  "met": true
+ },
+ "q3": {
+  "logistic": {
+   "difference": 0.061103576451677716,
+   "interval": [
+    0.02856389391199517,
+    0.09304299778983323
+   ]
+  },
+  "xgboost": {
+   "difference": 0.004797066505927266,
+   "interval": [
+    -0.03173849708659836,
+    0.04266626481816357
+   ]
+  },
+  "met": false
+ },
+ "q4": {
+  "decider": {
+   "same_classification": 0.9933884297520661,
+   "interval": [
+    0.9877049180327869,
+    0.9976038338658147
+   ],
+   "identical_probability": 0.6809917355371901
+  },
+  "nimble": {
+   "same_classification": 1.0,
+   "interval": [
+    1.0,
+    1.0
+   ],
+   "identical_probability": 0.9917355371900827
+  },
+  "gemini": {
+   "same_classification": 1.0,
+   "interval": [
+    1.0,
+    1.0
+   ],
+   "identical_probability": 1.0
+  }
+ },
+ "q5": {
+  "automatic exclude": {
+   "correct": 65,
+   "decisions": 91,
+   "reliability": 0.7142857142857143,
+   "coverage": 0.07520661157024794,
+   "families": 42,
+   "interval": [
+    0.6263736263736264,
+    0.8023255813953488
+   ]
+  },
+  "automatic include": {
+   "correct": 151,
+   "decisions": 201,
+   "reliability": 0.7512437810945274,
+   "coverage": 0.16611570247933885,
+   "families": 58,
+   "interval": [
+    0.6854460093896714,
+    0.8132530120481928
+   ]
+  }
+ },
+ "q6": {
+  "observed_sd": 0.136242155745522,
+  "sampling_noise_sd": 0.1244221022377949,
+  "estimated_underlying_sd": 0.055507346152692136,
+  "gaps": {
+   "decider-nimble": [
+    -0.0030239099859352943,
+    -0.023249447458308214,
+    0.018349407273457914
+   ],
+   "decider-gemini": [
+    0.002162447257383966,
+    -0.0216646574241511,
+    0.026263311231665663
+   ],
+   "nimble-gemini": [
+    0.0051863572433192605,
+    -0.01524512758689975,
+    0.02554751858549326
+   ]
+  }
+ },
+ "secondary_differences": {
+  "nimble-gpt": [
+   -0.01707604982921439,
+   -0.04374120956399438,
+   0.00792395017078561
+  ],
+  "gemini-gpt": [
+   -0.02226240707253365,
+   -0.04869148081173398,
+   0.0025818766325095494
+  ],
+  "decider-haiku": [
+   0.009636829415310435,
+   -0.0183142455294354,
+   0.03775115531444647
+  ],
+  "nimble-haiku": [
+   0.012660739401245728,
+   -0.01535061281896725,
+   0.039840767530640954
+  ],
+  "gpt-haiku": [
+   0.02973678923046012,
+   0.003101768133413694,
+   0.0572458308217802
+  ],
+  "nimble-logistic": [
+   0.06412748643761301,
+   0.030912196102069512,
+   0.09725487241310025
+  ],
+  "nimble-xgboost": [
+   0.007820976491862561,
+   -0.02836548121358248,
+   0.04382157926461722
+  ],
+  "gpt-xgboost": [
+   0.024897026321076952,
+   -0.013348904962829011,
+   0.06434599156118143
+  ]
+ },
+ "confidence": {
+  "decider": [
+   0.7317880794701986,
+   0.5298013245033113
+  ],
+  "nimble": [
+   0.7450331125827815,
+   0.5231788079470199
+  ],
+  "gemini": [
+   0.7682119205298014,
+   0.5231788079470199
+  ],
+  "gpt": [
+   0.7284768211920529,
+   0.5231788079470199
+  ],
+  "haiku": [
+   0.7052980132450332,
+   0.5298013245033113
+  ],
+  "logistic": [
+   0.6754966887417219,
+   0.49337748344370863
+  ],
+  "xgboost": [
+   0.6423841059602649,
+   0.5695364238410596
+  ]
+ },
+ "disagreement": {
+  "unanimous_share": 0.7553719008264462,
+  "accuracy_unanimous": 0.6531728665207878,
+  "accuracy_split_majority": 0.4797297297297297
+ },
+ "difficulty": {
+  "records sampled per review": 0.07524342745861733,
+  "review year": -0.043646543330087634,
+  "length of review title": -0.22733690360272638
+ }
+}

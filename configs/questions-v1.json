@@ -1,0 +1,76 @@
+{
+  "version": "v1",
+  "note": "Frozen before any model was run. Immutable once results exist; any change needs a new version file and new predictions.",
+  "sets": {
+    "triage": {
+      "context": "You are supporting a clinical-trial quality reviewer. Use only the supplied protocol excerpt and participant record. The record is synthetic. Your answers queue cases for human review; they are not regulatory determinations and must not recommend treatment or patient-safety actions. Each item in the record has a short ref such as ASM-2. Eligibility questions concern participants who have an enrollment event. The most recent result on or before the enrollment date governs a criterion. Limits are inclusive. Convert units only with the conversions listed in the protocol.",
+      "questions": [
+        {
+          "id": "eligibility_issue",
+          "text": "Does the record document that an enrolled participant did not meet an applicable eligibility requirement: a governing result outside a criterion limit, a governing result collected earlier than the screening window allows, or a required result collected only after enrollment?",
+          "true": "The record documents a specific eligibility requirement that was not met for an enrolled participant.",
+          "false": "No such documented evidence exists. This includes cases where evidence is missing, unusable or contradictory, and participants who were not enrolled."
+        },
+        {
+          "id": "eligibility_insufficient",
+          "text": "For an enrolled participant, is evidence needed to confirm an applicable eligibility criterion missing or unusable: no result for a required assessment, a result with no value, or a result whose unit is absent or not listed in the protocol?",
+          "true": "At least one applicable criterion cannot be confirmed because its evidence is missing or unusable.",
+          "false": "Every applicable criterion has a usable governing result, or the participant was not enrolled."
+        },
+        {
+          "id": "eligibility_conflicting",
+          "text": "For an enrolled participant, do the records contain unresolved contradictory information about an applicable eligibility criterion, so that one record supports eligibility and another does not?",
+          "true": "Records about the same criterion contradict each other and nothing in the record resolves the contradiction.",
+          "false": "There is no unresolved contradiction about any applicable criterion."
+        },
+        {
+          "id": "consent_issue",
+          "text": "Does the record document an informed-consent compliance problem: consent signed after the first study-specific procedure, consent signed on a version that was not the version in effect on the signing date, or a consent form on file and verified but lacking the investigator signature?",
+          "true": "The record documents a specific informed-consent compliance problem.",
+          "false": "No such documented evidence exists. Missing, unverified or contradictory consent documentation alone does not count."
+        },
+        {
+          "id": "consent_insufficient",
+          "text": "Is documentation needed to confirm informed-consent compliance missing or unusable: no consent record, a consent form that is not on file or not verified, required re-consent documentation absent, or signing and procedure times that cannot be put in order? Missing documentation is not proof that consent did not occur.",
+          "true": "Consent compliance cannot be confirmed because documentation is missing or unusable.",
+          "false": "The consent documentation needed to decide is present and usable."
+        },
+        {
+          "id": "consent_conflicting",
+          "text": "Do the records contain unresolved contradictory information about informed consent, such as two records of the same consent version whose signing times lead to different conclusions about whether consent preceded the first study-specific procedure?",
+          "true": "Consent records contradict each other and nothing in the record resolves the contradiction.",
+          "false": "There is no unresolved contradiction in the consent records."
+        },
+        {
+          "id": "review_needed",
+          "text": "Should this case be queued for human review beyond routine monitoring? Review is needed when there is any documented eligibility or consent problem, any missing or unusable evidence, or any unresolved contradiction.",
+          "true": "The case has at least one potential issue, missing-evidence finding or unresolved contradiction.",
+          "false": "The record is complete, consistent and compliant; routine monitoring is enough."
+        },
+        {
+          "id": "review_expedited",
+          "text": "Should this case receive expedited human review? Expedited review applies when the record documents an enrolled participant whose governing result is outside a criterion limit, a study-specific procedure performed before consent was signed, or study activity with no consent record at all.",
+          "true": "At least one of the three expedited conditions is present.",
+          "false": "None of the three expedited conditions is present."
+        }
+      ]
+    },
+    "finding": {
+      "context": "You are classifying a short description of an inspection observation about a clinical investigation. Use only the supplied text. Your answer is a retrospective classification for research; it is not a regulatory determination.",
+      "questions": [
+        {
+          "id": "eligibility_issue",
+          "text": "Does the described observation concern enrollment eligibility: participants enrolled, randomized or treated although they did not meet inclusion or exclusion criteria, or eligibility not assessed as the protocol required?",
+          "true": "The observation is about enrollment eligibility.",
+          "false": "The observation is not about enrollment eligibility."
+        },
+        {
+          "id": "consent_issue",
+          "text": "Does the described observation concern informed consent: consent not obtained, obtained after study procedures, obtained with a wrong or unapproved form, or not properly documented?",
+          "true": "The observation is about informed consent.",
+          "false": "The observation is not about informed consent."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,524 @@
+{
+ "cv_table": [
+  {
+   "model": "xgboost",
+   "params": [
+    4,
+    200,
+    5
+   ],
+   "features": "all",
+   "cv_family_balanced_accuracy": 0.5912,
+   "cv_mean_family_auc": 0.6352,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    4,
+    200,
+    1
+   ],
+   "features": "all",
+   "cv_family_balanced_accuracy": 0.5904,
+   "cv_mean_family_auc": 0.6417,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    2,
+    200,
+    1
+   ],
+   "features": "all",
+   "cv_family_balanced_accuracy": 0.5868,
+   "cv_mean_family_auc": 0.6384,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    2,
+    200,
+    5
+   ],
+   "features": "all",
+   "cv_family_balanced_accuracy": 0.5855,
+   "cv_mean_family_auc": 0.6484,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    4,
+    400,
+    1
+   ],
+   "features": "all",
+   "cv_family_balanced_accuracy": 0.5837,
+   "cv_mean_family_auc": 0.6389,
+   "families_scored": 991
+  },
+  {
+   "model": "logistic",
+   "params": [
+    3
+   ],
+   "features": "all",
+   "cv_family_balanced_accuracy": 0.583,
+   "cv_mean_family_auc": 0.6288,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    4,
+    400,
+    5
+   ],
+   "features": "all",
+   "cv_family_balanced_accuracy": 0.5822,
+   "cv_mean_family_auc": 0.6324,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    2,
+    400,
+    1
+   ],
+   "features": "all",
+   "cv_family_balanced_accuracy": 0.5811,
+   "cv_mean_family_auc": 0.6413,
+   "families_scored": 991
+  },
+  {
+   "model": "logistic",
+   "params": [
+    1
+   ],
+   "features": "all",
+   "cv_family_balanced_accuracy": 0.5789,
+   "cv_mean_family_auc": 0.6484,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    2,
+    400,
+    5
+   ],
+   "features": "all",
+   "cv_family_balanced_accuracy": 0.5785,
+   "cv_mean_family_auc": 0.6384,
+   "families_scored": 991
+  },
+  {
+   "model": "logistic",
+   "params": [
+    0.3
+   ],
+   "features": "all",
+   "cv_family_balanced_accuracy": 0.5782,
+   "cv_mean_family_auc": 0.6482,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    4,
+    200,
+    1
+   ],
+   "features": "study_only",
+   "cv_family_balanced_accuracy": 0.5767,
+   "cv_mean_family_auc": 0.6202,
+   "families_scored": 991
+  },
+  {
+   "model": "logistic",
+   "params": [
+    10
+   ],
+   "features": "all",
+   "cv_family_balanced_accuracy": 0.5765,
+   "cv_mean_family_auc": 0.6074,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    4,
+    200,
+    5
+   ],
+   "features": "study_only",
+   "cv_family_balanced_accuracy": 0.5754,
+   "cv_mean_family_auc": 0.6078,
+   "families_scored": 991
+  },
+  {
+   "model": "logistic",
+   "params": [
+    0.3
+   ],
+   "features": "study_only",
+   "cv_family_balanced_accuracy": 0.5747,
+   "cv_mean_family_auc": 0.6244,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    2,
+    400,
+    5
+   ],
+   "features": "study_only",
+   "cv_family_balanced_accuracy": 0.57,
+   "cv_mean_family_auc": 0.6059,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    4,
+    400,
+    5
+   ],
+   "features": "study_only",
+   "cv_family_balanced_accuracy": 0.5685,
+   "cv_mean_family_auc": 0.5953,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    2,
+    200,
+    1
+   ],
+   "features": "study_only",
+   "cv_family_balanced_accuracy": 0.568,
+   "cv_mean_family_auc": 0.6128,
+   "families_scored": 991
+  },
+  {
+   "model": "logistic",
+   "params": [
+    0.1
+   ],
+   "features": "all",
+   "cv_family_balanced_accuracy": 0.5676,
+   "cv_mean_family_auc": 0.632,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    2,
+    200,
+    5
+   ],
+   "features": "study_only",
+   "cv_family_balanced_accuracy": 0.5673,
+   "cv_mean_family_auc": 0.6105,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    2,
+    400,
+    1
+   ],
+   "features": "study_only",
+   "cv_family_balanced_accuracy": 0.5672,
+   "cv_mean_family_auc": 0.6021,
+   "families_scored": 991
+  },
+  {
+   "model": "logistic",
+   "params": [
+    1
+   ],
+   "features": "study_only",
+   "cv_family_balanced_accuracy": 0.5669,
+   "cv_mean_family_auc": 0.6151,
+   "families_scored": 991
+  },
+  {
+   "model": "logistic",
+   "params": [
+    3
+   ],
+   "features": "study_only",
+   "cv_family_balanced_accuracy": 0.5632,
+   "cv_mean_family_auc": 0.5967,
+   "families_scored": 991
+  },
+  {
+   "model": "logistic",
+   "params": [
+    10
+   ],
+   "features": "study_only",
+   "cv_family_balanced_accuracy": 0.5616,
+   "cv_mean_family_auc": 0.5828,
+   "families_scored": 991
+  },
+  {
+   "model": "logistic",
+   "params": [
+    0.1
+   ],
+   "features": "study_only",
+   "cv_family_balanced_accuracy": 0.5601,
+   "cv_mean_family_auc": 0.6298,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    4,
+    400,
+    1
+   ],
+   "features": "study_only",
+   "cv_family_balanced_accuracy": 0.5579,
+   "cv_mean_family_auc": 0.5968,
+   "families_scored": 991
+  },
+  {
+   "model": "logistic",
+   "params": [
+    0.03
+   ],
+   "features": "all",
+   "cv_family_balanced_accuracy": 0.5566,
+   "cv_mean_family_auc": 0.6101,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    4,
+    400,
+    1
+   ],
+   "features": "interaction_only",
+   "cv_family_balanced_accuracy": 0.5527,
+   "cv_mean_family_auc": 0.5848,
+   "families_scored": 991
+  },
+  {
+   "model": "logistic",
+   "params": [
+    0.3
+   ],
+   "features": "interaction_only",
+   "cv_family_balanced_accuracy": 0.5526,
+   "cv_mean_family_auc": 0.584,
+   "families_scored": 991
+  },
+  {
+   "model": "logistic",
+   "params": [
+    0.03
+   ],
+   "features": "interaction_only",
+   "cv_family_balanced_accuracy": 0.5523,
+   "cv_mean_family_auc": 0.5867,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    4,
+    200,
+    1
+   ],
+   "features": "interaction_only",
+   "cv_family_balanced_accuracy": 0.5517,
+   "cv_mean_family_auc": 0.5899,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    2,
+    400,
+    1
+   ],
+   "features": "interaction_only",
+   "cv_family_balanced_accuracy": 0.5516,
+   "cv_mean_family_auc": 0.5862,
+   "families_scored": 991
+  },
+  {
+   "model": "logistic",
+   "params": [
+    0.1
+   ],
+   "features": "interaction_only",
+   "cv_family_balanced_accuracy": 0.5512,
+   "cv_mean_family_auc": 0.5851,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    2,
+    200,
+    5
+   ],
+   "features": "interaction_only",
+   "cv_family_balanced_accuracy": 0.5511,
+   "cv_mean_family_auc": 0.5869,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    2,
+    200,
+    1
+   ],
+   "features": "interaction_only",
+   "cv_family_balanced_accuracy": 0.551,
+   "cv_mean_family_auc": 0.5875,
+   "families_scored": 991
+  },
+  {
+   "model": "logistic",
+   "params": [
+    1
+   ],
+   "features": "interaction_only",
+   "cv_family_balanced_accuracy": 0.55,
+   "cv_mean_family_auc": 0.5859,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    2,
+    400,
+    5
+   ],
+   "features": "interaction_only",
+   "cv_family_balanced_accuracy": 0.5495,
+   "cv_mean_family_auc": 0.5773,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    4,
+    200,
+    5
+   ],
+   "features": "interaction_only",
+   "cv_family_balanced_accuracy": 0.5492,
+   "cv_mean_family_auc": 0.5716,
+   "families_scored": 991
+  },
+  {
+   "model": "xgboost",
+   "params": [
+    4,
+    400,
+    5
+   ],
+   "features": "interaction_only",
+   "cv_family_balanced_accuracy": 0.5475,
+   "cv_mean_family_auc": 0.5633,
+   "families_scored": 991
+  },
+  {
+   "model": "logistic",
+   "params": [
+    3
+   ],
+   "features": "interaction_only",
+   "cv_family_balanced_accuracy": 0.5458,
+   "cv_mean_family_auc": 0.5832,
+   "families_scored": 991
+  },
+  {
+   "model": "logistic",
+   "params": [
+    10
+   ],
+   "features": "interaction_only",
+   "cv_family_balanced_accuracy": 0.5386,
+   "cv_mean_family_auc": 0.5794,
+   "families_scored": 991
+  },
+  {
+   "model": "logistic",
+   "params": [
+    0.03
+   ],
+   "features": "study_only",
+   "cv_family_balanced_accuracy": 0.5185,
+   "cv_mean_family_auc": 0.6298,
+   "families_scored": 991
+  }
+ ],
+ "chosen": {
+  "logistic": {
+   "features": "all",
+   "params": [
+    3
+   ],
+   "cv_family_balanced_accuracy": 0.5829575577746616,
+   "cv_mean_family_auc": 0.6288408962286359
+  },
+  "xgboost": {
+   "features": "all",
+   "params": [
+    4,
+    200,
+    1
+   ],
+   "cv_family_balanced_accuracy": 0.5903542688671346,
+   "cv_mean_family_auc": 0.6416860086133547
+  }
+ },
+ "selection_rule": "5-fold CV, folds = connected components of (family, PMID); out-of-fold predictions pooled; equal-family balanced accuracy at p>=0.5; per model type pick the best within 0.002 of the top by mean within-family AUC",
+ "training_counts": {
+  "rows": 5067,
+  "reviews": 1075,
+  "families": 1006,
+  "cv_groups": 785,
+  "largest_group_rows": 71
+ },
+ "leakage_checks": {
+  "training_rows": 5067,
+  "training_reviews": 1075,
+  "training_families": 1006,
+  "candidate_families_total": 239,
+  "overlap_training_reviews_in_candidate_families": 0,
+  "overlap_training_families_with_candidate_families": 0,
+  "overlap_training_reviews_pilot_infotest_or_title_match": 0,
+  "overlap_training_papers_with_pilot_infotest_samples": 0,
+  "overlap_training_papers_with_candidate_family_review_papers": 0,
+  "overlap_training_papers_with_final_records_pmids": 0,
+  "final_records_pmids_read": 2981,
+  "candidate_review_ids_incl_other_editions": 299,
+  "candidate_families_in_OLD_training_data_classic_train_jsonl": 159,
+  "candidate_families_in_OLD_training_data_incl_train_with_leak": 159,
+  "cv_folds_share_no_family_or_pmid": true,
+  "preprocessing_fitted_inside_training_folds": true,
+  "final_vectoriser_idf_scaler_fit_rows": 5067,
+  "label_counts": {
+   "included": 2446,
+   "excluded": 2621
+  }
+ },
+ "cv_seconds": 306
+}

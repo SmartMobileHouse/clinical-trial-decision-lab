@@ -1,0 +1,62 @@
+LOCKED FINAL RUN: 79 review families, 1210 records (605 included)
+
+All systems, first scheduled pass. Missing or invalid answers count as wrong.
+system                             balanced acc (95% interval)  included  excluded  record acc    AUC  Brier  invalid
+Decider 1.3                             60.9% (57.9% to 63.9%)     71.2%     50.6%       61.0%  0.685  0.293        0
+Nimble 4.1                              61.2% (58.2% to 64.1%)     70.5%     51.9%       61.8%  0.686  0.242        0
+Gemini Decision 1                       60.7% (58.1% to 63.3%)     79.6%     41.8%       61.4%  0.702  0.281        0
+GPT-6 Luna (probability)                62.9% (60.0% to 65.9%)     64.2%     61.6%       63.3%  0.692  0.318        0
+Claude Haiku 5.5 (probability)          59.9% (56.9% to 62.9%)     58.4%     61.4%       60.6%  0.666  0.289        0
+Logistic regression (classic)           54.8% (52.3% to 57.3%)     45.9%     63.7%       55.1%  0.611  0.252        0
+XGBoost (classic)                       60.4% (57.7% to 63.2%)     51.3%     69.5%       60.7%  0.633  0.240        0
+Keyword overlap (floor)                           ranking only                                  0.575
+
+QUESTION 1 (confirmatory): is Decider within five percentage points of probability-output GPT?
+   Decider minus GPT, equal-family balanced accuracy: -2.0%  (95% interval -5.0% to +0.8%); margin -5.0 points -> NON-INFERIORITY ESTABLISHED
+
+QUESTION 2 (secondary): does Decider cost at most one fifth as much? One production pass, all charges, divided by all scheduled records.
+   Decider $0.0134 per 1,000 records; GPT $0.0761; ratio 0.176 -> MET (prices as published, retrieved 2026-11-16; computed from token counts)
+
+QUESTION 3 (secondary): does Decider outperform both classic baselines?
+   Decider minus Logistic regression (classic): +6.1%  (95% interval +2.9% to +9.3%)
+   Decider minus XGBoost (classic): +0.5%  (95% interval -3.2% to +4.3%)
+   -> NOT MET
+
+QUESTION 4 (secondary, descriptive): do classifications repeat? Two valid, identical yes/no answers, over all scheduled records.
+   Decider 1.3: 99.3% (family-cluster interval 98.8% to 99.8%); identical probability on 68.1%  -> meets the 98% descriptive benchmark
+   Nimble 4.1: 100.0% (family-cluster interval 100.0% to 100.0%); identical probability on 99.2%
+   Gemini Decision 1: 100.0% (family-cluster interval 100.0% to 100.0%); identical probability on 100.0%
+
+QUESTION 5 (descriptive, no pass mark): the frozen Decider rule. Exclude when p <= 0.019619; include when p >= 0.964343; otherwise defer.
+   automatic exclude: 65/91 correct = 71.4% (family-bootstrap interval 62.6% to 80.2%); coverage 7.5% of records; 42 families contribute
+   automatic include: 151/201 correct = 75.1% (family-bootstrap interval 68.5% to 81.3%); coverage 16.6% of records; 58 families contribute
+   This describes one fixed rule on a balanced sample. It does not show what other rules could do, and it is not a deployment reliability.
+
+QUESTION 6 (exploratory, no pass mark): variation between reviews and between models.
+   Decider, per-review balanced accuracy: lowest 33%, highest 100%; observed standard deviation 13.6%;
+   expected from sampling so few records per review alone: 12.4%; estimated underlying spread after removing that: 5.6%
+   gap Decider 1.3 minus Nimble 4.1: -0.3% (-2.3% to +1.8%)
+   gap Decider 1.3 minus Gemini Decision 1: +0.2% (-2.2% to +2.6%)
+   gap Nimble 4.1 minus Gemini Decision 1: +0.5% (-1.5% to +2.6%)
+
+SECONDARY (descriptive, nominal intervals)
+   Nimble 4.1 minus GPT-6 Luna (probability): -1.7% (-4.4% to +0.8%)
+   Gemini Decision 1 minus GPT-6 Luna (probability): -2.2% (-4.9% to +0.3%)
+   Decider 1.3 minus Claude Haiku 5.5 (probability): +1.0% (-1.8% to +3.8%)
+   Nimble 4.1 minus Claude Haiku 5.5 (probability): +1.3% (-1.5% to +4.0%)
+   GPT-6 Luna (probability) minus Claude Haiku 5.5 (probability): +3.0% (+0.3% to +5.7%)
+   Nimble 4.1 minus Logistic regression (classic): +6.4% (+3.1% to +9.7%)
+   Nimble 4.1 minus XGBoost (classic): +0.8% (-2.8% to +4.4%)
+   GPT-6 Luna (probability) minus XGBoost (classic): +2.5% (-1.3% to +6.4%)
+   Confidence: accuracy among the quarter of valid answers the system is most sure about, and the quarter it is least sure about
+      Decider 1.3                      most sure 73.2%   least sure 53.0%
+      Nimble 4.1                       most sure 74.5%   least sure 52.3%
+      Gemini Decision 1                most sure 76.8%   least sure 52.3%
+      GPT-6 Luna (probability)         most sure 72.8%   least sure 52.3%
+      Claude Haiku 5.5 (probability)   most sure 70.5%   least sure 53.0%
+      Logistic regression (classic)    most sure 67.5%   least sure 49.3%
+      XGBoost (classic)                most sure 64.2%   least sure 57.0%
+   Disagreement: the three decision models agree on 75.5% of records and are right on 65.3% of those; where they split, the majority is right on 48.0%
+   Review difficulty vs records sampled per review: rank correlation +0.08 (exploratory)
+   Review difficulty vs review year: rank correlation -0.04 (exploratory)
+   Review difficulty vs length of review title: rank correlation -0.23 (exploratory)

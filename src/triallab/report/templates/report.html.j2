@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, follow">
+<title>Clinical Trial Decision Lab — local results summary</title>
+<style>
+  /* Neutral, unbranded theme (tokens shared with Fraud Decision Lab's plain report). */
+  :root { --bg:#FFFFFF; --ink:#1A1D21; --muted:#5C636B; --rule:#DDE1E6; --border:#D3D8DE; --paper:#F5F6F8; --accent:#2F6FB3; --bad:#7A2E19; --bad-bg:#FBE9E4; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#15181C; --ink:#EEF1F4; --muted:#A3ABB4; --rule:#2E343B; --border:#353C44; --paper:#22272D; --accent:#7FB0E6; --bad:#F0B8A8; --bad-bg:rgba(181,72,43,.2); } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; }
+  .wrap { max-width:1100px; margin:0 auto; padding:0 24px 64px; }
+  h1 { font-size:32px; line-height:1.15; margin:40px 0 8px; } h2 { font-size:22px; margin:40px 0 8px; padding-top:24px; border-top:1px solid var(--rule); }
+  p { max-width:46rem; } .muted { color:var(--muted); } .small { font-size:13.5px; }
+  .note { background:var(--paper); border:1px solid var(--border); border-radius:12px; padding:14px 18px; max-width:46rem; }
+  .caution { background:var(--bad-bg); color:var(--bad); border-radius:12px; padding:14px 18px; max-width:46rem; }
+  .table-wrap { overflow-x:auto; border:1px solid var(--border); border-radius:12px; }
+  table { border-collapse:collapse; width:100%; font-size:14px; } th,td { text-align:left; padding:9px 12px; border-bottom:1px solid var(--rule); vertical-align:top; }
+  td.num, th.num { text-align:right; white-space:nowrap; } tr:last-child td { border-bottom:0; } code { font-family:ui-monospace,Menlo,monospace; font-size:13px; }
+</style>
+</head>
+<body><div class="wrap">
+<h1>Clinical Trial Decision Lab</h1>
+<p class="muted">Enrollment eligibility and informed consent issue triage — local results summary. Generated {{ bundle.generated_utc }} by triallab {{ bundle.generator.version }}.</p>
+<p class="caution"><strong>Research only.</strong> Synthetic cases; the case mix is a design choice and does not represent how often such issues occur in real trials. Reference labels come from deterministic rules, not from clinical experts. Nothing here is a regulatory determination or a measure of performance in real clinical operations.</p>
+
+{% for key, exp in bundle.experiments.items() %}
+<h2>{{ "Synthetic operational triage" if exp.track == "synthetic" else "Regulatory finding classification" }} — {{ exp.dataset.name }} / {{ exp.dataset.split }}</h2>
+<p class="small muted">Run <code>{{ exp.run_id }}</code>, started {{ exp.started_utc }}. {{ exp.scored_cases }} cases:
+{% for name, count in exp.composition.by_category.items() %}{{ count }} {{ name }}{{ ", " if not loop.last }}{% endfor %};
+{{ exp.composition.text_dependent }} depend on a free-text note. Questions {{ exp.questions.version }}. Reference system for differences: {{ exp.reference_system or "none" }}.</p>
+{% if exp.track == "synthetic" %}
+<div class="table-wrap"><table>
+<thead><tr><th>System</th><th>Model</th><th class="num">Answered</th><th class="num">Both outcomes right</th><th class="num">Critical cases flagged</th><th class="num">Issue precision</th><th class="num">Issue recall</th><th class="num">Issues never queued</th><th class="num">Unneeded reviews / 100</th><th class="num">p95 latency</th><th class="num">Cost / 1,000</th></tr></thead>
+<tbody>
+{% for name, m in exp.models.items() %}
+<tr><td>{{ m.label }}</td>
+{% if m.status == "ok" %}
+<td><code>{{ (m.models_reported or [m.model_requested]) | join(", ") }}</code></td>
+<td class="num">{{ m.coverage | pct }}</td>
+<td class="num">{{ m.quality.case_accuracy | pct }}<br><span class="small muted">{{ m.ranges_95.case_accuracy.low | pct }} to {{ m.ranges_95.case_accuracy.high | pct }}</span></td>
+<td class="num">{{ m.quality.critical_recall | pct }}</td>
+<td class="num">{{ m.quality.issue_precision | pct }}</td>
+<td class="num">{{ m.quality.issue_recall | pct }}</td>
+<td class="num">{{ m.quality.missed_issues }} of {{ m.quality.issue_detection.issue_cases }}</td>
+<td class="num">{{ m.quality.false_positives_per_100 | num }}</td>
+<td class="num">{{ m.performance.latency_ms.p95 | num(2) }} ms<br><span class="small muted">{{ m.performance.latency_scope }}</span></td>
+<td class="num">{% if m.execution == "local" %}local, no API cost{% else %}${{ m.performance.cost.per_1000_cases_usd | num(4) }}{% endif %}</td>
+{% else %}
+<td colspan="10" class="muted">{{ m.status }} — {{ m.reason }}</td>
+{% endif %}</tr>
+{% endfor %}
+</tbody></table></div>
+<p class="small muted">Ranges are 95% paired-bootstrap ranges ({{ exp.bootstrap.resamples }} resamples, seed {{ exp.bootstrap.seed }}). "Critical" cases have reference priority <em>expedited</em>. "Flag every case" and "Flag no case" are anchors, not systems.</p>
+
+<h2>Where each measured system is right, by kind of case</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>System</th>{% for s in ["category:routine","category:issue","category:ambiguous","evidence:structured","evidence:text_dependent"] %}<th class="num">{{ s.split(":")[1] | replace("_"," ") }}</th>{% endfor %}</tr></thead>
+<tbody>{% for name in exp.measured_systems %}{% set m = exp.models[name] %}{% if m.status == "ok" %}
+<tr><td>{{ m.label }}</td>{% for s in ["category:routine","category:issue","category:ambiguous","evidence:structured","evidence:text_dependent"] %}<td class="num">{{ m.quality.strata[s].case_accuracy | pct }}<br><span class="small muted">{{ m.quality.strata[s].cases }} cases</span></td>{% endfor %}</tr>
+{% endif %}{% endfor %}</tbody></table></div>
+<p class="note small">The rules read structured fields only. By construction they agree with the reference on cases decided by structured fields, and can be wrong only where the deciding fact is written in a free-text note. Read the two evidence columns separately.</p>
+{% endif %}
+{% endfor %}
+
+<h2>Regulatory finding classification</h2>
+<p class="note">{{ bundle.tracks.regulatory.status | capitalize }}. {{ bundle.tracks.regulatory.reason }} Results of this track are never combined with synthetic results.</p>
+
+<h2>Model register</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Model</th><th>Identifier</th><th>Route</th><th>Enabled</th><th>Interface</th><th class="num">Input price / 1M tokens</th><th>Publish benchmarks (our reading of terms)</th></tr></thead>
+<tbody>{% for m in bundle.model_register %}
+<tr><td>{{ m.label }}</td><td><code>{{ m.model }}</code></td><td>{{ m.execution }}{% if m.gateway %} ({{ m.gateway }}){% endif %}</td><td>{{ "yes" if m.enabled else "no" }}</td><td>{{ m.interface_status | replace("_"," ") }}</td><td class="num">${{ m.price_input_per_m_usd }}<br><span class="small muted">list price read {{ m.price_retrieved }}</span></td><td>{{ m.terms_benchmark_publication | lower }}</td></tr>
+{% endfor %}</tbody></table></div>
+<p class="small muted">No paid API run has been made unless a row above shows measured results. A dry run exercises request building and parsing with fixture responses and measures nothing.</p>
+</div></body></html>

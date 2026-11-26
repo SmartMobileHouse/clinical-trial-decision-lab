@@ -1,0 +1,51 @@
+POST-HOC SENSITIVITY CHECKS (exploratory; written after the locked results were seen)
+
+1. TRIAL LINKAGE by registration numbers found in titles and abstracts (partial: papers that do not print their number stay unlinked)
+   sample records carrying a registration number: 531 of 1210; distinct numbers 494
+   numbers shared by more than one sample family: 6; families involved: 9; records involved: 16
+   review families 79 -> clusters after joining linked families 73
+   training rows sharing a registration number with the sample: 11 of 5067 (numbers: 7; sample records affected: 7)
+   registration numbers shared between the pilots and the sample: 8 (sample records affected: 11)
+   check: refitting logistic on the unchanged training set reproduces the frozen predictions to within 4.96e-03
+   check: refitting xgboost on the unchanged training set reproduces the frozen predictions to within 0.00e+00
+
+   Classic baselines, balanced accuracy on the locked sample
+      Logistic regression, as locked            54.79% (52.21% to 57.37%)   [linked families resampled together]
+      Logistic regression, linked rows removed  55.40% (52.88% to 57.96%)   [linked families resampled together]
+      XGBoost, as locked                        60.42% (57.79% to 63.25%)   [linked families resampled together]
+      XGBoost, linked rows removed              59.64% (57.08% to 62.26%)   [linked families resampled together]
+
+   Paired differences, three ways
+      comparison                               as locked (79 families)       linked families together (73)
+      decider minus gpt                      -2.01% (-4.96% to +0.80%)           -2.01% (-4.85% to +0.67%)
+      decider minus logistic                 +6.11% (+2.86% to +9.30%)           +6.11% (+2.80% to +9.55%)
+      decider minus xgboost                  +0.48% (-3.17% to +4.27%)           +0.48% (-3.23% to +4.24%)
+      decider minus logistic_clean           +5.50% (+2.23% to +8.73%)           +5.50% (+2.24% to +8.87%)
+      decider minus xgboost_clean            +1.26% (-2.47% to +5.02%)           +1.26% (-2.44% to +5.03%)
+      nimble minus xgboost_clean             +1.56% (-1.99% to +5.13%)           +1.56% (-1.97% to +5.08%)
+      gpt minus xgboost_clean                +3.27% (-0.43% to +7.06%)           +3.27% (-0.38% to +7.07%)
+   Question 1 with linked families together: lower end -4.851% against the margin -5.0 -> still passes
+   Question 1 also dropping the 11 sample records that share a trial number with the pilots: -1.84% (-4.68% to +0.82%) -> still passes
+   Question 3 with the cleaned baselines: still NOT MET
+
+2. QUESTIONS 4 AND 5 with the planned 10,000 draws (locked output used 2,000)
+   Q4 decider: 1202/1210 = 99.34%; interval 98.78% to 99.76% (linked families together: 98.81% to 99.76%)
+   Q4 nimble: 1210/1210 = 100.00%; interval 100.00% to 100.00% (linked families together: 100.00% to 100.00%)
+   Q4 gemini: 1210/1210 = 100.00%; interval 100.00% to 100.00% (linked families together: 100.00% to 100.00%)
+   Q5 automatic exclude: 65/91 = 71.4%; interval 62.4% to 80.5% (linked families together: 62.8% to 81.0%)
+   Q5 automatic include: 151/201 = 75.1%; interval 68.6% to 81.7% (linked families together: 68.7% to 81.4%)
+
+3. REVIEW DIFFICULTY, rank correlations with ties handled correctly (Decider, exploratory)
+   records sampled per review: +0.082
+   review year: -0.136
+   length of review title: -0.221
+
+4. PROBABILITY QUALITY: Brier score (lower is better; always answering 0.5 scores 0.250)
+   decider         0.293  worse than 0.5 everywhere
+   nimble          0.242  better than 0.5 everywhere
+   gemini          0.281  worse than 0.5 everywhere
+   gpt             0.318  worse than 0.5 everywhere
+   haiku           0.289  worse than 0.5 everywhere
+   logistic        0.252  worse than 0.5 everywhere
+   xgboost         0.240  better than 0.5 everywhere
+   xgboost_clean   0.239  better than 0.5 everywhere

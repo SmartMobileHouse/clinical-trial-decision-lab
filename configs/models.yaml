@@ -1,0 +1,481 @@
+# Model registry. Adding or disabling a model happens here only.
+#
+# interface_status
+#   executed_in_fraud_lab  this request format was run against the live API by Fraud Decision Lab (2026-11-06)
+#   verified_from_docs     request and response shape read from the provider's official docs; never executed by us
+#   not_verified           cannot be enabled
+# No model in this file has been executed by Clinical Trial Decision Lab. A dry run proves only that
+# our request builder and parser agree with the documented shape.
+#
+# terms: our reading on the `verified` date, from the provider's published terms. Not legal advice.
+# publication.approved: an owner decision. Results of a model are exported only when it is true.
+# Prices are USD per 1 million tokens, list price, read on `price.retrieved`. They are not invoices.
+verified: "2026-11-16"
+models:
+  - id: jev
+    label: TypeSafe Jev 1.14
+    kind: system_one
+    family: decision_model
+    provider: TypeSafe
+    model: jev-1.14.0
+    version_pinning: "Explicit version id. The aliases jev-latest and jev-preview move."
+    endpoint: https://api.typesafe.ai/v1/systemone
+    auth_env: TYPESAFE_API_KEY
+    max_context_tokens: 32768   # per question, without the long-context header
+    reports_probabilities: true
+    enabled: true
+    interface_status: executed_in_fraud_lab
+    interface_note: "Single-question requests were executed. Eight questions in one request follow the documented format but were not executed."
+    price: {input: 0.042, output: 0.0, source: "https://docs.typesafe.ai/models.md", retrieved: "2026-11-16"}
+    terms:
+      commercial_use: ALLOWED
+      output_publication: ALLOWED
+      benchmark_publication: UNCLEAR
+      source: https://typesafe.ai/legal/mca
+      verified: "2026-11-16"
+      note: "No benchmark clause. Confidentiality covers non-public information about the Services; no right to use name or logo. Ask TypeSafe in writing."
+
+  - id: openai_decisions
+    label: OpenAI Decisions (GPT-6 Luna)
+    kind: openai_decisions
+    family: decision_model
+    provider: OpenAI
+    model: gpt-6-luna
+    version_pinning: "No dated snapshot is offered. The run date and the model field of each response are recorded."
+    endpoint: https://api.openai.com/v1/decisions
+    auth_env: OPENAI_API_KEY
+    reports_probabilities: true
+    enabled: true
+    interface_status: executed_in_fraud_lab
+    interface_note: "Single-question requests were executed. Refusal answers are handled per the current guide."
+    price: {input: 0.10, output: 0.0, cached_input: 0.01, source: "https://developers.openai.com/api/docs/guides/decisions", retrieved: "2026-11-16"}
+    terms:
+      commercial_use: ALLOWED
+      output_publication: ALLOWED
+      benchmark_publication: ALLOWED
+      source: https://openai.com/policies/services-agreement/
+      verified: "2026-11-16"
+      note: "Usage Policies allow model evaluation and benchmarking. Section 10 restricts public statements about the relationship and use of name or logo. Outputs must not train competing models."
+
+  - id: clef
+    label: Cloudflare Clef
+    kind: system_one
+    family: decision_model
+    provider: Cloudflare Workers AI
+    model: "@cf/cloudflare/clef"
+    body_model: clef
+    version_pinning: "No version pinning is documented for the hosted model. The run date is recorded."
+    endpoint: "https://api.cloudflare.com/client/v4/accounts/{CLOUDFLARE_ACCOUNT_ID}/ai/run/@cf/cloudflare/clef"
+    endpoint_env: [CLOUDFLARE_ACCOUNT_ID]
+    auth_env: CLOUDFLARE_API_TOKEN
+    unwrap: cloudflare
+    max_context_tokens: 65536   # a longer state is silently truncated by the service, so we refuse to send it
+    reports_probabilities: true
+    enabled: true
+    interface_status: executed_in_fraud_lab
+    interface_note: "Single-question requests were executed. The REST result envelope was observed in that run, not in the docs."
+    price: {input: 0.24, output: 0.0, source: "https://developers.cloudflare.com/workers-ai/platform/pricing/", retrieved: "2026-11-16"}
+    terms:
+      commercial_use: ALLOWED
+      output_publication: ALLOWED
+      benchmark_publication: ALLOWED
+      source: https://www.cloudflare.com/terms/
+      verified: "2026-11-16"
+      note: "Section 2.2.2 permits benchmark tests; published results must come with all information necessary to replicate them."
+
+  - id: clef_flash
+    label: Cloudflare Clef-flash
+    kind: system_one
+    family: decision_model
+    provider: Cloudflare Workers AI
+    model: "@cf/cloudflare/clef-flash"
+    body_model: clef-flash
+    version_pinning: "No version pinning is documented for the hosted model. The run date is recorded."
+    endpoint: "https://api.cloudflare.com/client/v4/accounts/{CLOUDFLARE_ACCOUNT_ID}/ai/run/@cf/cloudflare/clef-flash"
+    endpoint_env: [CLOUDFLARE_ACCOUNT_ID]
+    auth_env: CLOUDFLARE_API_TOKEN
+    unwrap: cloudflare
+    max_context_tokens: 24576
+    reports_probabilities: true
+    enabled: true
+    interface_status: executed_in_fraud_lab
+    interface_note: "Single-question requests were executed."
+    price: {input: 0.038, output: 0.0, source: "https://developers.cloudflare.com/workers-ai/platform/pricing/", retrieved: "2026-11-16"}
+    terms:
+      commercial_use: ALLOWED
+      output_publication: ALLOWED
+      benchmark_publication: ALLOWED
+      source: https://www.cloudflare.com/terms/
+      verified: "2026-11-16"
+      note: "Same terms as Clef."
+
+  - id: pplx_decider
+    label: Perplexity Decider 1.2
+    kind: system_one
+    family: decision_model
+    provider: Perplexity
+    model: pplx-decider-v1.2
+    version_pinning: "Explicit version id. Superseded by v1.3; the -latest alias moves and is not used."
+    endpoint: https://api.perplexity.ai/v1/decisions
+    auth_env: PERPLEXITY_API_KEY
+    max_context_tokens: 256000
+    reports_probabilities: true
+    enabled: true
+    interface_status: verified_from_docs
+    interface_note: "Never executed by us. Web grounding mode is left off."
+    price: {input: 0.02, output: 0.0, source: "https://docs.perplexity.ai/docs/getting-started/pricing.md", retrieved: "2026-11-16"}
+    terms:
+      commercial_use: ALLOWED
+      output_publication: REQUIRES PERMISSION
+      benchmark_publication: REQUIRES PERMISSION
+      source: https://www.perplexity.ai/hub/legal/perplexity-api-terms-of-service
+      verified: "2026-11-16"
+      note: "Output display is limited to Customer Applications; the usage policy bars competitive or similar products. Get written permission before publishing."
+
+  - id: pplx_decider_flash
+    label: Perplexity Decider Flash 1.2
+    kind: system_one
+    family: decision_model
+    provider: Perplexity
+    model: pplx-decider-flash-v1.2
+    version_pinning: "Explicit version id. Superseded by v1.3."
+    endpoint: https://api.perplexity.ai/v1/decisions
+    auth_env: PERPLEXITY_API_KEY
+    max_context_tokens: 256000
+    reports_probabilities: true
+    batching: "one case per request; the provider answers each question separately and bills the state per question"
+    enabled: true
+    interface_status: verified_from_docs
+    interface_note: "Never executed by us."
+    price: {input: 0.01, output: 0.0, source: "https://docs.perplexity.ai/docs/getting-started/pricing.md", retrieved: "2026-11-16"}
+    terms:
+      commercial_use: ALLOWED
+      output_publication: REQUIRES PERMISSION
+      benchmark_publication: REQUIRES PERMISSION
+      source: https://www.perplexity.ai/hub/legal/perplexity-api-terms-of-service
+      verified: "2026-11-16"
+      note: "Same terms as Decider 1.2."
+
+  - id: pplx_decider_v13
+    publication: {approved: true, basis: "Owner decision by Jerzy Pietruszewski, 2026-11-26: aggregate results only. Perplexity's terms ask for permission and none was obtained; the owner judges the provider will not object. Raw outputs withheld."}
+    label: Perplexity Decider 1.3
+    kind: system_one
+    family: decision_model
+    provider: Perplexity
+    model: pplx-decider-v1.3
+    version_pinning: "Explicit version id. The -latest alias currently selects this version and can move; it is not used."
+    endpoint: https://api.perplexity.ai/v1/decisions
+    auth_env: PERPLEXITY_API_KEY
+    max_context_tokens: 256000
+    reports_probabilities: true
+    enabled: true
+    interface_status: verified_from_docs
+    interface_note: "Executed by us only in the registry-consistency feasibility run of 2026-11-17 (two questions per request), not on this benchmark's test set. Web grounding mode is left off."
+    price: {input: 0.02, output: 0.0, source: "https://docs.perplexity.ai/docs/getting-started/pricing.md", retrieved: "2026-11-17"}
+    terms:
+      commercial_use: ALLOWED
+      output_publication: REQUIRES PERMISSION
+      benchmark_publication: REQUIRES PERMISSION
+      source: https://www.perplexity.ai/hub/legal/perplexity-api-terms-of-service
+      verified: "2026-11-16"
+      note: "Same terms as Decider 1.2. Whether weights are openly available was not verified from a Perplexity source."
+
+  - id: pplx_decider_flash_v13
+    label: Perplexity Decider Flash 1.3
+    kind: system_one
+    family: decision_model
+    provider: Perplexity
+    model: pplx-decider-flash-v1.3
+    version_pinning: "Explicit version id. The -latest alias currently selects this version and can move; it is not used."
+    endpoint: https://api.perplexity.ai/v1/decisions
+    auth_env: PERPLEXITY_API_KEY
+    max_context_tokens: 256000
+    reports_probabilities: true
+    enabled: true
+    interface_status: verified_from_docs
+    interface_note: "Executed by us only in the registry-consistency feasibility run of 2026-11-17 (two questions per request), not on this benchmark's test set. Web grounding mode is left off."
+    price: {input: 0.01, output: 0.0, source: "https://docs.perplexity.ai/docs/getting-started/pricing.md", retrieved: "2026-11-17"}
+    terms:
+      commercial_use: ALLOWED
+      output_publication: REQUIRES PERMISSION
+      benchmark_publication: REQUIRES PERMISSION
+      source: https://www.perplexity.ai/hub/legal/perplexity-api-terms-of-service
+      verified: "2026-11-16"
+      note: "Same terms as Decider 1.2. Whether weights are openly available was not verified from a Perplexity source."
+
+  - id: nimble
+    publication: {approved: true, basis: "Owner decision by Jerzy Pietruszewski, 2026-11-26: aggregate results only. No published terms for the hosted service were found on that date, and the report says so. Raw outputs withheld."}
+    label: Bespoke Labs Nimble 4.1 Max
+    kind: system_one
+    family: decision_model
+    provider: Bespoke Labs
+    model: nimble-v4.1-max
+    version_pinning: "Explicit version id. nimble-latest is a moving alias."
+    endpoint: https://api.bespokelabs.ai/v1/systemone
+    auth_env: BESPOKE_API_KEY
+    max_context_tokens: 256000
+    reports_probabilities: true
+    enabled: false
+    disabled_reason: "The hosted API terms are not public. Read and archive them at sign-up before any call. The open weights are CC BY-NC 4.0 and must not be self-hosted by a commercial company."
+    interface_status: verified_from_docs
+    price: {input: 0.04, output: 0.0, source: "https://docs.bespokelabs.ai/nimble/pricing", retrieved: "2026-11-16"}
+    terms:
+      commercial_use: UNCLEAR
+      output_publication: UNCLEAR
+      benchmark_publication: UNCLEAR
+      source: https://docs.bespokelabs.ai/nimble/overview.md
+      verified: "2026-11-26"
+      note: "No terms of service page was found. Tried on 2026-11-26: bespokelabs.ai/terms and /terms-of-service (both 404) and docs.bespokelabs.ai (no terms link). The terms shown at sign-up were not kept. The model was called in the locked screening run of 2026-11-25 by the study's own runner."
+
+  - id: liquid_d1_ultra
+    label: Liquid AI D1 Ultra
+    kind: system_one
+    family: decision_model
+    provider: Liquid AI
+    model: d1-ultra
+    version_pinning: "Model id without a version; d1-ultra:latest is a moving alias."
+    endpoint: https://api.liquid.ai/decisions/v1/systemone
+    auth_env: LIQUID_API_KEY
+    max_context_tokens: 32768
+    reports_probabilities: true
+    enabled: false
+    disabled_reason: "Standard endpoints may store prompts and use them to improve models, which would expose the frozen test set to training. Enable only on a zero-retention endpoint."
+    interface_status: verified_from_docs
+    interface_note: "Liquid's pages disagree on whether the state is billed once or per question; measure before reporting cost."
+    price: {input: 0.042, output: 0.0, source: "https://liquid.ai/pricing", retrieved: "2026-11-16"}
+    terms:
+      commercial_use: ALLOWED
+      output_publication: ALLOWED
+      benchmark_publication: UNCLEAR
+      source: https://www.liquid.ai/terms-conditions
+      verified: "2026-11-16"
+      note: "Use is for internal business purposes; the terms are silent on publishing benchmarks. Ask Liquid."
+
+  - id: morph_reflex
+    label: Morph reflex
+    kind: system_one
+    family: decision_model
+    provider: Morph
+    model: reflex
+    version_pinning: "No versioned id exists. The run date is recorded."
+    endpoint: https://api.morphllm.com/v1/systemone
+    auth_env: MORPH_API_KEY
+    max_context_tokens: 65536
+    reports_probabilities: true
+    enabled: true
+    interface_status: verified_from_docs
+    interface_note: "Never executed by us. Use metered API access, not a flat-rate subscription."
+    price: {input: 0.042, output: 0.0, cached_input: 0.002, source: "https://www.morphllm.com/api/models/json?prices=list", retrieved: "2026-11-16"}
+    terms:
+      commercial_use: ALLOWED
+      output_publication: ALLOWED
+      benchmark_publication: UNCLEAR
+      source: https://morphllm.com/privacy/tos
+      verified: "2026-11-16"
+      note: "Subscription terms restrict 'benchmark farming' and evaluating competing models; reach for metered API use is unclear. Ask Morph."
+
+  - id: microsoft_decision
+    label: Microsoft Decision 1 (Preview)
+    kind: system_one
+    family: decision_model
+    provider: Microsoft Foundry
+    model: Microsoft-Decision-1
+    body_model: "Decision-1.1"   # the deployment created on 2026-11-21; the service reports microsoft-decision-1.1
+    version_pinning: "Model version 1 behind a customer deployment name; Preview."
+    endpoint: "{AZURE_FOUNDRY_ENDPOINT}/providers/microsoft/v1/systemone"
+    endpoint_env: [AZURE_FOUNDRY_ENDPOINT]
+    auth_env: AZURE_FOUNDRY_API_KEY
+    auth_header: api-key
+    auth_scheme: ""
+    max_context_tokens: 32768
+    reports_probabilities: true
+    enabled: false
+    disabled_reason: "The documentation shows no literal response with probability fields, so the parser cannot be validated without a live call. Needs an Azure deployment name in body_model."
+    interface_status: not_verified
+    price: {input: 0.042, output: 0.0, source: "https://ai.azure.com/catalog/models/Microsoft-Decision-1", retrieved: "2026-11-16"}
+    terms:
+      commercial_use: ALLOWED
+      output_publication: ALLOWED
+      benchmark_publication: ALLOWED
+      source: https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all
+      verified: "2026-11-16"
+      note: "Benchmark disclosure requires replication information on request, and waives our own anti-benchmark terms if we offer a competing product. Preview service."
+
+  - id: convai_laya
+    label: Convai Laya
+    kind: system_one
+    family: decision_model
+    provider: Convai Innovations (self-hosted)
+    model: convaiinnovations/laya
+    version_pinning: "Open weights; pin a repository revision when self-hosting."
+    endpoint: "{LAYA_BASE_URL}/v1/systemone"
+    endpoint_env: [LAYA_BASE_URL]
+    auth_env: LAYA_API_KEY
+    max_context_tokens: 1024
+    reports_probabilities: true
+    enabled: false
+    disabled_reason: "No vendor-hosted API. The context is 512 to 1,024 tokens, far below one case packet, and evidence is never truncated."
+    interface_status: not_verified
+    price: {input: 0.0, output: 0.0, source: "https://huggingface.co/convaiinnovations/laya", retrieved: "2026-11-16"}
+    terms:
+      commercial_use: ALLOWED
+      output_publication: ALLOWED
+      benchmark_publication: ALLOWED
+      source: https://huggingface.co/convaiinnovations/laya
+      verified: "2026-11-16"
+      note: "Apache-2.0 weights."
+
+  - id: llm_openai
+    publication: {approved: true, basis: "Owner decision by Jerzy Pietruszewski, 2026-11-26: aggregate results only; OpenAI Services Agreement read 2026-11-16. Plain naming, no logo. Raw outputs withheld."}
+    label: Structured-output LLM (GPT-6 Luna)
+    kind: openai_responses
+    family: general_llm
+    provider: OpenAI
+    model: gpt-6-luna
+    version_pinning: "No dated snapshot is offered. The run date and reported model are recorded."
+    endpoint: https://api.openai.com/v1/responses
+    auth_env: OPENAI_API_KEY
+    reports_probabilities: false
+    parameters: {reasoning_effort: none, max_output_tokens: 600}
+    enabled: true
+    interface_status: executed_in_fraud_lab
+    interface_note: "Executed with a one-number schema. The answers schema used here was not executed."
+    price: {input: 0.10, output: 0.50, cached_input: 0.01, source: "https://developers.openai.com/api/docs/pricing", retrieved: "2026-11-16"}
+    terms:
+      commercial_use: ALLOWED
+      output_publication: ALLOWED
+      benchmark_publication: ALLOWED
+      source: https://openai.com/policies/services-agreement/
+      verified: "2026-11-16"
+      note: "Same terms as OpenAI Decisions."
+
+  - id: llm_anthropic
+    publication: {approved: true, basis: "Owner decision by Jerzy Pietruszewski, 2026-11-26: aggregate results only; Anthropic commercial terms read 2026-11-16. Raw outputs withheld."}
+    label: Structured-output LLM (Claude Haiku 5.5)
+    kind: anthropic_messages
+    family: general_llm
+    provider: Anthropic
+    model: claude-haiku-5-5
+    version_pinning: "The model id is a pinned snapshot."
+    endpoint: https://api.anthropic.com/v1/messages
+    auth_env: ANTHROPIC_API_KEY
+    auth_header: x-api-key
+    auth_scheme: ""
+    extra_headers: {anthropic-version: "2026-10-21"}
+    reports_probabilities: false
+    parameters: {effort: low, thinking: disabled, max_tokens: 600}
+    enabled: true
+    interface_status: verified_from_docs
+    interface_note: "Never executed by us. Uses output_config.format with a JSON schema."
+    price: {input: 0.10, output: 0.50, cached_input: 0.01, source: "https://platform.claude.com/docs/en/about-claude/pricing", retrieved: "2026-11-16"}
+    terms:
+      commercial_use: ALLOWED
+      output_publication: ALLOWED
+      benchmark_publication: ALLOWED
+      source: https://www.anthropic.com/legal/commercial-terms
+      verified: "2026-11-16"
+      note: "No benchmarking clause. The services may not be used to build a competing product or train competing models."
+
+  - id: qwen35_9b_local
+    label: Qwen3.5 9B (open weights, self-hosted)
+    kind: ollama_chat
+    family: general_llm
+    provider: Alibaba Qwen, served locally with Ollama
+    model: "qwen3.5:9b"
+    version_pinning: "Ollama tag; the manifest digest of the pulled model is recorded with each run folder's notes. A tag can be re-pointed by the library."
+    endpoint: "{OLLAMA_BASE_URL}/api/chat"
+    endpoint_env: [OLLAMA_BASE_URL]
+    max_context_tokens: 16384   # sent as num_ctx; longer inputs are refused, never cut
+    reports_probabilities: false
+    timeout_s: 300.0
+    parameters: {think: false, temperature: 0, num_predict: 600, quantization: "library default for the tag"}
+    enabled: false
+    disabled_reason: "Not part of this lab's comparison by owner decision (2026-11-17). In a small registry-consistency test the quantized model with reasoning off answered no on nearly every item. The adapter is kept for future labs."
+    interface_status: verified_from_docs
+    interface_note: "Self-hosted: accuracy is comparable with hosted models, latency and cost are not. Quantized weights, not the full-precision release."
+    price: {input: 0.0, output: 0.0, source: "https://ollama.com/library/qwen3.5", retrieved: "2026-11-17"}
+    terms:
+      commercial_use: ALLOWED
+      output_publication: ALLOWED
+      benchmark_publication: ALLOWED
+      source: https://huggingface.co/Qwen/Qwen3.5-9B
+      verified: "2026-11-17"
+      note: "Apache-2.0 weights per the model card metadata. The licence file itself was not read."
+
+  - id: or_gemini_decision_1
+    publication: {approved: true, basis: "Owner decision by Jerzy Pietruszewski, 2026-11-26: aggregate results only; OpenRouter and Google terms read 2026-11-26, no benchmarking clause found. Raw outputs withheld."}
+    label: Google Gemini Decision 1 via OpenRouter
+    kind: system_one
+    family: decision_model
+    provider: Google
+    model: google/gemini-decision-1
+    version_pinning: "No dated id can be requested. The gateway reported google/gemini-decision-1-20261111 in the locked screening run."
+    endpoint: https://openrouter.ai/api/v1/systemone
+    auth_env: OPENROUTER_API_KEY
+    execution: gateway
+    gateway: OpenRouter
+    reports_probabilities: true
+    enabled: false
+    disabled_reason: "Called only by the screening study's own runner (studies/screening/experiment/screening/tp/run_openrouter.py), not through a triallab adapter."
+    interface_status: verified_from_docs
+    interface_note: "Executed by us in the locked screening run of 2026-11-25 (1,210 papers, two passes). Upstream reported as Google AI Studio. Caching details were not logged."
+    price: {input: 0.10, output: 0.0, source: "https://openrouter.ai/google/gemini-decision-1", retrieved: "2026-11-26"}
+    terms:
+      commercial_use: ALLOWED
+      output_publication: UNCLEAR
+      benchmark_publication: UNCLEAR
+      source: https://openrouter.ai/terms
+      verified: "2026-11-26"
+      note: "OpenRouter terms (last updated 2026-08-31) defer output rights to each model's own terms and bind the user to them; no benchmarking clause was found. Google's API terms (https://aistudio.google.com/docs/terms, effective 2026-03-23) are for business use, claim no ownership of generated content, do not address publishing test results, and forbid using the service to develop competing models. Pages were read through a summarising fetch tool, not as raw text. The model page says the model is not available through EU in-region routing."
+
+  - id: jev_via_opper
+    label: TypeSafe Jev 1.14 via Opper
+    kind: system_one
+    family: decision_model
+    provider: TypeSafe
+    model: typesafe/jev-1.14.0
+    version_pinning: "Full catalogue id, which never fails over to another endpoint."
+    endpoint: https://api.opper.ai/v3/compat/v1/systemone
+    auth_env: OPPER_API_KEY
+    execution: gateway
+    gateway: Opper
+    native_counterpart: jev
+    max_context_tokens: 32768
+    reports_probabilities: true
+    enabled: true
+    interface_status: verified_from_docs
+    interface_note: "Never executed by us. The gateway retries once on its own; its timing includes gateway processing."
+    price: {input: 0.042, output: 0.0, source: "https://opper.ai/models/decision-models.md", retrieved: "2026-11-16"}
+    terms:
+      commercial_use: ALLOWED
+      output_publication: UNCLEAR
+      benchmark_publication: UNCLEAR
+      source: https://opper.ai/terms-of-service
+      verified: "2026-11-16"
+      note: "Opper's terms do not address output ownership; upstream TypeSafe terms are assumed to apply. Catalogue price is shown rounded to cents."
+
+  - id: jev_via_runware
+    label: TypeSafe Jev 1.14 via Runware
+    kind: system_one
+    family: decision_model
+    provider: TypeSafe
+    model: "typesafe:jev@1.14"
+    version_pinning: "Explicit version in the gateway model id."
+    endpoint: https://api.runware.ai/v1/decisions
+    auth_env: RUNWARE_API_KEY
+    execution: gateway
+    gateway: Runware
+    native_counterpart: jev
+    max_context_tokens: 32768
+    reports_probabilities: true
+    enabled: true
+    interface_status: verified_from_docs
+    interface_note: "Never executed by us. Whether the gateway enables long context is not documented."
+    price: {input: 0.042, output: 0.0, source: "https://runware.ai/blog/jev-laya-and-the-emerging-role-of-decision-models", retrieved: "2026-11-16"}
+    terms:
+      commercial_use: ALLOWED
+      output_publication: ALLOWED
+      benchmark_publication: UNCLEAR
+      source: https://runware.ai/terms
+      verified: "2026-11-16"
+      note: "Model licence terms govern on conflict and were not shown for Jev; upstream TypeSafe terms are assumed to apply."

@@ -1,0 +1,68 @@
+{
+ "jev": {
+  "n": 400,
+  "mean_review_auc": 0.729,
+  "worst_review_auc": 0.51,
+  "pooled_auc_no_plans": 0.7034162499188154,
+  "accuracy": 0.6275,
+  "included_kept": 0.735,
+  "excluded_rejected": 0.52,
+  "cost_usd": 0.01493423400000001,
+  "median_ms": 172.90381249040365
+ },
+ "clef": {
+  "n": 400,
+  "mean_review_auc": 0.69425,
+  "worst_review_auc": 0.42,
+  "pooled_auc_no_plans": 0.6719166071312593,
+  "accuracy": 0.5975,
+  "included_kept": 0.82,
+  "excluded_rejected": 0.375,
+  "cost_usd": 0.06660960000000007,
+  "median_ms": 203.49137450102717
+ },
+ "pplx_decider_v13": {
+  "n": 400,
+  "mean_review_auc": 0.743,
+  "worst_review_auc": 0.5,
+  "pooled_auc_no_plans": 0.7223485094498928,
+  "accuracy": 0.6675,
+  "included_kept": 0.66,
+  "excluded_rejected": 0.675,
+  "cost_usd": 0.005126160000000001,
+  "median_ms": 300.6322084693238
+ },
+ "openai_decisions": {
+  "n": 400,
+  "mean_review_auc": 0.69425,
+  "worst_review_auc": 0.49,
+  "pooled_auc_no_plans": 0.7323829317399494,
+  "accuracy": 0.6475,
+  "included_kept": 0.465,
+  "excluded_rejected": 0.83,
+  "cost_usd": 0.0283603,
+  "median_ms": 218.2099794736132
+ },
+ "llm_openai": {
+  "n": 120,
+  "mean_review_auc": 0.6666666666666667,
+  "worst_review_auc": 0.16666666666666666,
+  "pooled_auc_no_plans": 0.6811670160726765,
+  "accuracy": 0.6666666666666666,
+  "included_kept": 0.5166666666666667,
+  "excluded_rejected": 0.8166666666666667,
+  "cost_usd": 0.0093051,
+  "median_ms": 785.4361870558932
+ },
+ "keyword_overlap": {
+  "n": 400,
+  "mean_review_auc": 0.5715,
+  "worst_review_auc": 0.29,
+  "pooled_auc_no_plans": 0.5294050789114763,
+  "accuracy": null,
+  "included_kept": null,
+  "excluded_rejected": null,
+  "cost_usd": 0,
+  "median_ms": null
+ }
+}

@@ -1,0 +1,597 @@
+{
+ "clef": {
+  "detailed": {
+   "accuracy": 0.5975,
+   "ranking": 0.69425,
+   "yes_rate": 0.7225
+  },
+  "evidence": {
+   "accuracy": 0.62,
+   "ranking": 0.66125,
+   "yes_rate": 0.61
+  },
+  "minimal": {
+   "accuracy": 0.6025,
+   "ranking": 0.6519999999999999,
+   "yes_rate": 0.6925
+  }
+ },
+ "clef_flash": {
+  "detailed": {
+   "accuracy": 0.6,
+   "ranking": 0.6505,
+   "yes_rate": 0.66
+  },
+  "evidence": {
+   "accuracy": 0.5825,
+   "ranking": 0.6407499999999999,
+   "yes_rate": 0.5825
+  },
+  "minimal": {
+   "accuracy": 0.57,
+   "ranking": 0.6207499999999999,
+   "yes_rate": 0.315
+  }
+ },
+ "jev": {
+  "detailed": {
+   "accuracy": 0.6275,
+   "ranking": 0.729,
+   "yes_rate": 0.6075
+  },
+  "evidence": {
+   "accuracy": 0.62,
+   "ranking": 0.689,
+   "yes_rate": 0.525
+  },
+  "minimal": {
+   "accuracy": 0.615,
+   "ranking": 0.7002499999999999,
+   "yes_rate": 0.53
+  }
+ },
+ "liquid_d1_ultra": {
+  "detailed": {
+   "accuracy": 0.6425,
+   "ranking": 0.73925,
+   "yes_rate": 0.5725
+  },
+  "evidence": {
+   "accuracy": 0.6375,
+   "ranking": 0.74325,
+   "yes_rate": 0.5925
+  },
+  "minimal": {
+   "accuracy": 0.6975,
+   "ranking": 0.77225,
+   "yes_rate": 0.4825
+  }
+ },
+ "llm_anthropic": {
+  "detailed": {
+   "accuracy": 0.7,
+   "ranking": 0.7,
+   "yes_rate": 0.6166666666666667
+  },
+  "evidence": {
+   "accuracy": 0.7083333333333334,
+   "ranking": 0.7083333333333333,
+   "yes_rate": 0.5916666666666667
+  },
+  "minimal": {
+   "accuracy": 0.6666666666666666,
+   "ranking": 0.6666666666666667,
+   "yes_rate": 0.6333333333333333
+  }
+ },
+ "llm_openai": {
+  "detailed": {
+   "accuracy": 0.6666666666666666,
+   "ranking": 0.6666666666666667,
+   "yes_rate": 0.35
+  },
+  "evidence": {
+   "accuracy": 0.7,
+   "ranking": 0.7,
+   "yes_rate": 0.4
+  },
+  "minimal": {
+   "accuracy": 0.675,
+   "ranking": 0.675,
+   "yes_rate": 0.275
+  }
+ },
+ "microsoft_decision": {
+  "detailed": {
+   "accuracy": 0.6475,
+   "ranking": 0.7264999999999999,
+   "yes_rate": 0.5225
+  },
+  "evidence": {
+   "accuracy": 0.6275,
+   "ranking": 0.722,
+   "yes_rate": 0.4775
+  },
+  "minimal": {
+   "accuracy": 0.63,
+   "ranking": 0.725,
+   "yes_rate": 0.525
+  }
+ },
+ "morph_reflex": {
+  "detailed": {
+   "accuracy": 0.605,
+   "ranking": 0.7110000000000001,
+   "yes_rate": 0.505
+  },
+  "evidence": {
+   "accuracy": 0.62,
+   "ranking": 0.689,
+   "yes_rate": 0.46
+  },
+  "minimal": {
+   "accuracy": 0.6025,
+   "ranking": 0.6995,
+   "yes_rate": 0.4025
+  }
+ },
+ "nimble": {
+  "detailed": {
+   "accuracy": 0.6725,
+   "ranking": 0.75725,
+   "yes_rate": 0.4675
+  },
+  "evidence": {
+   "accuracy": 0.6625,
+   "ranking": 0.73075,
+   "yes_rate": 0.5175
+  },
+  "minimal": {
+   "accuracy": 0.6575,
+   "ranking": 0.744,
+   "yes_rate": 0.3775
+  }
+ },
+ "openai_decisions": {
+  "detailed": {
+   "accuracy": 0.6475,
+   "ranking": 0.69425,
+   "yes_rate": 0.3175
+  },
+  "evidence": {
+   "accuracy": 0.6325,
+   "ranking": 0.6849999999999999,
+   "yes_rate": 0.2575
+  },
+  "minimal": {
+   "accuracy": 0.6375,
+   "ranking": 0.68675,
+   "yes_rate": 0.2675
+  }
+ },
+ "or_bison_1": {
+  "detailed": {
+   "accuracy": 0.645,
+   "ranking": 0.72,
+   "yes_rate": 0.44
+  },
+  "evidence": {
+   "accuracy": 0.6275,
+   "ranking": 0.7310000000000001,
+   "yes_rate": 0.4425
+  },
+  "minimal": {
+   "accuracy": 0.64,
+   "ranking": 0.73,
+   "yes_rate": 0.41
+  }
+ },
+ "or_clef_omni": {
+  "detailed": {
+   "accuracy": 0.57,
+   "ranking": 0.6275000000000001,
+   "yes_rate": 0.71
+  },
+  "evidence": {
+   "accuracy": 0.5125,
+   "ranking": 0.61,
+   "yes_rate": 0.1675
+  },
+  "minimal": {
+   "accuracy": 0.555,
+   "ranking": 0.59225,
+   "yes_rate": 0.265
+  }
+ },
+ "or_d1_1": {
+  "detailed": {
+   "accuracy": 0.625,
+   "ranking": 0.74875,
+   "yes_rate": 0.685
+  },
+  "evidence": {
+   "accuracy": 0.625,
+   "ranking": 0.69975,
+   "yes_rate": 0.6
+  },
+  "minimal": {
+   "accuracy": 0.6475,
+   "ranking": 0.7292500000000001,
+   "yes_rate": 0.4975
+  }
+ },
+ "or_d1_2": {
+  "detailed": {
+   "accuracy": 0.6416040100250626,
+   "ranking": 0.7238333333333333,
+   "yes_rate": 0.531328320802005
+  },
+  "evidence": {
+   "accuracy": 0.6375,
+   "ranking": 0.7230000000000001,
+   "yes_rate": 0.5625
+  },
+  "minimal": {
+   "accuracy": 0.675,
+   "ranking": 0.72575,
+   "yes_rate": 0.4
+  }
+ },
+ "or_d1_2_ultra": {
+  "detailed": {
+   "accuracy": 0.6375,
+   "ranking": 0.75225,
+   "yes_rate": 0.3875
+  },
+  "evidence": {
+   "accuracy": 0.63,
+   "ranking": 0.737,
+   "yes_rate": 0.43
+  },
+  "minimal": {
+   "accuracy": 0.6475,
+   "ranking": 0.758,
+   "yes_rate": 0.4025
+  }
+ },
+ "or_drex_max": {
+  "detailed": {
+   "accuracy": 0.6225,
+   "ranking": 0.75075,
+   "yes_rate": 0.3275
+  },
+  "evidence": {
+   "accuracy": 0.6425,
+   "ranking": 0.73075,
+   "yes_rate": 0.3825
+  },
+  "minimal": {
+   "accuracy": 0.6525,
+   "ranking": 0.76825,
+   "yes_rate": 0.3125
+  }
+ },
+ "or_drex_v1_5": {
+  "detailed": {
+   "accuracy": 0.55,
+   "ranking": 0.657,
+   "yes_rate": 0.88
+  },
+  "evidence": {
+   "accuracy": 0.5675,
+   "ranking": 0.646,
+   "yes_rate": 0.6875
+  },
+  "minimal": {
+   "accuracy": 0.5525,
+   "ranking": 0.6599999999999999,
+   "yes_rate": 0.8125
+  }
+ },
+ "or_drex_v2_0": {
+  "detailed": {
+   "accuracy": 0.61,
+   "ranking": 0.692,
+   "yes_rate": 0.65
+  },
+  "evidence": {
+   "accuracy": 0.5825,
+   "ranking": 0.6639999999999999,
+   "yes_rate": 0.6325
+  },
+  "minimal": {
+   "accuracy": 0.62,
+   "ranking": 0.68325,
+   "yes_rate": 0.545
+  }
+ },
+ "or_elephant_1": {
+  "detailed": {
+   "accuracy": 0.6025,
+   "ranking": 0.693,
+   "yes_rate": 0.5825
+  },
+  "evidence": {
+   "accuracy": 0.6125,
+   "ranking": 0.6735,
+   "yes_rate": 0.5275
+  },
+  "minimal": {
+   "accuracy": 0.615,
+   "ranking": 0.6990000000000001,
+   "yes_rate": 0.51
+  }
+ },
+ "or_gemini_decision_1": {
+  "detailed": {
+   "accuracy": 0.6475,
+   "ranking": 0.7355,
+   "yes_rate": 0.6325
+  },
+  "evidence": {
+   "accuracy": 0.66,
+   "ranking": 0.752,
+   "yes_rate": 0.595
+  },
+  "minimal": {
+   "accuracy": 0.655,
+   "ranking": 0.7645,
+   "yes_rate": 0.62
+  }
+ },
+ "or_groundhog_1": {
+  "detailed": {
+   "accuracy": 0.61,
+   "ranking": 0.6940000000000001,
+   "yes_rate": 0.695
+  },
+  "evidence": {
+   "accuracy": 0.6075,
+   "ranking": 0.6985,
+   "yes_rate": 0.5825
+  },
+  "minimal": {
+   "accuracy": 0.585,
+   "ranking": 0.67275,
+   "yes_rate": 0.255
+  }
+ },
+ "or_heygen_decision_1": {
+  "detailed": {
+   "accuracy": 0.635,
+   "ranking": 0.6895,
+   "yes_rate": 0.55
+  },
+  "evidence": {
+   "accuracy": 0.6125,
+   "ranking": 0.6875,
+   "yes_rate": 0.5875
+  },
+  "minimal": {
+   "accuracy": 0.635,
+   "ranking": 0.7037500000000001,
+   "yes_rate": 0.565
+  }
+ },
+ "or_heygen_decision_1_turbo": {
+  "detailed": {
+   "accuracy": 0.6090225563909775,
+   "ranking": 0.6988055555555556,
+   "yes_rate": 0.5789473684210527
+  },
+  "evidence": {
+   "accuracy": 0.59,
+   "ranking": 0.67625,
+   "yes_rate": 0.62
+  },
+  "minimal": {
+   "accuracy": 0.6225,
+   "ranking": 0.6915,
+   "yes_rate": 0.5475
+  }
+ },
+ "or_jev_1_13": {
+  "detailed": {
+   "accuracy": 0.63,
+   "ranking": 0.7382500000000001,
+   "yes_rate": 0.62
+  },
+  "evidence": {
+   "accuracy": 0.62,
+   "ranking": 0.72275,
+   "yes_rate": 0.48
+  },
+  "minimal": {
+   "accuracy": 0.66,
+   "ranking": 0.727,
+   "yes_rate": 0.505
+  }
+ },
+ "or_joey_1": {
+  "detailed": {
+   "accuracy": 0.5325,
+   "ranking": 0.6935,
+   "yes_rate": 0.9075
+  },
+  "evidence": {
+   "accuracy": 0.5375,
+   "ranking": 0.613,
+   "yes_rate": 0.7725
+  },
+  "minimal": {
+   "accuracy": 0.5975,
+   "ranking": 0.631,
+   "yes_rate": 0.6125
+  }
+ },
+ "or_mammoth_1": {
+  "detailed": {
+   "accuracy": 0.62,
+   "ranking": 0.7145,
+   "yes_rate": 0.58
+  },
+  "evidence": {
+   "accuracy": 0.6175,
+   "ranking": 0.7185,
+   "yes_rate": 0.6025
+  },
+  "minimal": {
+   "accuracy": 0.62,
+   "ranking": 0.704,
+   "yes_rate": 0.52
+  }
+ },
+ "or_microsoft_decision_1": {
+  "detailed": {
+   "accuracy": 0.6075,
+   "ranking": 0.6845,
+   "yes_rate": 0.5075
+  },
+  "evidence": {
+   "accuracy": 0.6125,
+   "ranking": 0.6799999999999999,
+   "yes_rate": 0.4375
+  },
+  "minimal": {
+   "accuracy": 0.6125,
+   "ranking": 0.7045,
+   "yes_rate": 0.5925
+  }
+ },
+ "or_solar_decide": {
+  "detailed": {
+   "accuracy": 0.6125,
+   "ranking": 0.638,
+   "yes_rate": 0.6425
+  },
+  "evidence": {
+   "accuracy": 0.6225,
+   "ranking": 0.6665,
+   "yes_rate": 0.3775
+  },
+  "minimal": {
+   "accuracy": 0.5875,
+   "ranking": 0.65725,
+   "yes_rate": 0.3375
+  }
+ },
+ "or_solar_decide_flash": {
+  "detailed": {
+   "accuracy": 0.5575,
+   "ranking": 0.6125,
+   "yes_rate": 0.8475
+  },
+  "evidence": {
+   "accuracy": 0.565,
+   "ranking": 0.6025,
+   "yes_rate": 0.525
+  },
+  "minimal": {
+   "accuracy": 0.5475,
+   "ranking": 0.601,
+   "yes_rate": 0.1675
+  }
+ },
+ "or_span_02": {
+  "detailed": {
+   "accuracy": 0.5725,
+   "ranking": 0.666,
+   "yes_rate": 0.7925
+  },
+  "evidence": {
+   "accuracy": 0.6025,
+   "ranking": 0.688,
+   "yes_rate": 0.5425
+  },
+  "minimal": {
+   "accuracy": 0.6225,
+   "ranking": 0.6865,
+   "yes_rate": 0.6525
+  }
+ },
+ "or_tev1_4b_experimental": {
+  "detailed": {
+   "accuracy": 0.515,
+   "ranking": 0.53975,
+   "yes_rate": 0.43
+  },
+  "evidence": {
+   "accuracy": 0.5375,
+   "ranking": 0.5425,
+   "yes_rate": 0.2725
+  },
+  "minimal": {
+   "accuracy": 0.56,
+   "ranking": 0.5745,
+   "yes_rate": 0.585
+  }
+ },
+ "pplx_decider": {
+  "detailed": {
+   "accuracy": 0.6475,
+   "ranking": 0.7335,
+   "yes_rate": 0.4525
+  },
+  "evidence": {
+   "accuracy": 0.6575,
+   "ranking": 0.7205,
+   "yes_rate": 0.4775
+  },
+  "minimal": {
+   "accuracy": 0.6525,
+   "ranking": 0.7474999999999999,
+   "yes_rate": 0.3725
+  }
+ },
+ "pplx_decider_flash": {
+  "detailed": {
+   "accuracy": 0.61,
+   "ranking": 0.6705,
+   "yes_rate": 0.605
+  },
+  "evidence": {
+   "accuracy": 0.585,
+   "ranking": 0.6665,
+   "yes_rate": 0.605
+  },
+  "minimal": {
+   "accuracy": 0.61,
+   "ranking": 0.6945,
+   "yes_rate": 0.395
+  }
+ },
+ "pplx_decider_flash_v13": {
+  "detailed": {
+   "accuracy": 0.6175,
+   "ranking": 0.6865,
+   "yes_rate": 0.6275
+  },
+  "evidence": {
+   "accuracy": 0.595,
+   "ranking": 0.683,
+   "yes_rate": 0.605
+  },
+  "minimal": {
+   "accuracy": 0.6225,
+   "ranking": 0.696,
+   "yes_rate": 0.5725
+  }
+ },
+ "pplx_decider_v13": {
+  "detailed": {
+   "accuracy": 0.6675,
+   "ranking": 0.743,
+   "yes_rate": 0.4925
+  },
+  "evidence": {
+   "accuracy": 0.6475,
+   "ranking": 0.7344999999999999,
+   "yes_rate": 0.5325
+  },
+  "minimal": {
+   "accuracy": 0.6875,
+   "ranking": 0.7695000000000001,
+   "yes_rate": 0.5025
+  }
+ }
+}

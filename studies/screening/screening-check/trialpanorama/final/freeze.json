@@ -1,0 +1,83 @@
+{
+ "frozen_at": "2026-11-22T13:21:38+0100",
+ "note": "Frozen before any model prediction on the final sample was collected. The feasibility folder is not a git repository, so files are identified by SHA-256.",
+ "files": {
+  "reports/Locked run plan.md": "be0f45bebef415b09d275f32f9151ecc38de71e58c33fdd3827302ac9eb2df3e",
+  "screening-check/trialpanorama/final/sample.jsonl": "1925403c2c2098347457cb38632f4780173741d69ff3399484b9a5c9099b5460",
+  "screening-check/trialpanorama/final/reviews.json": "599c670381d24ff07b5eb86c46ef7af55d00e931c06f272ab9d4cf0e29d5356e",
+  "screening-check/trialpanorama/final/family-adjudication.json": "326622729ef99efd98597cd865b9794d34742a79f281447ea743c9b845505860",
+  "screening-check/trialpanorama/final/build_sample.py": "fdb40bc1267175d2352b4ee4346ac3db9120b7eb03d6a85a5f637c81178bb0ba",
+  "screening-check/trialpanorama/final/fetch_records.py": "1c03326e268f3c76e63f2e1d9883cd6fe1d6239976fc9951ad624247e7b88d7c",
+  "experiment/screening/tp/questions.json": "173b80ecbdc9c8a7fca7657bec29b3e5e3b0619c72b8dd31338109679c36ea6e",
+  "experiment/screening/tp/run.py": "ddd0176c8302c9575c67ef9f2715b97cd38cdab15f18d10492a10b2f4fa5d259",
+  "experiment/screening/tp/run_openrouter.py": "7ae972a2941983ca0641cae662146406d8487602ab6ec4f130801e820fe3d6c6",
+  "experiment/screening/tp/run_llm_probability.py": "ac286e98c407888783248f6511bbb0ecb1995da79559951c938007741035e6b4",
+  "experiment/screening/tp/final_analysis.py": "a897c3b316bcfb7eb625b9134510cebeeba2df6bebfa820b935dd5921c97d884"
+ },
+ "lab_adapters_repo_commit": "f14ce5e8672e2bc48b0424dff4c7ba0352f5580f",
+ "lab_repo_uncommitted_files": [
+  "M configs/models.yaml"
+ ],
+ "lab_models_yaml_sha256": "8e0961e19995adcf2e2f7cc02037a8d71ac0168bcf3036537ec52d794d2f8be8",
+ "dataset": "TrialPanorama/TrialPanorama-benchmark, study_screening, downloaded 2026-11-21 (train.jsonl 680,692,492 bytes; test.jsonl 1,835,140 bytes)",
+ "systems": {
+  "decider": "pplx-decider-v1.3 (direct)",
+  "nimble": "nimble-v4.1-max (direct)",
+  "gemini": "google/gemini-decision-1 (OpenRouter)",
+  "gpt": "gpt-6-luna, reasoning effort none, probability output",
+  "haiku": "claude-haiku-5-5, thinking disabled, effort low, probability output"
+ },
+ "prices_usd_per_million_tokens": {
+  "retrieved": "2026-11-16",
+  "pplx-decider-v1.3": "see lab configs/models.yaml",
+  "gpt-6-luna": {
+   "input": 0.1,
+   "output": 0.5
+  },
+  "claude-haiku-5-5": {
+   "input": 0.1,
+   "output": 0.5
+  }
+ },
+ "seed": 20261122,
+ "bootstrap_draws": 10000,
+ "margin": -0.05,
+ "cutoffs": {
+  "exclude_le": 0.019619440825558058,
+  "include_ge": 0.96434342645985
+ },
+ "classic_baseline": {
+  "added_at": "2026-11-25T14:14:11+0100",
+  "models_pkl_sha256": "562cbd6e9bd8aee56e940a58d5574d702003d38eab8d0339cd0f4d32468866ec",
+  "script_sha256": "34041c79ecb3682d0a9531609cc4eabee5cfaecae0b6218e7162e08c68c06bdc",
+  "chosen": {
+   "logistic": {
+    "features": "all",
+    "params": [
+     3
+    ],
+    "cv_family_balanced_accuracy": 0.5829575577746616,
+    "cv_mean_family_auc": 0.6288408962286359
+   },
+   "xgboost": {
+    "features": "all",
+    "params": [
+     4,
+     200,
+     1
+    ],
+    "cv_family_balanced_accuracy": 0.5903542688671346,
+    "cv_mean_family_auc": 0.6416860086133547
+   }
+  },
+  "training_counts": {
+   "rows": 5067,
+   "reviews": 1075,
+   "families": 1006,
+   "cv_groups": 785,
+   "largest_group_rows": 71
+  },
+  "prior_exposure_candidate_families_in_old_training": 159
+ },
+ "predictions_started_at": "2026-11-25T14:14:11+0100"
+}

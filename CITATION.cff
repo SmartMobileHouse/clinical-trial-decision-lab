@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this benchmark or its results, please cite it as below."
+title: "Clinical Trial Decision Lab: a reproducible benchmark of AI decision models for clinical-trial evidence work"
+type: software
+authors:
+  - given-names: Jerzy
+    family-names: Pietruszewski
+    affiliation: Smart Mobile House
+version: 0.1.0
+date-released: 2026-11-26
+license: MIT
+repository-code: "https://github.com/SmartMobileHouse/clinical-trial-decision-lab"
+url: "https://smartmobilehouse.com/research/clinical-trial-decision-lab/"
+abstract: >-
+  A reproducible benchmark of AI decision models, general-purpose LLMs and trained classifiers for
+  clinical-trial evidence work. The screening study predicts whether a systematic review included or
+  excluded a paper from the review title and the paper's abstract. The repository also holds a
+  synthetic benchmark for triage of enrollment-eligibility and informed-consent issues. Research
+  only; not validated by clinical experts.
+keywords:
+  - clinical trials
+  - systematic reviews
+  - study screening
+  - benchmark
+  - decision models
+  - large language models
+preferred-citation:
+  type: report
+  title: "Clinical Trial Decision Lab: Where AI Decision Models Earn Their Place in Clinical-Trial Evidence Work, and Where They Do Not (report version 1.0)"
+  authors:
+    - given-names: Jerzy
+      family-names: Pietruszewski
+      affiliation: Smart Mobile House
+  institution:
+    name: Smart Mobile House
+  year: 2026
+  month: 11
+  url: "https://smartmobilehouse.com/research/clinical-trial-decision-lab/"

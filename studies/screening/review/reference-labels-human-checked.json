@@ -1,0 +1,2042 @@
+[
+ {
+  "item_id": "NCT07677839:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07678125:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07678125:randomized",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07678125:sex_restricted",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07679100:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07679100:randomized",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07681011:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07681778:maximum_age",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07681778:minimum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07682350:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07682740:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07683780:randomized",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07684729:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07686276:maximum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07688382:maximum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07693985:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07694063:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07694739:placebo_arm",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07695090:sex_restricted",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07696559:placebo_arm",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07696936:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07697651:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07699198:randomized",
+  "label": "unresolved",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07700342:placebo_arm",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07701135:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07702682:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07703995:sex_restricted",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07704073:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07704372:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07705386:maximum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07706673:maximum_age",
+  "label": "unresolved",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07706673:minimum_age",
+  "label": "unresolved",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07706868:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07709286:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07710547:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07712666:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07712978:randomized",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07713472:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07715279:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07715396:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07716176:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07717775:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07719387:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07719387:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07719738:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07721402:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07722299:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07722767:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07723495:randomized",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07724522:placebo_arm",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07725510:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07725510:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07725679:sex_restricted",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07727239:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07727330:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07729345:randomized",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07729670:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07729982:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07729982:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07730021:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07730047:maximum_age",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07730177:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07731373:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07731373:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07733700:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07734610:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07734610:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07735156:minimum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07735156:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07735182:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07738367:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07738757:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07738874:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07739095:placebo_arm",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07739784:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07740330:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07741149:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07741227:placebo_arm",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07742176:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07742176:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07742345:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07743294:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07744191:placebo_arm",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07745751:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07745842:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07746622:maximum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07747051:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07747285:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07747558:maximum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07748468:minimum_age",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07749404:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07749443:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07749560:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07749768:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07749768:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07749768:placebo_arm",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07750054:maximum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07750054:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07750730:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07750977:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07752641:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07752680:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07752706:sex_restricted",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07753629:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07753629:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07754227:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07754812:randomized",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07756853:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07756970:maximum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07756970:minimum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07757165:sex_restricted",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07757295:randomized",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07759895:maximum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07761117:placebo_arm",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07761299:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07762209:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07762300:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07762586:maximum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07762599:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07763431:sex_restricted",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07763665:placebo_arm",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07763977:maximum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07764497:sex_restricted",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07764965:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07766265:maximum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07766265:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07766356:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07766681:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07767578:maximum_age",
+  "label": "unresolved",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07767578:minimum_age",
+  "label": "unresolved",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07768176:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07768800:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07768800:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07768930:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07769450:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07769775:randomized",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07770594:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07771322:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07771322:randomized",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07774182:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07775053:sex_restricted",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07775092:sex_restricted",
+  "label": "missing_information",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07775443:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07775443:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07776132:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07776288:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07777185:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07777549:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07777822:maximum_age",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07778355:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07778446:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07778602:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07780149:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07781033:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07781033:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07781605:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07781852:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07781852:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07782112:maximum_age",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07782450:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07782827:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07782983:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07782983:sex_restricted",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07783763:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07785167:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07785661:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07785713:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07786922:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07787130:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07788183:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07788313:maximum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07790159:placebo_arm",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07790159:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07790601:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07791277:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07791446:randomized",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07791758:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07792044:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07796178:randomized",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07796672:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07797413:randomized",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07798570:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07798960:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07800715:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07800897:randomized",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07801417:maximum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07801417:minimum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07801612:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07801612:maximum_age",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07803705:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07803705:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07803952:placebo_arm",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07804602:randomized",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07804745:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07805603:maximum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07807566:healthy_volunteers",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07807826:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07808983:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07808983:minimum_age",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07809477:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07809802:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07811583:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07811674:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07814001:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07814742:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07815561:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07816159:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07816601:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07816952:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07817628:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07817641:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07819357:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07819591:sex_restricted",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07819786:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07820449:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07821216:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07821814:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07822503:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07822594:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07822919:maximum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07823465:maximum_age",
+  "label": "unresolved",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07823465:minimum_age",
+  "label": "unresolved",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07823556:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07824362:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07825532:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07825558:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07826260:maximum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07826260:minimum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07827742:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07828457:placebo_arm",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07828548:placebo_arm",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07829289:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07830160:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07830667:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07830953:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07831057:randomized",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07831460:maximum_age",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07831928:placebo_arm",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07832136:sex_restricted",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07832435:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07835074:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07835152:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07835373:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07836452:minimum_age",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07836452:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07836647:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07836712:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07838974:sex_restricted",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07840040:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07840612:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07840612:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07841171:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07843355:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07843472:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07843472:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07844135:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07845669:placebo_arm",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07847944:placebo_arm",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07848750:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07849114:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07849153:sex_restricted",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07850271:maximum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07850271:minimum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07851675:minimum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07851675:randomized",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07851675:sex_restricted",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07852455:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07852637:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07856303:sex_restricted",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07856875:sex_restricted",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07859735:randomized",
+  "label": "missing_information",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07859787:maximum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07859787:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07860281:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07860645:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07860645:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07863219:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07863609:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07863609:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07863609:sex_restricted",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07863856:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07863856:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07864259:maximum_age",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07865624:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07866560:maximum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07867210:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07867626:maximum_age",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07868380:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07868744:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07868809:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07868913:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07869550:maximum_age",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07870954:placebo_arm",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07871578:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07871682:placebo_arm",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07871942:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07872995:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07874867:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07874919:placebo_arm",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07875387:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07875387:maximum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07876037:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07876323:randomized",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07876934:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07877129:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07877870:healthy_volunteers",
+  "label": "unresolved",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07877870:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07878169:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07878169:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07878429:maximum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07878429:minimum_age",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07879430:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07879430:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07880080:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07880197:sex_restricted",
+  "label": "missing_information",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07880938:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07881523:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07881770:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07881887:maximum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07882966:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07882966:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07885020:sex_restricted",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07886372:placebo_arm",
+  "label": "unresolved",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07887035:placebo_arm",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07888829:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07889557:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07891039:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07891104:minimum_age",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07891195:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07891195:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07891624:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07891793:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07891793:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07891845:minimum_age",
+  "label": "missing_information",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07892755:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07892755:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07893314:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07893912:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07895472:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07896031:maximum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07896031:minimum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07896135:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07896434:placebo_arm",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07897682:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07898592:maximum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07898592:minimum_age",
+  "label": "missing_information",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07898670:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07898956:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07899359:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07899593:maximum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07901829:randomized",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07902115:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07902466:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07903311:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07905157:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07905469:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07906197:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07907107:randomized",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07908459:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07909356:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07911839:maximum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07912775:placebo_arm",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07912931:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07913178:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07914543:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07914543:minimum_age",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07914608:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07914946:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07915115:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07915167:placebo_arm",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07915583:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07916441:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07917702:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07919067:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07920471:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07920471:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07920809:placebo_arm",
+  "label": "unresolved",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07920887:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07920991:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07921290:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07921290:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07922213:minimum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07924527:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07924839:randomized",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07925489:maximum_age",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07925489:minimum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07925606:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07926282:minimum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07928778:maximum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07929012:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07929662:maximum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07929662:placebo_arm",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07930585:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07930845:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07931222:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07932444:placebo_arm",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07932509:minimum_age",
+  "label": "contradiction",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07933692:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07935317:minimum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07936578:maximum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07937046:randomized",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07937878:maximum_age",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07937878:minimum_age",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07937878:randomized",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07939087:healthy_volunteers",
+  "label": "consistent",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07940023:sex_restricted",
+  "label": "consistent",
+  "human_checked": true
+ },
+ {
+  "item_id": "NCT07940036:maximum_age",
+  "label": "missing_information",
+  "human_checked": false
+ },
+ {
+  "item_id": "NCT07940478:sex_restricted",
+  "label": "consistent",
+  "human_checked": false
+ }
+]

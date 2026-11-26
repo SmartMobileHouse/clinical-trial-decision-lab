@@ -1,0 +1,92 @@
+# Strings the Presidio scan (scripts/presidio_scan.py, `make pii`) may find without reporting.
+# One exact string per line, or re:<pattern> that the whole finding must match. Reason after " #".
+# Add a line only after a person has looked at the finding. Names of real third parties do not belong here
+# unless publishing them was decided on purpose.
+
+# --- The author of this project, named on purpose
+Jerzy #author, in README and CITATION.cff
+Pietruszewski #author
+J. #author's initial in the citation
+Jerzy Pietruszewski #owner, named as approver in the source manifest and the model registry
+
+# --- Identifiers that are not personal data
+re:CT\d{7} #tail of a ClinicalTrials.gov registration number (NCT........)
+re:MC\d{7} #tail of a PubMed Central id (PMC.......)
+re:TN\d{7} #tail of an ISRCTN trial registration number
+re:[A-Za-z]{1,2}\d{1,2} #clause and item labels in the audit documents (F1, B4, v1); too short to be a licence number
+re:[a-z]{2}\d{7} #lower-case fragments of package hashes (uv.lock) and DOI suffixes (sample-ids.jsonl)
+337684 #part of a fictional participant id in the synthetic dataset
+127.0.0.1 #local machine address in .env.example
+0.0.0.0 #placeholder address quoted from provider documentation
+
+# --- Deliberately fake fixtures in the tests of the publication checks
+Zebulon Quackenbush #invented name used to test the name scan
+Quackenbush #same
+M.D. #same fixture
+re:[a-z.]+@(hospital\.org|example\.com) #two invented addresses used to test the email pattern
+John Smith #placeholder name quoted from provider documentation
+
+# --- Products, organisations, statistics and ordinary words that the model reads as a person
+Alibaba Qwen #model
+Claude #model
+Claude Fable #model
+Claude Haiku #model
+Claude Sonnet #model
+Jev #model
+TypeSafe Jev #model
+May Jev #sentence start "May Jev be named"
+Laya #model
+Max #part of a model name
+Morph #provider
+Ollama #software
+OpenRouter #service
+Docker #software
+Git #software
+PyInstaller #software
+Markdown #format
+Gilead #company
+F. Hoffmann-La Roche AG #company
+Workr Maintainer #literal placeholder text in a third-party licence file, not a person
+Brier #Brier score
+Cohen #Cohen's kappa
+McNemar #McNemar test
+Dipeptidyl #drug class in a review title
+Xpert MTB #diagnostic test in a review title
+GDPR #regulation
+Art #abbreviation of "Article"
+Mark #the word "Mark" in "FDA Mark" (trademark)
+Y. #"Y" in a yes/no template field
+TS #abbreviation
+Bibliographic #ordinary word
+Consents #ordinary word
+Footer #ordinary word
+Frozen #ordinary word
+Goal #ordinary word
+Layout #ordinary word
+Measures #ordinary word
+Participant #ordinary word
+Scope #ordinary word
+Token #ordinary word
+Exception #code identifier
+Ledger #code identifier
+CallOutcome #code identifier
+CaseTruth #code identifier
+CheckResult #code identifier
+GeneratedCase #code identifier
+MockProvider #code identifier
+NoteMeaning #code identifier
+RulesProvider #code identifier
+RULES.values #code identifier
+DATACHG #dataset column name
+DATAENT #dataset column name
+
+# --- Real people, kept on purpose (owner decision of 2026-11-26)
+# Public authorship credits quoted from the licence or description files of open-source tools and datasets
+# assessed in docs/research. No private source.
+Jeno Pizarro #author named in a public dataset readme
+Peter Glass #author named in a public dataset readme
+Jeremy Wildfire #author listed for a public R package
+Renan Escalante Chong #author listed for a public R package
+Will Harris #maintainer listed for a public R package
+Pekka Tiikkainen #author listed for a public R package
+Björn Koneswarakantha #author listed for a public R package

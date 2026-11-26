@@ -1,0 +1,838 @@
+{
+ "items": 408,
+ "real": 45,
+ "rule_flags": 144,
+ "systems": {
+  "jev": {
+   "v1": [
+    42,
+    26
+   ],
+   "v2": [
+    36,
+    8
+   ],
+   "v3": [
+    33,
+    10
+   ]
+  },
+  "clef": {
+   "v1": [
+    40,
+    23
+   ],
+   "v2": [
+    38,
+    8
+   ],
+   "v3": [
+    31,
+    11
+   ]
+  },
+  "clef_flash": {
+   "v1": [
+    38,
+    36
+   ],
+   "v2": [
+    37,
+    35
+   ],
+   "v3": [
+    30,
+    13
+   ]
+  },
+  "openai_decisions": {
+   "v1": [
+    43,
+    42
+   ],
+   "v2": [
+    28,
+    6
+   ],
+   "v3": [
+    35,
+    17
+   ]
+  },
+  "llm_openai": {
+   "v1": [
+    36,
+    32
+   ],
+   "v2": [
+    41,
+    14
+   ],
+   "v3": [
+    35,
+    15
+   ]
+  },
+  "pplx_decider_v13": {
+   "v1": [
+    44,
+    27
+   ],
+   "v2": [
+    44,
+    11
+   ],
+   "v3": [
+    43,
+    20
+   ]
+  },
+  "pplx_decider_flash_v13": {
+   "v1": [
+    41,
+    35
+   ],
+   "v2": [
+    37,
+    15
+   ],
+   "v3": [
+    36,
+    15
+   ]
+  },
+  "laya_multilingual": {
+   "v1": [
+    40,
+    91
+   ],
+   "v2": null,
+   "v3": null
+  }
+ },
+ "treatments": {
+  "jev": {
+   "v1": {
+    "a": {
+     "real_kept": 42,
+     "real_total": 44,
+     "false_alarms_kept": 26,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 74,
+     "found_overall_pipeline": 42,
+     "found_overall_model_alone": 42,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 42,
+     "real_total": 44,
+     "false_alarms_kept": 21,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 70,
+     "found_overall_pipeline": 42,
+     "found_overall_model_alone": 42,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 47,
+     "real_total": 53,
+     "false_alarms_kept": 21,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 70,
+     "found_overall_pipeline": 47,
+     "found_overall_model_alone": 47,
+     "contradictions_total": 55
+    }
+   },
+   "v2": {
+    "a": {
+     "real_kept": 36,
+     "real_total": 44,
+     "false_alarms_kept": 8,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 92,
+     "found_overall_pipeline": 36,
+     "found_overall_model_alone": 36,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 36,
+     "real_total": 44,
+     "false_alarms_kept": 5,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 86,
+     "found_overall_pipeline": 36,
+     "found_overall_model_alone": 36,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 39,
+     "real_total": 53,
+     "false_alarms_kept": 5,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 86,
+     "found_overall_pipeline": 39,
+     "found_overall_model_alone": 40,
+     "contradictions_total": 55
+    }
+   },
+   "v3": {
+    "a": {
+     "real_kept": 33,
+     "real_total": 44,
+     "false_alarms_kept": 10,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 90,
+     "found_overall_pipeline": 33,
+     "found_overall_model_alone": 33,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 33,
+     "real_total": 44,
+     "false_alarms_kept": 7,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 84,
+     "found_overall_pipeline": 33,
+     "found_overall_model_alone": 33,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 36,
+     "real_total": 53,
+     "false_alarms_kept": 7,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 84,
+     "found_overall_pipeline": 36,
+     "found_overall_model_alone": 37,
+     "contradictions_total": 55
+    }
+   }
+  },
+  "clef": {
+   "v1": {
+    "a": {
+     "real_kept": 40,
+     "real_total": 44,
+     "false_alarms_kept": 23,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 77,
+     "found_overall_pipeline": 40,
+     "found_overall_model_alone": 40,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 40,
+     "real_total": 44,
+     "false_alarms_kept": 19,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 72,
+     "found_overall_pipeline": 40,
+     "found_overall_model_alone": 40,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 44,
+     "real_total": 53,
+     "false_alarms_kept": 19,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 72,
+     "found_overall_pipeline": 44,
+     "found_overall_model_alone": 44,
+     "contradictions_total": 55
+    }
+   },
+   "v2": {
+    "a": {
+     "real_kept": 38,
+     "real_total": 44,
+     "false_alarms_kept": 8,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 92,
+     "found_overall_pipeline": 38,
+     "found_overall_model_alone": 38,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 38,
+     "real_total": 44,
+     "false_alarms_kept": 5,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 86,
+     "found_overall_pipeline": 38,
+     "found_overall_model_alone": 38,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 41,
+     "real_total": 53,
+     "false_alarms_kept": 5,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 86,
+     "found_overall_pipeline": 41,
+     "found_overall_model_alone": 41,
+     "contradictions_total": 55
+    }
+   },
+   "v3": {
+    "a": {
+     "real_kept": 31,
+     "real_total": 44,
+     "false_alarms_kept": 11,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 89,
+     "found_overall_pipeline": 31,
+     "found_overall_model_alone": 31,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 31,
+     "real_total": 44,
+     "false_alarms_kept": 9,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 82,
+     "found_overall_pipeline": 31,
+     "found_overall_model_alone": 31,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 33,
+     "real_total": 53,
+     "false_alarms_kept": 9,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 82,
+     "found_overall_pipeline": 33,
+     "found_overall_model_alone": 33,
+     "contradictions_total": 55
+    }
+   }
+  },
+  "clef_flash": {
+   "v1": {
+    "a": {
+     "real_kept": 38,
+     "real_total": 44,
+     "false_alarms_kept": 36,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 64,
+     "found_overall_pipeline": 38,
+     "found_overall_model_alone": 38,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 38,
+     "real_total": 44,
+     "false_alarms_kept": 29,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 62,
+     "found_overall_pipeline": 38,
+     "found_overall_model_alone": 38,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 45,
+     "real_total": 53,
+     "false_alarms_kept": 29,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 62,
+     "found_overall_pipeline": 45,
+     "found_overall_model_alone": 46,
+     "contradictions_total": 55
+    }
+   },
+   "v2": {
+    "a": {
+     "real_kept": 37,
+     "real_total": 44,
+     "false_alarms_kept": 35,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 65,
+     "found_overall_pipeline": 37,
+     "found_overall_model_alone": 37,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 37,
+     "real_total": 44,
+     "false_alarms_kept": 31,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 60,
+     "found_overall_pipeline": 37,
+     "found_overall_model_alone": 37,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 41,
+     "real_total": 53,
+     "false_alarms_kept": 31,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 60,
+     "found_overall_pipeline": 41,
+     "found_overall_model_alone": 42,
+     "contradictions_total": 55
+    }
+   },
+   "v3": {
+    "a": {
+     "real_kept": 30,
+     "real_total": 44,
+     "false_alarms_kept": 13,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 87,
+     "found_overall_pipeline": 30,
+     "found_overall_model_alone": 30,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 30,
+     "real_total": 44,
+     "false_alarms_kept": 9,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 82,
+     "found_overall_pipeline": 30,
+     "found_overall_model_alone": 30,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 34,
+     "real_total": 53,
+     "false_alarms_kept": 9,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 82,
+     "found_overall_pipeline": 34,
+     "found_overall_model_alone": 35,
+     "contradictions_total": 55
+    }
+   }
+  },
+  "openai_decisions": {
+   "v1": {
+    "a": {
+     "real_kept": 43,
+     "real_total": 44,
+     "false_alarms_kept": 42,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 58,
+     "found_overall_pipeline": 43,
+     "found_overall_model_alone": 43,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 43,
+     "real_total": 44,
+     "false_alarms_kept": 35,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 56,
+     "found_overall_pipeline": 43,
+     "found_overall_model_alone": 43,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 50,
+     "real_total": 53,
+     "false_alarms_kept": 35,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 56,
+     "found_overall_pipeline": 50,
+     "found_overall_model_alone": 51,
+     "contradictions_total": 55
+    }
+   },
+   "v2": {
+    "a": {
+     "real_kept": 28,
+     "real_total": 44,
+     "false_alarms_kept": 6,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 94,
+     "found_overall_pipeline": 28,
+     "found_overall_model_alone": 28,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 28,
+     "real_total": 44,
+     "false_alarms_kept": 4,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 87,
+     "found_overall_pipeline": 28,
+     "found_overall_model_alone": 28,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 30,
+     "real_total": 53,
+     "false_alarms_kept": 4,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 87,
+     "found_overall_pipeline": 30,
+     "found_overall_model_alone": 30,
+     "contradictions_total": 55
+    }
+   },
+   "v3": {
+    "a": {
+     "real_kept": 35,
+     "real_total": 44,
+     "false_alarms_kept": 17,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 83,
+     "found_overall_pipeline": 35,
+     "found_overall_model_alone": 35,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 35,
+     "real_total": 44,
+     "false_alarms_kept": 14,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 77,
+     "found_overall_pipeline": 35,
+     "found_overall_model_alone": 35,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 38,
+     "real_total": 53,
+     "false_alarms_kept": 14,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 77,
+     "found_overall_pipeline": 38,
+     "found_overall_model_alone": 39,
+     "contradictions_total": 55
+    }
+   }
+  },
+  "llm_openai": {
+   "v1": {
+    "a": {
+     "real_kept": 36,
+     "real_total": 44,
+     "false_alarms_kept": 32,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 68,
+     "found_overall_pipeline": 36,
+     "found_overall_model_alone": 36,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 36,
+     "real_total": 44,
+     "false_alarms_kept": 28,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 63,
+     "found_overall_pipeline": 36,
+     "found_overall_model_alone": 36,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 40,
+     "real_total": 53,
+     "false_alarms_kept": 28,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 63,
+     "found_overall_pipeline": 40,
+     "found_overall_model_alone": 40,
+     "contradictions_total": 55
+    }
+   },
+   "v2": {
+    "a": {
+     "real_kept": 41,
+     "real_total": 44,
+     "false_alarms_kept": 14,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 86,
+     "found_overall_pipeline": 41,
+     "found_overall_model_alone": 41,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 41,
+     "real_total": 44,
+     "false_alarms_kept": 11,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 80,
+     "found_overall_pipeline": 41,
+     "found_overall_model_alone": 41,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 44,
+     "real_total": 53,
+     "false_alarms_kept": 11,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 80,
+     "found_overall_pipeline": 44,
+     "found_overall_model_alone": 44,
+     "contradictions_total": 55
+    }
+   },
+   "v3": {
+    "a": {
+     "real_kept": 35,
+     "real_total": 44,
+     "false_alarms_kept": 15,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 85,
+     "found_overall_pipeline": 35,
+     "found_overall_model_alone": 35,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 35,
+     "real_total": 44,
+     "false_alarms_kept": 12,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 79,
+     "found_overall_pipeline": 35,
+     "found_overall_model_alone": 35,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 38,
+     "real_total": 53,
+     "false_alarms_kept": 12,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 79,
+     "found_overall_pipeline": 38,
+     "found_overall_model_alone": 39,
+     "contradictions_total": 55
+    }
+   }
+  },
+  "pplx_decider_v13": {
+   "v1": {
+    "a": {
+     "real_kept": 44,
+     "real_total": 44,
+     "false_alarms_kept": 27,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 73,
+     "found_overall_pipeline": 44,
+     "found_overall_model_alone": 45,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 44,
+     "real_total": 44,
+     "false_alarms_kept": 21,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 70,
+     "found_overall_pipeline": 44,
+     "found_overall_model_alone": 45,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 50,
+     "real_total": 53,
+     "false_alarms_kept": 21,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 70,
+     "found_overall_pipeline": 50,
+     "found_overall_model_alone": 52,
+     "contradictions_total": 55
+    }
+   },
+   "v2": {
+    "a": {
+     "real_kept": 44,
+     "real_total": 44,
+     "false_alarms_kept": 11,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 89,
+     "found_overall_pipeline": 44,
+     "found_overall_model_alone": 44,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 44,
+     "real_total": 44,
+     "false_alarms_kept": 8,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 83,
+     "found_overall_pipeline": 44,
+     "found_overall_model_alone": 44,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 47,
+     "real_total": 53,
+     "false_alarms_kept": 8,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 83,
+     "found_overall_pipeline": 47,
+     "found_overall_model_alone": 48,
+     "contradictions_total": 55
+    }
+   },
+   "v3": {
+    "a": {
+     "real_kept": 43,
+     "real_total": 44,
+     "false_alarms_kept": 20,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 80,
+     "found_overall_pipeline": 43,
+     "found_overall_model_alone": 43,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 43,
+     "real_total": 44,
+     "false_alarms_kept": 13,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 78,
+     "found_overall_pipeline": 43,
+     "found_overall_model_alone": 43,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 50,
+     "real_total": 53,
+     "false_alarms_kept": 13,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 78,
+     "found_overall_pipeline": 50,
+     "found_overall_model_alone": 51,
+     "contradictions_total": 55
+    }
+   }
+  },
+  "pplx_decider_flash_v13": {
+   "v1": {
+    "a": {
+     "real_kept": 41,
+     "real_total": 44,
+     "false_alarms_kept": 35,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 65,
+     "found_overall_pipeline": 41,
+     "found_overall_model_alone": 41,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 41,
+     "real_total": 44,
+     "false_alarms_kept": 28,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 63,
+     "found_overall_pipeline": 41,
+     "found_overall_model_alone": 41,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 48,
+     "real_total": 53,
+     "false_alarms_kept": 28,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 63,
+     "found_overall_pipeline": 48,
+     "found_overall_model_alone": 49,
+     "contradictions_total": 55
+    }
+   },
+   "v2": {
+    "a": {
+     "real_kept": 37,
+     "real_total": 44,
+     "false_alarms_kept": 15,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 85,
+     "found_overall_pipeline": 37,
+     "found_overall_model_alone": 37,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 37,
+     "real_total": 44,
+     "false_alarms_kept": 12,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 79,
+     "found_overall_pipeline": 37,
+     "found_overall_model_alone": 37,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 40,
+     "real_total": 53,
+     "false_alarms_kept": 12,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 79,
+     "found_overall_pipeline": 40,
+     "found_overall_model_alone": 41,
+     "contradictions_total": 55
+    }
+   },
+   "v3": {
+    "a": {
+     "real_kept": 36,
+     "real_total": 44,
+     "false_alarms_kept": 15,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 85,
+     "found_overall_pipeline": 36,
+     "found_overall_model_alone": 36,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 36,
+     "real_total": 44,
+     "false_alarms_kept": 12,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 79,
+     "found_overall_pipeline": 36,
+     "found_overall_model_alone": 36,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 39,
+     "real_total": 53,
+     "false_alarms_kept": 12,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 79,
+     "found_overall_pipeline": 39,
+     "found_overall_model_alone": 40,
+     "contradictions_total": 55
+    }
+   }
+  },
+  "laya_multilingual": {
+   "v1": {
+    "a": {
+     "real_kept": 40,
+     "real_total": 44,
+     "false_alarms_kept": 91,
+     "false_alarms_total": 100,
+     "false_alarms_removed": 9,
+     "found_overall_pipeline": 40,
+     "found_overall_model_alone": 41,
+     "contradictions_total": 45
+    },
+    "b": {
+     "real_kept": 40,
+     "real_total": 44,
+     "false_alarms_kept": 82,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 9,
+     "found_overall_pipeline": 40,
+     "found_overall_model_alone": 41,
+     "contradictions_total": 45
+    },
+    "c": {
+     "real_kept": 49,
+     "real_total": 53,
+     "false_alarms_kept": 82,
+     "false_alarms_total": 91,
+     "false_alarms_removed": 9,
+     "found_overall_pipeline": 49,
+     "found_overall_model_alone": 51,
+     "contradictions_total": 55
+    }
+   },
+   "v2": null,
+   "v3": null
+  }
+ },
+ "configurations_tried": 22
+}

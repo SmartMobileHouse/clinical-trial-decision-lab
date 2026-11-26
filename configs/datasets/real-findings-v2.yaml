@@ -1,0 +1,14 @@
+# Descriptions of publicly documented FDA and OHRP findings (retrospective classification). Supersedes fda-findings-v1.
+# NOT distributed with this repository: set TRIALLAB_RESTRICTED_DATA to the folder that holds it.
+# Local only until the privacy review in docs/RELEASE-APPROVAL.md is complete.
+name: real-findings-v2
+track: regulatory
+question_set: finding
+source_id: fda-warning-letters
+location: restricted
+path: real-findings-v2
+splits: [test]
+reported_split: test
+external_processing_allowed: false   # owner decision pending; see docs/DATA-LICENSING-AUDIT.md
+publication_allowed: false
+license_note: "Source letters (FDA, OHRP) are U.S. Government works in the public domain; OHRP reuse policy not verified. Letters name individuals; publication of any per-case material needs a privacy review."

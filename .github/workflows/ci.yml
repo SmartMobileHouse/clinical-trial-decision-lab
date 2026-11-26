@@ -1,0 +1,44 @@
+# Runs the same gate as `make check`. Never calls a provider: tests block the network and no secrets are used.
+# Actions are pinned to full commit hashes. This workflow has not yet run on a hosted runner.
+name: check
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0          # the preflight and the secret scan read the whole history
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+        with:
+          version: "0.12.3"
+      - name: Install pinned dependencies
+        run: uv sync --frozen
+      - name: Formatting and linting
+        run: make lint
+      - name: Types
+        run: make typecheck
+      - name: Unit and integration tests (mocked providers, offline)
+        run: make test
+      - name: Dataset reproducibility and ground-truth integrity
+        run: make data
+      - name: Dependency licence screen
+        run: make licenses
+      - name: Publication preflight (restricted files, notices, sensitive data, artifacts)
+        run: make preflight
+      - name: Documentation links
+        run: uv run python scripts/check_doc_links.py
+      - name: Secret scan
+        uses: gitleaks/gitleaks-action@e0c47f4f8be36e29cdc102c57e68cb5cbf0e8d1e # v3.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

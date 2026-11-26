@@ -1,0 +1,24 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.DS_Store
+
+# Run artifacts, raw provider traces and reports stay local until release approval.
+outputs/
+private/
+
+# Third-party or unapproved source material is never kept inside this repository.
+data/external/
+data/restricted/
+data/processed/
+
+# Planning documents are kept outside the repo
+IMPLEMENTATION_PLAN*.md
+PLAN_REVIEW*.md
+
+# Private Claude Code notes
+CLAUDE.local.md

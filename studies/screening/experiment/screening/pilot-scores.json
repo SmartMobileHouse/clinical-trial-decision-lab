@@ -1,0 +1,86 @@
+{
+ "keyword_bm25": {
+  "n_scored": 584,
+  "cutoff": 14.313314653826152,
+  "test_ranking_auc": 0.6449147087222401,
+  "test_relevant_kept": 0.9807692307692307,
+  "test_kept_by_review": {
+   "Butink_2023": 1.0,
+   "Sepriano_2022": 1.0,
+   "van_Ballegooijen_2024": 0.95
+  },
+  "test_irrelevant_rejected": 0.10460251046025104,
+  "cost_usd": 0.0,
+  "items_per_second": null
+ },
+ "keyword_tfidf": {
+  "n_scored": 584,
+  "cutoff": 0.03060914362034069,
+  "test_ranking_auc": 0.760057933698101,
+  "test_relevant_kept": 0.9038461538461539,
+  "test_kept_by_review": {
+   "Butink_2023": 1.0,
+   "Sepriano_2022": 0.9166666666666666,
+   "van_Ballegooijen_2024": 0.8
+  },
+  "test_irrelevant_rejected": 0.3179916317991632,
+  "cost_usd": 0.0,
+  "items_per_second": null
+ },
+ "jev": {
+  "n_scored": 584,
+  "cutoff": 0.05,
+  "test_ranking_auc": 0.8478838107499196,
+  "test_relevant_kept": 0.9807692307692307,
+  "test_kept_by_review": {
+   "Butink_2023": 1.0,
+   "Sepriano_2022": 1.0,
+   "van_Ballegooijen_2024": 0.95
+  },
+  "test_irrelevant_rejected": 0.12552301255230125,
+  "cost_usd": 0.02923977,
+  "items_per_second": 5.040695662230291
+ },
+ "clef": {
+  "n_scored": 584,
+  "cutoff": 0.0466,
+  "test_ranking_auc": 0.8692870936594786,
+  "test_relevant_kept": 0.9807692307692307,
+  "test_kept_by_review": {
+   "Butink_2023": 1.0,
+   "Sepriano_2022": 1.0,
+   "van_Ballegooijen_2024": 0.95
+  },
+  "test_irrelevant_rejected": 0.1297071129707113,
+  "cost_usd": 0.13707000000000022,
+  "items_per_second": 3.8721784232875502
+ },
+ "pplx_decider_v13": {
+  "n_scored": 584,
+  "cutoff": 0.004716799781027189,
+  "test_ranking_auc": 0.8863051174766656,
+  "test_relevant_kept": 0.9807692307692307,
+  "test_kept_by_review": {
+   "Butink_2023": 1.0,
+   "Sepriano_2022": 1.0,
+   "van_Ballegooijen_2024": 0.95
+  },
+  "test_irrelevant_rejected": 0.2301255230125523,
+  "cost_usd": 0.010826160000000001,
+  "items_per_second": 3.877847711873049
+ },
+ "openai_decisions": {
+  "n_scored": 584,
+  "cutoff": 0.0,
+  "test_ranking_auc": 0.857981976182813,
+  "test_relevant_kept": 1.0,
+  "test_kept_by_review": {
+   "Butink_2023": 1.0,
+   "Sepriano_2022": 1.0,
+   "van_Ballegooijen_2024": 1.0
+  },
+  "test_irrelevant_rejected": 0.0,
+  "cost_usd": 0.057626,
+  "items_per_second": 5.13661700006646
+ }
+}

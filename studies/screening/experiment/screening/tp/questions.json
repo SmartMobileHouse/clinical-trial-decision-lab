@@ -1,0 +1,8 @@
+{
+  "version": "tp-pilot-1",
+  "note": "Written before any model was called. The review is described by its title only.",
+  "context": "A systematic review is described only by its title. You are shown the title and abstract of one study that the reviewers considered for the review. Decide whether the study was included in the review. A study is included when it matches what the review's title asks about (the people, the intervention or exposure, the comparison and the kind of study) and can contribute results. Use only what is shown.",
+  "questions": [
+    {"id": "included", "text": "Based on the title and abstract, does this study belong in this systematic review?", "true": "The study matches the review's question and would be included in the review.", "false": "The study does not match the review's question, or cannot contribute results, and would be excluded."}
+  ]
+}

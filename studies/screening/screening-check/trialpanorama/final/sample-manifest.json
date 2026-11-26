@@ -1,0 +1,971 @@
+{
+ "seed": 20261122,
+ "families_considered_after_title_adjudication": 122,
+ "families_qualifying": 79,
+ "families_not_qualifying": 43,
+ "records": 1210,
+ "included": 605,
+ "excluded": 605,
+ "unique_pmids": 1210,
+ "k_distribution": {
+  "6": 28,
+  "7": 16,
+  "8": 8,
+  "9": 9,
+  "10": 18
+ },
+ "record_flow": {
+  "included record dropped: no open commercial-reuse licence on record (never fetched)": 8592,
+  "excluded record dropped: no open commercial-reuse licence on record (never fetched)": 10025,
+  "records carrying both labels (dropped)": 0,
+  "included record dropped: plan-like title": 280,
+  "excluded record dropped: plan-like title": 417,
+  "included record dropped: used in pilot": 52,
+  "excluded record dropped: used in pilot": 29,
+  "included record dropped: already allocated to another family": 59,
+  "excluded record dropped: already allocated to another family": 50,
+  "excluded record dropped: abstract shorter than 200 characters or no title": 4,
+  "included record dropped: abstract shorter than 200 characters or no title": 1
+ },
+ "families": [
+  {
+   "review": "36971690",
+   "title": "Methylphenidate for children and adolescents with attention deficit hyperactivity disorder (ADHD).",
+   "qualifies": true,
+   "usable_included": 17,
+   "usable_excluded": 6,
+   "k_per_label": 6
+  },
+  {
+   "review": "36416787",
+   "title": "Timing of kidney replacement therapy initiation for acute kidney injury.",
+   "qualifies": false,
+   "usable_included": 2,
+   "usable_excluded": 12
+  },
+  {
+   "review": "29129039",
+   "title": "Combined diet and exercise interventions for preventing gestational diabetes mellitus.",
+   "qualifies": false,
+   "usable_included": 17,
+   "usable_excluded": 5
+  },
+  {
+   "review": "32361988",
+   "title": "Physical activity interventions for disease-related physical and mental health during and following treatment in people with non-advanced colorectal cancer.",
+   "qualifies": false,
+   "usable_included": 5,
+   "usable_excluded": 11
+  },
+  {
+   "review": "31755089",
+   "title": "Dietary interventions for adult cancer survivors.",
+   "qualifies": false,
+   "usable_included": 4,
+   "usable_excluded": 5
+  },
+  {
+   "review": "27501438",
+   "title": "Cognitive behavioural therapy (CBT), third-wave CBT and interpersonal therapy (IPT) based interventions for preventing depression in children and adolescents.",
+   "qualifies": true,
+   "usable_included": 11,
+   "usable_excluded": 8,
+   "k_per_label": 8
+  },
+  {
+   "review": "19588323",
+   "title": "The effects of on-screen, point of care computer reminders on processes and outcomes of care.",
+   "qualifies": true,
+   "usable_included": 9,
+   "usable_excluded": 11,
+   "k_per_label": 9
+  },
+  {
+   "review": "31549742",
+   "title": "Interventions to improve disposal of child faeces for preventing diarrhoea and soil-transmitted helminth infection.",
+   "qualifies": true,
+   "usable_included": 13,
+   "usable_excluded": 12,
+   "k_per_label": 10
+  },
+  {
+   "review": "23235597",
+   "title": "Erythropoietin or darbepoetin for patients with cancer.",
+   "qualifies": true,
+   "usable_included": 9,
+   "usable_excluded": 6,
+   "k_per_label": 6
+  },
+  {
+   "review": "31638271",
+   "title": "Mobile phone text messaging and app-based interventions for smoking cessation.",
+   "qualifies": true,
+   "usable_included": 13,
+   "usable_excluded": 9,
+   "k_per_label": 9
+  },
+  {
+   "review": "30620776",
+   "title": "Disease management interventions for heart failure.",
+   "qualifies": false,
+   "usable_included": 3,
+   "usable_excluded": 7
+  },
+  {
+   "review": "33305350",
+   "title": "Body weight management in overweight and obese breast cancer survivors.",
+   "qualifies": false,
+   "usable_included": 3,
+   "usable_excluded": 7
+  },
+  {
+   "review": "33058172",
+   "title": "Implementation interventions to promote the uptake of evidence-based practices in stroke rehabilitation.",
+   "qualifies": true,
+   "usable_included": 7,
+   "usable_excluded": 7,
+   "k_per_label": 7
+  },
+  {
+   "review": "28816346",
+   "title": "Homocysteine-lowering interventions for preventing cardiovascular events.",
+   "qualifies": false,
+   "usable_included": 5,
+   "usable_excluded": 6
+  },
+  {
+   "review": "31684691",
+   "title": "Exercise interventions for smoking cessation.",
+   "qualifies": false,
+   "usable_included": 3,
+   "usable_excluded": 6
+  },
+  {
+   "review": "36939655",
+   "title": "Anti-vascular endothelial growth factor for proliferative diabetic retinopathy.",
+   "qualifies": true,
+   "usable_included": 8,
+   "usable_excluded": 6,
+   "k_per_label": 6
+  },
+  {
+   "review": "31482606",
+   "title": "Altering the availability or proximity of food, alcohol, and tobacco products to change their selection and consumption.",
+   "qualifies": false,
+   "usable_included": 5,
+   "usable_excluded": 8
+  },
+  {
+   "review": "37458240",
+   "title": "Mobile phone-based interventions for improving contraception use.",
+   "qualifies": true,
+   "usable_included": 9,
+   "usable_excluded": 8,
+   "k_per_label": 8
+  },
+  {
+   "review": "34280957",
+   "title": "Interventions for treating cavitated or dentine carious lesions.",
+   "qualifies": false,
+   "usable_included": 5,
+   "usable_excluded": 5
+  },
+  {
+   "review": "30132304",
+   "title": "Phosphate binders for preventing and treating chronic kidney disease-mineral and bone disorder (CKD-MBD).",
+   "qualifies": true,
+   "usable_included": 6,
+   "usable_excluded": 8,
+   "k_per_label": 6
+  },
+  {
+   "review": "37314064",
+   "title": "Non-pharmacological management of infant and young child procedural pain.",
+   "qualifies": true,
+   "usable_included": 9,
+   "usable_excluded": 16,
+   "k_per_label": 9
+  },
+  {
+   "review": "37873968",
+   "title": "Primary-level and community worker interventions for the prevention of mental disorders and the promotion of well-being in low- and middle-income countries.",
+   "qualifies": true,
+   "usable_included": 42,
+   "usable_excluded": 47,
+   "k_per_label": 10
+  },
+  {
+   "review": "34693994",
+   "title": "Strategies to improve smoking cessation rates in primary care.",
+   "qualifies": true,
+   "usable_included": 18,
+   "usable_excluded": 21,
+   "k_per_label": 10
+  },
+  {
+   "review": "30569545",
+   "title": "Uterotonic agents for preventing postpartum haemorrhage: a network meta-analysis.",
+   "qualifies": true,
+   "usable_included": 7,
+   "usable_excluded": 8,
+   "k_per_label": 7
+  },
+  {
+   "review": "29383710",
+   "title": "Family and carer smoking control programmes for reducing children's exposure to environmental tobacco smoke.",
+   "qualifies": true,
+   "usable_included": 6,
+   "usable_excluded": 7,
+   "k_per_label": 6
+  },
+  {
+   "review": "28524930",
+   "title": "Nutrition support in hospitalised adults at nutritional risk.",
+   "qualifies": true,
+   "usable_included": 6,
+   "usable_excluded": 7,
+   "k_per_label": 6
+  },
+  {
+   "review": "37916745",
+   "title": "Antioxidants for adults with chronic kidney disease.",
+   "qualifies": true,
+   "usable_included": 20,
+   "usable_excluded": 12,
+   "k_per_label": 10
+  },
+  {
+   "review": "26517969",
+   "title": "Structured telephone support or non-invasive telemonitoring for patients with heart failure.",
+   "qualifies": true,
+   "usable_included": 6,
+   "usable_excluded": 12,
+   "k_per_label": 6
+  },
+  {
+   "review": "28639319",
+   "title": "Diet, physical activity and behavioural interventions for the treatment of overweight or obese children from the age of 6 to 11 years.",
+   "qualifies": true,
+   "usable_included": 9,
+   "usable_excluded": 23,
+   "k_per_label": 9
+  },
+  {
+   "review": "32628293",
+   "title": "Behavioural activation therapy for depression in adults.",
+   "qualifies": false,
+   "usable_included": 6,
+   "usable_excluded": 3
+  },
+  {
+   "review": "38032059",
+   "title": "Adverse effects of immunotherapies for multiple sclerosis: a network meta-analysis.",
+   "qualifies": true,
+   "usable_included": 10,
+   "usable_excluded": 6,
+   "k_per_label": 6
+  },
+  {
+   "review": "34057201",
+   "title": "Behavioural interventions delivered through interactive social media for health behaviour change, health outcomes, and health equity in the adult population.",
+   "qualifies": true,
+   "usable_included": 42,
+   "usable_excluded": 13,
+   "k_per_label": 10
+  },
+  {
+   "review": "28869775",
+   "title": "Internet-based interventions for smoking cessation.",
+   "qualifies": false,
+   "usable_included": 25,
+   "usable_excluded": 4
+  },
+  {
+   "review": "26075988",
+   "title": "Community coalition-driven interventions to reduce health disparities among racial and ethnic minority populations.",
+   "qualifies": true,
+   "usable_included": 6,
+   "usable_excluded": 13,
+   "k_per_label": 6
+  },
+  {
+   "review": "31686427",
+   "title": "Community-based maternal and newborn educational care packages for improving neonatal health and survival in low- and middle-income countries.",
+   "qualifies": true,
+   "usable_included": 23,
+   "usable_excluded": 6,
+   "k_per_label": 6
+  },
+  {
+   "review": "35514131",
+   "title": "Educational interventions for health professionals managing chronic obstructive pulmonary disease in primary care.",
+   "qualifies": true,
+   "usable_included": 15,
+   "usable_excluded": 9,
+   "k_per_label": 9
+  },
+  {
+   "review": "36994923",
+   "title": "Zinc supplementation for preventing mortality, morbidity, and growth failure in children aged 6 months to 12 years.",
+   "qualifies": true,
+   "usable_included": 14,
+   "usable_excluded": 9,
+   "k_per_label": 9
+  },
+  {
+   "review": "27175934",
+   "title": "Biologics or tofacitinib for rheumatoid arthritis in incomplete responders to methotrexate or other traditional disease-modifying anti-rheumatic drugs: a systematic review and network meta-analysis.",
+   "qualifies": false,
+   "usable_included": 7,
+   "usable_excluded": 5
+  },
+  {
+   "review": "33769555",
+   "title": "Mobile phone-based interventions for improving adherence to medication prescribed for the primary prevention of cardiovascular disease in adults.",
+   "qualifies": false,
+   "usable_included": 6,
+   "usable_excluded": 3
+  },
+  {
+   "review": "32700325",
+   "title": "Workplace pedometer interventions for increasing physical activity.",
+   "qualifies": true,
+   "usable_included": 10,
+   "usable_excluded": 6,
+   "k_per_label": 6
+  },
+  {
+   "review": "30136733",
+   "title": "Drugs for treating Buruli ulcer (Mycobacterium ulcerans disease).",
+   "qualifies": true,
+   "usable_included": 7,
+   "usable_excluded": 10,
+   "k_per_label": 7
+  },
+  {
+   "review": "19588433",
+   "title": "Artemisinin-based combination therapy for treating uncomplicated malaria.",
+   "qualifies": true,
+   "usable_included": 16,
+   "usable_excluded": 8,
+   "k_per_label": 8
+  },
+  {
+   "review": "33559127",
+   "title": "Interventions for improving medical students' interpersonal communication in medical consultations.",
+   "qualifies": true,
+   "usable_included": 7,
+   "usable_excluded": 7,
+   "k_per_label": 7
+  },
+  {
+   "review": "31985055",
+   "title": "Low vision rehabilitation for better quality of life in visually impaired adults.",
+   "qualifies": false,
+   "usable_included": 3,
+   "usable_excluded": 6
+  },
+  {
+   "review": "34693988",
+   "title": "Telehealth interventions: remote monitoring and consultations for people with chronic obstructive pulmonary disease (COPD).",
+   "qualifies": false,
+   "usable_included": 7,
+   "usable_excluded": 5
+  },
+  {
+   "review": "32608505",
+   "title": "Psychological therapies for women who experience intimate partner violence.",
+   "qualifies": true,
+   "usable_included": 9,
+   "usable_excluded": 9,
+   "k_per_label": 9
+  },
+  {
+   "review": "35608942",
+   "title": "Interventions for increasing solid organ donor registration.",
+   "qualifies": false,
+   "usable_included": 5,
+   "usable_excluded": 5
+  },
+  {
+   "review": "36367444",
+   "title": "Mosquito aquatic habitat modification and manipulation interventions to control malaria.",
+   "qualifies": true,
+   "usable_included": 7,
+   "usable_excluded": 6,
+   "k_per_label": 6
+  },
+  {
+   "review": "34585740",
+   "title": "Mass drug administration for malaria.",
+   "qualifies": true,
+   "usable_included": 10,
+   "usable_excluded": 8,
+   "k_per_label": 8
+  },
+  {
+   "review": "35001366",
+   "title": "Self-management interventions for people with chronic obstructive pulmonary disease.",
+   "qualifies": false,
+   "usable_included": 5,
+   "usable_excluded": 31
+  },
+  {
+   "review": "30168868",
+   "title": "Lipid-based nutrient supplements for maternal, birth, and infant developmental outcomes.",
+   "qualifies": true,
+   "usable_included": 11,
+   "usable_excluded": 6,
+   "k_per_label": 6
+  },
+  {
+   "review": "29205264",
+   "title": "Diet, physical activity or both for prevention or delay of type 2 diabetes mellitus and its associated complications in people at increased risk of developing type 2 diabetes mellitus.",
+   "qualifies": false,
+   "usable_included": 6,
+   "usable_excluded": 3
+  },
+  {
+   "review": "36791280",
+   "title": "Erythropoiesis-stimulating agents for anaemia in adults with chronic kidney disease: a network meta-analysis.",
+   "qualifies": true,
+   "usable_included": 6,
+   "usable_excluded": 6,
+   "k_per_label": 6
+  },
+  {
+   "review": "33884617",
+   "title": "Psychosocial interventions for self-harm in adults.",
+   "qualifies": true,
+   "usable_included": 11,
+   "usable_excluded": 17,
+   "k_per_label": 10
+  },
+  {
+   "review": "25803792",
+   "title": "Community-based intervention packages for reducing maternal and neonatal morbidity and mortality and improving neonatal outcomes.",
+   "qualifies": true,
+   "usable_included": 12,
+   "usable_excluded": 8,
+   "k_per_label": 8
+  },
+  {
+   "review": "37378598",
+   "title": "Social network interventions to support cardiac rehabilitation and secondary prevention in the management of people with heart disease.",
+   "qualifies": true,
+   "usable_included": 10,
+   "usable_excluded": 16,
+   "k_per_label": 10
+  },
+  {
+   "review": "28402085",
+   "title": "Decision aids for people facing health treatment or screening decisions.",
+   "qualifies": true,
+   "usable_included": 17,
+   "usable_excluded": 22,
+   "k_per_label": 10
+  },
+  {
+   "review": "33175411",
+   "title": "Transcranial direct current stimulation (tDCS) for improving activities of daily living, and physical and cognitive functioning, in people after stroke.",
+   "qualifies": true,
+   "usable_included": 6,
+   "usable_excluded": 10,
+   "k_per_label": 6
+  },
+  {
+   "review": "34661282",
+   "title": "Memory rehabilitation for people with multiple sclerosis.",
+   "qualifies": true,
+   "usable_included": 6,
+   "usable_excluded": 7,
+   "k_per_label": 6
+  },
+  {
+   "review": "36156769",
+   "title": "Local interventions for the management of alveolar osteitis (dry socket).",
+   "qualifies": true,
+   "usable_included": 7,
+   "usable_excluded": 10,
+   "k_per_label": 7
+  },
+  {
+   "review": "26488938",
+   "title": "Interventions to improve water quality for preventing diarrhoea.",
+   "qualifies": true,
+   "usable_included": 7,
+   "usable_excluded": 15,
+   "k_per_label": 7
+  },
+  {
+   "review": "34931696",
+   "title": "Dietary advice with or without oral nutritional supplements for disease-related malnutrition in adults.",
+   "qualifies": false,
+   "usable_included": 5,
+   "usable_excluded": 15
+  },
+  {
+   "review": "31046132",
+   "title": "Preventive lipid-based nutrient supplements given with complementary foods to infants and young children 6 to 23 months of age for health, nutrition, and developmental outcomes.",
+   "qualifies": true,
+   "usable_included": 10,
+   "usable_excluded": 6,
+   "k_per_label": 6
+  },
+  {
+   "review": "35691614",
+   "title": "Digital interventions to improve adherence to maintenance medication in asthma.",
+   "qualifies": true,
+   "usable_included": 6,
+   "usable_excluded": 8,
+   "k_per_label": 6
+  },
+  {
+   "review": "34523117",
+   "title": "Effects of consumers and health providers working in partnership on health services planning, delivery and evaluation.",
+   "qualifies": false,
+   "usable_included": 5,
+   "usable_excluded": 49
+  },
+  {
+   "review": "34766330",
+   "title": "Multidisciplinary rehabilitation for older people with hip fractures.",
+   "qualifies": true,
+   "usable_included": 9,
+   "usable_excluded": 7,
+   "k_per_label": 7
+  },
+  {
+   "review": "36036664",
+   "title": "Strategies for enhancing the implementation of school-based policies or practices targeting diet, physical activity, obesity, tobacco or alcohol use.",
+   "qualifies": false,
+   "usable_included": 15,
+   "usable_excluded": 5
+  },
+  {
+   "review": "33687070",
+   "title": "Smoking cessation for improving mental health.",
+   "qualifies": false,
+   "usable_included": 5,
+   "usable_excluded": 4
+  },
+  {
+   "review": "30035305",
+   "title": "Multifactorial and multiple component interventions for preventing falls in older people living in the community.",
+   "qualifies": true,
+   "usable_included": 10,
+   "usable_excluded": 6,
+   "k_per_label": 6
+  },
+  {
+   "review": "32794606",
+   "title": "Psychological therapies for the management of chronic pain (excluding headache) in adults.",
+   "qualifies": true,
+   "usable_included": 7,
+   "usable_excluded": 8,
+   "k_per_label": 7
+  },
+  {
+   "review": "31750936",
+   "title": "Follow-up strategies following completion of primary cancer treatment in adult cancer survivors.",
+   "qualifies": false,
+   "usable_included": 11,
+   "usable_excluded": 4
+  },
+  {
+   "review": "32710657",
+   "title": "Education of family members to support weaning to solids and nutrition in later infancy in term-born infants.",
+   "qualifies": false,
+   "usable_included": 4,
+   "usable_excluded": 12
+  },
+  {
+   "review": "27960229",
+   "title": "Automated telephone communication systems for preventive healthcare and management of long-term conditions.",
+   "qualifies": true,
+   "usable_included": 8,
+   "usable_excluded": 10,
+   "k_per_label": 8
+  },
+  {
+   "review": "37146227",
+   "title": "First-line therapy for adults with advanced renal cell carcinoma: a systematic review and network meta-analysis.",
+   "qualifies": true,
+   "usable_included": 6,
+   "usable_excluded": 6,
+   "k_per_label": 6
+  },
+  {
+   "review": "35665915",
+   "title": "Interventions for preventing falls in Parkinson's disease.",
+   "qualifies": true,
+   "usable_included": 9,
+   "usable_excluded": 11,
+   "k_per_label": 9
+  },
+  {
+   "review": "35726112",
+   "title": "Interventions to improve water, sanitation, and hygiene for preventing soil-transmitted helminth infection.",
+   "qualifies": true,
+   "usable_included": 13,
+   "usable_excluded": 10,
+   "k_per_label": 10
+  },
+  {
+   "review": "30191554",
+   "title": "Interventions for preventing falls in older people in care facilities and hospitals.",
+   "qualifies": true,
+   "usable_included": 13,
+   "usable_excluded": 7,
+   "k_per_label": 7
+  },
+  {
+   "review": "36373988",
+   "title": "Skin care interventions in infants for preventing eczema and food allergy.",
+   "qualifies": true,
+   "usable_included": 7,
+   "usable_excluded": 8,
+   "k_per_label": 7
+  },
+  {
+   "review": "34637526",
+   "title": "Routine provision of feedback from patient-reported outcome measurements to healthcare providers and patients in clinical practice.",
+   "qualifies": true,
+   "usable_included": 12,
+   "usable_excluded": 11,
+   "k_per_label": 10
+  },
+  {
+   "review": "34273901",
+   "title": "Intermittent preventive treatment for malaria in infants.",
+   "qualifies": true,
+   "usable_included": 7,
+   "usable_excluded": 12,
+   "k_per_label": 7
+  },
+  {
+   "review": "31348529",
+   "title": "Vitamin D supplementation for women during pregnancy.",
+   "qualifies": true,
+   "usable_included": 10,
+   "usable_excluded": 10,
+   "k_per_label": 10
+  },
+  {
+   "review": "33871065",
+   "title": "Digital interventions for the management of chronic obstructive pulmonary disease.",
+   "qualifies": false,
+   "usable_included": 4,
+   "usable_excluded": 5
+  },
+  {
+   "review": "34555181",
+   "title": "School-based physical activity programs for promoting physical activity and fitness in children and adolescents aged 6 to 18.",
+   "qualifies": true,
+   "usable_included": 57,
+   "usable_excluded": 67,
+   "k_per_label": 10
+  },
+  {
+   "review": "30288738",
+   "title": "Individual-, family-, and school-level interventions targeting multiple risk behaviours in young people.",
+   "qualifies": false,
+   "usable_included": 5,
+   "usable_excluded": 3
+  },
+  {
+   "review": "34352116",
+   "title": "Primary-level worker interventions for the care of people living with mental disorders and distress in low- and middle-income countries.",
+   "qualifies": true,
+   "usable_included": 39,
+   "usable_excluded": 16,
+   "k_per_label": 10
+  },
+  {
+   "review": "36511823",
+   "title": "Family-centred interventions for Indigenous early childhood well-being by primary healthcare services.",
+   "qualifies": true,
+   "usable_included": 6,
+   "usable_excluded": 19,
+   "k_per_label": 6
+  },
+  {
+   "review": "34368949",
+   "title": "Individual-level interventions to reduce personal exposure to outdoor air pollution and their effects on people with long-term respiratory conditions.",
+   "qualifies": true,
+   "usable_included": 8,
+   "usable_excluded": 8,
+   "k_per_label": 8
+  },
+  {
+   "review": "31849042",
+   "title": "Food fortification with multiple micronutrients: impact on health outcomes in general population.",
+   "qualifies": true,
+   "usable_included": 6,
+   "usable_excluded": 7,
+   "k_per_label": 6
+  },
+  {
+   "review": "35018639",
+   "title": "Exercise training for adults undergoing maintenance dialysis.",
+   "qualifies": true,
+   "usable_included": 14,
+   "usable_excluded": 6,
+   "k_per_label": 6
+  },
+  {
+   "review": "32196635",
+   "title": "Physical fitness training for stroke patients.",
+   "qualifies": true,
+   "usable_included": 6,
+   "usable_excluded": 7,
+   "k_per_label": 6
+  },
+  {
+   "review": "28850174",
+   "title": "Chemotherapy for advanced gastric cancer.",
+   "qualifies": true,
+   "usable_included": 7,
+   "usable_excluded": 7,
+   "k_per_label": 7
+  },
+  {
+   "review": "31742666",
+   "title": "Workplace interventions for increasing standing or walking for decreasing musculoskeletal symptoms in sedentary workers.",
+   "qualifies": false,
+   "usable_included": 5,
+   "usable_excluded": 7
+  },
+  {
+   "review": "31425622",
+   "title": "Motivational interviewing for smoking cessation.",
+   "qualifies": false,
+   "usable_included": 4,
+   "usable_excluded": 4
+  },
+  {
+   "review": "33075160",
+   "title": "Drugs for preventing postoperative nausea and vomiting in adults after general anaesthesia: a network meta-analysis.",
+   "qualifies": true,
+   "usable_included": 10,
+   "usable_excluded": 10,
+   "k_per_label": 10
+  },
+  {
+   "review": "33565123",
+   "title": "Integrated community case management of childhood illness in low- and middle-income countries.",
+   "qualifies": true,
+   "usable_included": 6,
+   "usable_excluded": 22,
+   "k_per_label": 6
+  },
+  {
+   "review": "34788488",
+   "title": "Vaccines for preventing rotavirus diarrhoea: vaccines in use.",
+   "qualifies": true,
+   "usable_included": 6,
+   "usable_excluded": 14,
+   "k_per_label": 6
+  },
+  {
+   "review": "34741536",
+   "title": "Exercise-based cardiac rehabilitation for coronary heart disease.",
+   "qualifies": false,
+   "usable_included": 4,
+   "usable_excluded": 26
+  },
+  {
+   "review": "30873598",
+   "title": "Multiple-micronutrient supplementation for women during pregnancy.",
+   "qualifies": true,
+   "usable_included": 22,
+   "usable_excluded": 12,
+   "k_per_label": 10
+  },
+  {
+   "review": "33630309",
+   "title": "Walking for hypertension.",
+   "qualifies": true,
+   "usable_included": 7,
+   "usable_excluded": 11,
+   "k_per_label": 7
+  },
+  {
+   "review": "32297320",
+   "title": "Interventions for promoting physical activity in people with chronic obstructive pulmonary disease (COPD).",
+   "qualifies": true,
+   "usable_included": 15,
+   "usable_excluded": 6,
+   "k_per_label": 6
+  },
+  {
+   "review": "31508807",
+   "title": "Public health deworming programmes for soil-transmitted helminths in children living in endemic areas.",
+   "qualifies": true,
+   "usable_included": 7,
+   "usable_excluded": 8,
+   "k_per_label": 7
+  },
+  {
+   "review": "31808563",
+   "title": "Community pharmacy interventions for health promotion: effects on professional practice and health outcomes.",
+   "qualifies": false,
+   "usable_included": 5,
+   "usable_excluded": 6
+  },
+  {
+   "review": "37094824",
+   "title": "Fecal transplantation for treatment of inflammatory bowel disease.",
+   "qualifies": true,
+   "usable_included": 6,
+   "usable_excluded": 8,
+   "k_per_label": 6
+  },
+  {
+   "review": "30484282",
+   "title": "Polyunsaturated fatty acids for the primary and secondary prevention of cardiovascular disease.",
+   "qualifies": false,
+   "usable_included": 5,
+   "usable_excluded": 14
+  },
+  {
+   "review": "36472416",
+   "title": "Interventions for improving health literacy in people with chronic kidney disease.",
+   "qualifies": false,
+   "usable_included": 17,
+   "usable_excluded": 4
+  },
+  {
+   "review": "34826144",
+   "title": "Non-pharmacological interventions for preventing delirium in hospitalised non-ICU patients.",
+   "qualifies": false,
+   "usable_included": 3,
+   "usable_excluded": 5
+  },
+  {
+   "review": "33417236",
+   "title": "Remotely delivered information, training and support for informal caregivers of people with dementia.",
+   "qualifies": false,
+   "usable_included": 6,
+   "usable_excluded": 5
+  },
+  {
+   "review": "32678471",
+   "title": "Interventions outside the workplace for reducing sedentary behaviour in adults under 60 years of age.",
+   "qualifies": true,
+   "usable_included": 9,
+   "usable_excluded": 10,
+   "k_per_label": 9
+  },
+  {
+   "review": "29238948",
+   "title": "Antioxidants for preventing and reducing muscle soreness after exercise.",
+   "qualifies": true,
+   "usable_included": 13,
+   "usable_excluded": 8,
+   "k_per_label": 8
+  },
+  {
+   "review": "22336792",
+   "title": "Intermittent preventive treatment for malaria in children living in areas with seasonal transmission.",
+   "qualifies": false,
+   "usable_included": 4,
+   "usable_excluded": 10
+  },
+  {
+   "review": "36367232",
+   "title": "Shared decision-making interventions for people with mental health conditions.",
+   "qualifies": false,
+   "usable_included": 3,
+   "usable_excluded": 23
+  },
+  {
+   "review": "37606067",
+   "title": "Healthy eating interventions delivered in early childhood education and care settings for improving the diet of children aged six months to six years.",
+   "qualifies": true,
+   "usable_included": 20,
+   "usable_excluded": 16,
+   "k_per_label": 10
+  },
+  {
+   "review": "37646367",
+   "title": "Lay health workers in primary and community health care for maternal and child health: identification and treatment of wasting in children.",
+   "qualifies": true,
+   "usable_included": 7,
+   "usable_excluded": 28,
+   "k_per_label": 7
+  },
+  {
+   "review": "26343551",
+   "title": "Interactive telemedicine: effects on professional practice and health care outcomes.",
+   "qualifies": false,
+   "usable_included": 3,
+   "usable_excluded": 11
+  },
+  {
+   "review": "24737131",
+   "title": "The WHO Health Promoting School framework for improving the health and well-being of students and their academic achievement.",
+   "qualifies": false,
+   "usable_included": 9,
+   "usable_excluded": 5
+  },
+  {
+   "review": "34495549",
+   "title": "Integrated disease management interventions for patients with chronic obstructive pulmonary disease.",
+   "qualifies": false,
+   "usable_included": 5,
+   "usable_excluded": 10
+  },
+  {
+   "review": "34693515",
+   "title": "Dipeptidyl peptidase-4 inhibitors, glucagon-like peptide 1 receptor agonists and sodium-glucose co-transporter-2 inhibitors for people with cardiovascular disease: a network meta-analysis.",
+   "qualifies": true,
+   "usable_included": 10,
+   "usable_excluded": 7,
+   "k_per_label": 7
+  },
+  {
+   "review": "32036618",
+   "title": "Strategies to improve the implementation of healthy eating, physical activity and obesity prevention policies, practices or programmes within childcare services.",
+   "qualifies": false,
+   "usable_included": 3,
+   "usable_excluded": 5
+  },
+  {
+   "review": "34523128",
+   "title": "Continuing education meetings and workshops: effects on professional practice and healthcare outcomes.",
+   "qualifies": false,
+   "usable_included": 13,
+   "usable_excluded": 4
+  },
+  {
+   "review": "30556590",
+   "title": "Workplace interventions for reducing sitting at work.",
+   "qualifies": true,
+   "usable_included": 12,
+   "usable_excluded": 17,
+   "k_per_label": 10
+  },
+  {
+   "review": "33511633",
+   "title": "Telerehabilitation for chronic respiratory disease.",
+   "qualifies": false,
+   "usable_included": 4,
+   "usable_excluded": 8
+  },
+  {
+   "review": "33914901",
+   "title": "Preconception lifestyle advice for people with infertility.",
+   "qualifies": true,
+   "usable_included": 13,
+   "usable_excluded": 10,
+   "k_per_label": 10
+  }
+ ],
+ "sample_sha256": "1925403c2c2098347457cb38632f4780173741d69ff3399484b9a5c9099b5460",
+ "licences": {
+  "cc by": 1193,
+  "cc0": 15,
+  "cc by-nd": 2
+ }
+}
