@@ -1,0 +1,227 @@
+{
+ "records": 1210,
+ "corrected_abstracts": 325,
+ "unchanged_abstracts": 885,
+ "systems": {
+  "decider": {
+   "corrected": {
+    "records": 325,
+    "answers_changed": 9,
+    "share_changed": 0.027692307692307693,
+    "changed_to_include": 3,
+    "changed_wrong_to_right": 5,
+    "changed_right_to_wrong": 4,
+    "identical_probability": 0.0,
+    "mean_absolute_probability_change": 0.028775692469066284,
+    "balanced_accuracy_pooled_locked_text": 0.5862919132149901,
+    "balanced_accuracy_pooled_corrected_text": 0.5897435897435898
+   },
+   "unchanged": {
+    "records": 885,
+    "answers_changed": 4,
+    "share_changed": 0.004519774011299435,
+    "changed_to_include": 4,
+    "changed_wrong_to_right": 2,
+    "changed_right_to_wrong": 2,
+    "identical_probability": 0.8248587570621468,
+    "mean_absolute_probability_change": 0.0025836567661437887,
+    "balanced_accuracy_pooled_locked_text": 0.6166991888191904,
+    "balanced_accuracy_pooled_corrected_text": 0.6167655953086368
+   }
+  },
+  "nimble": {
+   "corrected": {
+    "records": 325,
+    "answers_changed": 18,
+    "share_changed": 0.055384615384615386,
+    "changed_to_include": 10,
+    "changed_wrong_to_right": 3,
+    "changed_right_to_wrong": 15,
+    "identical_probability": 0.012307692307692308,
+    "mean_absolute_probability_change": 0.030697066556665147,
+    "balanced_accuracy_pooled_locked_text": 0.641025641025641,
+    "balanced_accuracy_pooled_corrected_text": 0.6037968441814596
+   },
+   "unchanged": {
+    "records": 885,
+    "answers_changed": 0,
+    "share_changed": 0.0,
+    "changed_to_include": 0,
+    "changed_wrong_to_right": 0,
+    "changed_right_to_wrong": 0,
+    "identical_probability": 0.9954802259887006,
+    "mean_absolute_probability_change": 0.00011857464843326544,
+    "balanced_accuracy_pooled_locked_text": 0.6089040885964734,
+    "balanced_accuracy_pooled_corrected_text": 0.6089040885964734
+   }
+  },
+  "gemini": {
+   "corrected": {
+    "records": 325,
+    "answers_changed": 15,
+    "share_changed": 0.046153846153846156,
+    "changed_to_include": 7,
+    "changed_wrong_to_right": 6,
+    "changed_right_to_wrong": 9,
+    "identical_probability": 0.0,
+    "mean_absolute_probability_change": 0.06236508659318998,
+    "balanced_accuracy_pooled_locked_text": 0.6104536489151874,
+    "balanced_accuracy_pooled_corrected_text": 0.6013313609467456
+   },
+   "unchanged": {
+    "records": 885,
+    "answers_changed": 0,
+    "share_changed": 0.0,
+    "changed_to_include": 0,
+    "changed_wrong_to_right": 0,
+    "changed_right_to_wrong": 0,
+    "identical_probability": 1.0,
+    "mean_absolute_probability_change": 0.0,
+    "balanced_accuracy_pooled_locked_text": 0.6149521873275985,
+    "balanced_accuracy_pooled_corrected_text": 0.6149521873275985
+   }
+  },
+  "gpt": {
+   "corrected": {
+    "records": 325,
+    "answers_changed": 25,
+    "share_changed": 0.07692307692307693,
+    "changed_to_include": 19,
+    "changed_wrong_to_right": 14,
+    "changed_right_to_wrong": 11,
+    "identical_probability": 0.32,
+    "mean_absolute_probability_change": 0.08547384615384615,
+    "balanced_accuracy_pooled_locked_text": 0.6407790927021697,
+    "balanced_accuracy_pooled_corrected_text": 0.6484220907297831
+   },
+   "unchanged": {
+    "records": 885,
+    "answers_changed": 82,
+    "share_changed": 0.09265536723163842,
+    "changed_to_include": 43,
+    "changed_wrong_to_right": 33,
+    "changed_right_to_wrong": 49,
+    "identical_probability": 0.34124293785310733,
+    "mean_absolute_probability_change": 0.0895909604519774,
+    "balanced_accuracy_pooled_locked_text": 0.6291325269201692,
+    "balanced_accuracy_pooled_corrected_text": 0.6111159355141906
+   }
+  },
+  "haiku": {
+   "corrected": {
+    "records": 325,
+    "answers_changed": 44,
+    "share_changed": 0.13538461538461538,
+    "changed_to_include": 23,
+    "changed_wrong_to_right": 24,
+    "changed_right_to_wrong": 20,
+    "identical_probability": 0.31384615384615383,
+    "mean_absolute_probability_change": 0.11596923076923077,
+    "balanced_accuracy_pooled_locked_text": 0.6116863905325444,
+    "balanced_accuracy_pooled_corrected_text": 0.623767258382643
+   },
+   "unchanged": {
+    "records": 885,
+    "answers_changed": 37,
+    "share_changed": 0.04180790960451977,
+    "changed_to_include": 21,
+    "changed_wrong_to_right": 18,
+    "changed_right_to_wrong": 19,
+    "identical_probability": 0.4542372881355932,
+    "mean_absolute_probability_change": 0.047717514124293786,
+    "balanced_accuracy_pooled_locked_text": 0.6028227866206248,
+    "balanced_accuracy_pooled_corrected_text": 0.6017756073639688
+   }
+  },
+  "logistic": {
+   "corrected": {
+    "records": 325,
+    "answers_changed": 27,
+    "share_changed": 0.08307692307692308,
+    "changed_to_include": 20,
+    "changed_wrong_to_right": 17,
+    "changed_right_to_wrong": 10,
+    "identical_probability": 0.0,
+    "mean_absolute_probability_change": 0.0388748695504352,
+    "balanced_accuracy_pooled_locked_text": 0.5066568047337278,
+    "balanced_accuracy_pooled_corrected_text": 0.5266272189349113
+   },
+   "unchanged": {
+    "records": 885,
+    "answers_changed": 43,
+    "share_changed": 0.04858757062146893,
+    "changed_to_include": 14,
+    "changed_wrong_to_right": 24,
+    "changed_right_to_wrong": 19,
+    "identical_probability": 0.0,
+    "mean_absolute_probability_change": 0.01949034379549591,
+    "balanced_accuracy_pooled_locked_text": 0.568253100672238,
+    "balanced_accuracy_pooled_corrected_text": 0.573655013179134
+   }
+  },
+  "xgboost": {
+   "corrected": {
+    "records": 325,
+    "answers_changed": 57,
+    "share_changed": 0.1753846153846154,
+    "changed_to_include": 38,
+    "changed_wrong_to_right": 28,
+    "changed_right_to_wrong": 29,
+    "identical_probability": 0.0,
+    "mean_absolute_probability_change": 0.05774491938260885,
+    "balanced_accuracy_pooled_locked_text": 0.5892504930966469,
+    "balanced_accuracy_pooled_corrected_text": 0.5838264299802762
+   },
+   "unchanged": {
+    "records": 885,
+    "answers_changed": 134,
+    "share_changed": 0.15141242937853108,
+    "changed_to_include": 53,
+    "changed_wrong_to_right": 65,
+    "changed_right_to_wrong": 69,
+    "identical_probability": 0.0,
+    "mean_absolute_probability_change": 0.047325113668280135,
+    "balanced_accuracy_pooled_locked_text": 0.6134273921660776,
+    "balanced_accuracy_pooled_corrected_text": 0.6084417972660959
+   }
+  }
+ },
+ "decider_minus_gpt_pooled": {
+  "all": {
+   "locked_text": [
+    -0.023140495867768562,
+    -0.0523648648648648,
+    0.0050000000000001155
+   ],
+   "corrected_text": [
+    -0.011570247933884392,
+    -0.03974562798092218,
+    0.01649305555555558
+   ]
+  },
+  "corrected": {
+   "locked_text": [
+    -0.05448717948717963,
+    -0.10197530864197524,
+    -0.006665652879156547
+   ],
+   "corrected_text": [
+    -0.058678500986193316,
+    -0.10052735662491752,
+    -0.015929965556831238
+   ]
+  },
+  "unchanged": {
+   "locked_text": [
+    -0.012433338100978797,
+    -0.047869903802107316,
+    0.021533232129892443
+   ],
+   "corrected_text": [
+    0.005649659794446205,
+    -0.02959845301336428,
+    0.040795367094634605
+   ]
+  }
+ }
+}

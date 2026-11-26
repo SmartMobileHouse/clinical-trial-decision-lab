@@ -41,6 +41,7 @@ Report v1.0 (locked run of 25 November 2026). Full write-up with charts and rang
 - **The one pre-declared test passed, narrowly.** Decider 1.3 minus GPT-6 Luna was −2.01 points (range −4.96 to +0.80), inside the five-point margin fixed before the run. This does not show the two are equal.
 - **Lower cost, repeatable answers.** Decider's estimated cost was 17.6% of GPT-6 Luna's. It repeated 99.3% of its include-or-exclude answers on a second pass.
 - **No clear advantage over XGBoost.** Decider minus XGBoost was +0.48 points (range −3.17 to +4.27). It did beat logistic regression.
+- **A cleaning error, found and rerun.** After the run we found that our text cleaning had deleted passages from 325 of the 1,210 abstracts. In a rerun with the passages restored, the outcome of every question was unchanged: Decider minus GPT-6 Luna was −0.80 points (range −3.64 to +2.02). The table above shows the locked run; the rerun is an after-the-fact check.
 - **Not reliable enough to act alone.** A rule that acted only on Decider's most confident answers was right on 65 of 91 automatic exclusions and 151 of 201 automatic inclusions.
 
 The decision models and general LLMs had no training on this task; the classifiers learned from labelled papers from other reviews. The sample is balanced and uses open-licence abstracts only, so these are not figures for a real screening workload. See [Notes & limitations](#notes--limitations).
@@ -124,7 +125,7 @@ Live runs need `--allow-external-requests` and a `--max-cost-usd` estimate. The 
 
 ## Status
 
-- [x] Screening study: locked run, independent recalculation, correction note, post-hoc checks
+- [x] Screening study: locked run, independent recalculation, correction note, post-hoc checks, rerun with corrected text
 - [x] Offline integrity test for the screening study
 - [x] Adapters for decision models and structured-output LLMs, with a spending guard for live runs
 - [x] Synthetic eligibility-and-consent benchmark: dataset, reference labels, rules baseline, metrics
@@ -165,7 +166,7 @@ Run `make check` before every push. Tests can never reach the network; tests tha
 - **Less information than a reviewer has.** The systems saw a review title, a paper title and an abstract. Reviewers decide with the full paper and written selection criteria. This is "predict the published decision from limited information", which is harder than, and different from, the reviewer's job.
 - **Balanced, open-licence sample.** Half the papers were included and half excluded, and only abstracts under CC0, CC BY, CC BY-SA or CC BY-ND were used. Real workloads are not balanced.
 - **A narrow pass on a chosen margin.** The five-point margin was set by judgement before the run. A four-point margin would not have been met. The claim concerns one named model with one prompt, not decision models in general.
-- **Departures from the plan.** Reports of the same trial were not linked as planned; two ranges were first computed with too few resamples; logs lack returned model identifiers for the general LLMs and caching details; the planned calibration analysis was not done. The effects are in the correction note in [`studies/screening/reports/`](studies/screening/reports/). No verdict changed.
+- **Departures from the plan.** A cleaning error deleted passages from a quarter of the abstracts in the locked run (rerun with the passages restored: same outcomes); reports of the same trial were not linked as planned; two ranges were first computed with too few resamples; logs lack returned model identifiers for the general LLMs and caching details; the planned calibration analysis was not done. The effects are in the correction note in [`studies/screening/reports/`](studies/screening/reports/). No verdict changed.
 - **Probabilities are not chances.** Four of the five hosted systems had a worse Brier score than always answering 50%.
 - **Zero-shot against supervised.** The trained classifiers learned from labelled papers from other reviews; the hosted models saw each paper cold. That is deliberate.
 - **Labels are published lists.** "Excluded" means the review listed the paper as assessed and rejected. The lists were not re-checked.

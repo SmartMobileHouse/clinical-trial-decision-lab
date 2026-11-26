@@ -86,3 +86,62 @@ Four of the five hosted systems give probabilities that score worse than a const
 
 - The sample was not redrawn. Doing so would lose its locked status.
 - The reviewer could not rebuild the random draw or certify every family decision, because the bundle it received lacked the source membership lists and candidate metadata.
+
+## 8. Cleaning error: passages deleted from abstracts (found 26 November 2026)
+
+Found by us while preparing a worked example, after the two independent reviews, which were not given the raw text.
+
+**The fault.** Markup was removed from titles and abstracts with the rule `<[^>]+>`. That rule treats every "less than" sign as the start of a tag. In text such as "p < 0.001" it deleted everything from that sign to the end of the next real tag.
+
+**How much.** We fetched the raw text again and confirmed that the old rule reproduces the text used in the locked run for all 1,210 papers.
+
+- 325 of 1,210 abstracts lost text (26.9%). The median loss is 332 characters, 16.7% of the complete abstract.
+- No title was changed.
+- All 79 reviews are affected: 169 included papers and 156 excluded papers.
+- Every system received the same shortened text for the same paper. The classifiers' training text had the same fault (1,382 of 5,067 training rows).
+- The pilots used the same rule. They were not rerun.
+
+**The repair.** The corrected rule strips only the tag names that occur in the source text and keeps everything else. We wrote a plan (`Corrected-text rerun plan.md`), fingerprinted it with the corrected sample and the scripts (2026-11-26T16:13:48+0100), and then ran all five hosted models again (two passes for the decision models) and refitted the two classifiers on corrected text with their original settings. Same papers, labels, question, request formats, measure, margin, seed and resamples.
+
+This rerun was decided after the locked results were known. It is a check, not a confirmatory test. The locked run remains the confirmatory result.
+
+**Result: the outcome of every decision rule was unchanged.**
+
+| Question | Locked run | Complete abstracts |
+|---|---|---|
+| 1. Decider minus GPT-6 Luna (pass mark: lower end above -5.00) | -2.01 (-4.96 to +0.80), passed | -0.80 (-3.64 to +2.02), passed |
+| 2. Cost ratio, Decider to GPT-6 Luna (at most 0.2) | 0.176, met | 0.178, met |
+| 3. Decider minus XGBoost | +0.48 (-3.17 to +4.27), not met | +1.09 (-2.51 to +4.80), not met |
+| 3. Decider minus logistic regression | +6.11 (+2.86 to +9.30) | +5.01 (+1.45 to +8.52) |
+| 4. Decider repeats its answer | 99.3% | 100.0% |
+| 5. Automatic exclusions correct | 65 of 91 | 66 of 92 |
+| 5. Automatic inclusions correct | 151 of 201 | 151 of 202 |
+
+| System | Balanced accuracy, locked run | Balanced accuracy, complete abstracts | Answers changed, corrected abstracts | Answers changed, unchanged abstracts |
+|---|---|---|---|---|
+| GPT-6 Luna | 62.9% (60.0% to 65.9%) | 61.9% (58.6% to 65.1%) | 25 of 325 (7.7%) | 82 of 885 (9.3%) |
+| Decider 1.3 | 60.9% (57.9% to 63.9%) | 61.1% (58.1% to 64.0%) | 9 of 325 (2.8%) | 4 of 885 (0.5%) |
+| Gemini Decision 1 | 60.7% (58.1% to 63.3%) | 60.6% (58.0% to 63.2%) | 15 of 325 (4.6%) | 0 of 885 (0.0%) |
+| Nimble 4.1 | 61.2% (58.2% to 64.1%) | 60.2% (57.3% to 63.1%) | 18 of 325 (5.5%) | 0 of 885 (0.0%) |
+| Claude Haiku 5.5 | 59.9% (56.9% to 62.9%) | 60.0% (56.9% to 63.0%) | 44 of 325 (13.5%) | 37 of 885 (4.2%) |
+| XGBoost | 60.4% (57.7% to 63.2%) | 60.0% (57.1% to 62.9%) | 57 of 325 (17.5%) | 134 of 885 (15.1%) |
+| Logistic regression | 54.8% (52.3% to 57.3%) | 56.0% (53.3% to 58.7%) | 27 of 325 (8.3%) | 43 of 885 (4.9%) |
+
+**What else it shows.**
+
+- Scores showed no consistent change: between the two runs they moved by -1.05 to +1.26 points. These changes mix the restored text with run-to-run variation and, for the classifiers, refitting, so they do not measure the effect of the missing passages.
+- On the 325 repaired abstracts alone, counting papers equally, Decider was behind GPT-6 Luna in both runs: -5.45 points in the locked run and -5.87 (-10.05 to -1.59) in the rerun. On the unchanged abstracts the gap was -1.24 and +0.56. These subgroup figures are descriptive, not the pre-declared measure.
+- On the 885 abstracts whose text did not change, the hosted models received identical requests a day apart. GPT-6 Luna changed its include-or-exclude answer on 9.3% and Claude Haiku on 4.2%; Decider on 0.5%, Nimble and Gemini Decision on none. This shows disagreement between these two runs. We cannot tell whether the general models vary from call to call or were changed by their providers between the two days, and it says nothing about longer periods. The classifiers' answers moved because they were refitted.
+
+**Independent check.** A separate AI model (GPT-6.1 Sol, highest reasoning setting) recalculated the defect and the rerun from the raw text and both sets of answers with its own code. It reproduced the counts above and all 327 numbers in the two rerun result files, and confirmed that the analysis script differs from the locked one only in the four declared ways. Its further points are included here.
+
+**Limits.**
+
+- The heading "QUESTION 1 (confirmatory)" in `Corrected-text rerun results.txt` is copied from the locked script. In the rerun that question is an after-the-fact check.
+- The confidence-quarter figures of GPT-6 Luna and Claude Haiku, in both runs, depend on the order of tied probabilities, because these models give rounded probabilities. We no longer quote them.
+- Superscripts and subscripts are flattened in 40 abstracts (for example "HbA 1c"). That was also true in the locked run. "Restored" means the source abstracts with the deleted passages put back, not copies checked against the original publications.
+- The plan, the corrected sample and the analysis script were fingerprinted before the first request on the corrected text. The comparison script was added at 2026-11-26T16:33:27+0100, after the answers had been collected; by our own record no corrected result had been computed by then. There is no independent witness to that order.
+- A repeat rate of 100% in the rerun does not guarantee future requests.
+- The models may have changed between 25 and 26 November. The rerun does not repair trial linkage (section 1). Recorded API spend for the rerun: $0.52.
+
+Files: `Corrected-text rerun plan.md`, `Corrected-text rerun results.txt` and `.json`, `Corrected-text rerun comparison.json`; scripts `corrected_text_analysis.py`, `corrected_text_classic.py`, `corrected_text_compare.py`; corrected sample builder `final-corrected/build_corrected_sample.py`.

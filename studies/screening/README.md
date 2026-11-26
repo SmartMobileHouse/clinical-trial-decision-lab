@@ -26,6 +26,10 @@ in their original relative paths. Do not reformat or move them: the fingerprints
 | `reports/Locked run results.txt`, `.json` | The original output of the locked analysis |
 | `reports/Locked run correction note.md` | Departures from the plan found afterwards, and their effect |
 | `reports/Locked run sensitivity checks.txt`, `.json` | The post-hoc checks |
+| `reports/Corrected-text rerun plan.md`, `results.txt`, `.json`, `comparison.json` | The rerun of 26 November 2026 with the deleted passages restored: its plan, results and comparison with the locked run |
+| `screening-check/trialpanorama/final-corrected/` | Builder of the corrected sample, its manifest, the list of repaired papers and the rerun's fingerprints |
+| `experiment/screening/tp/corrected_text_*.py`, `corrected-*` | The rerun's analysis scripts, aggregate results and the classifiers' per-paper predictions |
+| `abstract-check/fetch_raw.py` | Script that downloads raw titles and abstracts from Europe PMC by identifier |
 | `screening-check/trialpanorama/final/` | Sample builder, record fetcher, fingerprints, sample manifest, review list, `sample-ids.jsonl` |
 | `screening-check/trialpanorama/classic-final/selection.json` | Chosen settings of the trained classifiers |
 | `experiment/screening/tp/questions.json` | The frozen question |
@@ -55,7 +59,7 @@ in their original relative paths. Do not reformat or move them: the fingerprints
 `tests/unit/test_screening_study.py` runs offline as part of `make check`. It verifies the
 fingerprints of the frozen files that are present, and recomputes the balanced accuracy of the two
 trained classifiers from their saved predictions and `sample-ids.jsonl`, comparing it with
-`final-results.json`. The hosted models' figures cannot be recomputed from this folder alone.
+`final-results.json`, and does the same for the rerun against `corrected-results.json`. The hosted models' figures cannot be recomputed from this folder alone.
 
 ## Re-running the analysis
 
@@ -74,9 +78,25 @@ python experiment/export_report_data.py report-data.json
 A fresh prediction run calls live services whose models may have changed, and costs money. The
 runners import this repository's `triallab` package and need API keys in `.env`.
 
+## The cleaning error and the rerun
+
+On 26 November 2026 we found that the step removing markup had deleted passages from 325 of the 1,210 abstracts
+(26.9%) in the locked run: it treated every "less than" sign, as in "p < 0.001", as the start of a tag. Every system
+received the same damaged text for the same paper.
+
+We corrected the cleaning, fingerprinted a plan, and ran all five hosted models again and refitted the classifiers.
+The outcome of every decision rule was unchanged: Decider minus GPT-6 Luna was -0.80 points (-3.64 to +2.02). The
+rerun was decided after the locked results were known, so it is a check, not a confirmatory test. Details and limits
+are in section 8 of `reports/Locked run correction note.md`.
+
+To rebuild the corrected sample, fetch the raw text with `abstract-check/fetch_raw.py` and run
+`screening-check/trialpanorama/final-corrected/build_corrected_sample.py`; its SHA-256 must equal the value in
+`final-corrected/manifest.json`.
+
 ## Known limits
 
-Read `reports/Locked run correction note.md`. In short: reports of the same trial were not linked as
+Read `reports/Locked run correction note.md`. In short: a cleaning error deleted passages from a quarter of
+the abstracts (rerun with the passages restored: same outcomes); reports of the same trial were not linked as
 planned; two ranges were first computed with too few resamples; logs lack returned model identifiers
 for the general models and caching details; the planned calibration analysis was not done. The software versions used at run time were not recorded.
 

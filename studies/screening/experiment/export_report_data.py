@@ -122,6 +122,58 @@ locked = {
         "decider_minus_logistic_clean": {"points": pts(sd["decider-logistic_clean"]["cluster"][0]), "low": pts(sd["decider-logistic_clean"]["cluster"][1]), "high": pts(sd["decider-logistic_clean"]["cluster"][2])},
     },
 }
+# ---------- corrected-text rerun of 26 November 2026 (after the fact; see reports/Corrected-text rerun plan.md) ----------
+CD = ROOT / "screening-check/trialpanorama/final-corrected"
+cres, ccmp, cman, cfz, cinfo = J(TP / "corrected-results.json"), J(TP / "corrected-compare.json"), J(CD / "manifest.json"), J(CD / "freeze.json"), J(TP / "corrected-classic-info.json")
+for f, h in cfz["files"].items(): assert sha(ROOT / f) == h, f"changed since the corrected-text freeze: {f}"
+assert sha(ROOT / cfz["added_before_results_were_read"]["file"]) == cfz["added_before_results_were_read"]["sha256"]
+assert cman["sample_sha256"] == sha(CD / "sample.jsonl") and cman["labels_identical"] and cman["titles_changed"] == 0
+CSRC = {k: (v[0].replace("final-", "corrected-"), v[1]) for k, v in SRC.items()}
+cpass2 = {k: (v[0].replace("final-", "corrected-"), v[1]) for k, v in PASS2.items()}
+ccost = {k: sum(p.get("cost_usd") or 0 for p in preds(*v)) for k, v in CSRC.items() if k not in ("logistic", "xgboost")}
+ccost2 = {k: sum(p.get("cost_usd") or 0 for p in preds(*v)) for k, v in cpass2.items()}
+cmodels = {}
+for k in SRC:
+    c = cres["systems"][k]; cm = ccmp["systems"][k]
+    cmodels[k] = {"balanced_accuracy": c["balanced_accuracy"], "low": c["interval"][0], "high": c["interval"][1], "accuracy_included": c["accuracy_included"], "accuracy_excluded": c["accuracy_excluded"],
+                  "record_accuracy": c["record_accuracy"], "auc": c["auc"], "brier": c["brier_valid_only"], "invalid_or_missing": c["invalid_or_missing"],
+                  "change_points": pts(c["balanced_accuracy"] - res["systems"][k]["balanced_accuracy"]),
+                  "answers_changed_corrected": cm["corrected"]["answers_changed"], "share_changed_corrected": cm["corrected"]["share_changed"],
+                  "answers_changed_unchanged": cm["unchanged"]["answers_changed"], "share_changed_unchanged": cm["unchanged"]["share_changed"],
+                  "identical_probability_unchanged": cm["unchanged"]["identical_probability"]}
+cq1, cq3 = cres["q1"], cres["q3"]
+locked["corrected"] = {
+    "run_id": "corrected-text-rerun-20261126", "status": "after the fact, not confirmatory", "plan_frozen": cfz["frozen_at"],
+    "started_utc": min(json.loads(l)["at"] for l in open(TP / "corrected-pass1-direct/attempts.jsonl") if '"start"' in l),
+    "abstracts_changed": cman["abstracts_changed"], "abstracts_unchanged": N - cman["abstracts_changed"], "share_changed": cman["abstracts_changed"] / N, "titles_changed": cman["titles_changed"],
+    "characters_restored_median": cman["characters_restored"]["median"], "share_restored_median": cman["share_of_corrected_abstract_restored_median"],
+    "changed_included": cman["changed_by_label"]["included"], "changed_excluded": cman["changed_by_label"]["excluded"], "reviews_affected": cman["reviews_with_a_changed_abstract"],
+    "training_rows_corrected": cinfo["training_text"].get("abstract corrected", 0), "training_rows": cinfo["training_rows"],
+    "training_rows_kept_old_text": sum(v for k, v in cinfo["training_text"].items() if "old text kept" in k),
+    "models": cmodels, "highest_accuracy": max(m["balanced_accuracy"] for m in cmodels.values()), "lowest_six_accuracy": sorted(m["balanced_accuracy"] for m in cmodels.values())[1],
+    "largest_change_points": max(abs(m["change_points"]) for m in cmodels.values()),
+    "q1": {"points": pts(cq1["difference"]), "low": pts(cq1["interval"][0]), "high": pts(cq1["interval"][1]), "cleared_by_points": pts(cq1["interval"][0] - cq1["margin"]), "verdict": cq1["verdict"]},
+    "q2": {**cres["q2"]},
+    "q3": {b: {"points": pts(cq3[b]["difference"]), "low": pts(cq3[b]["interval"][0]), "high": pts(cq3[b]["interval"][1])} for b in ("logistic", "xgboost")} | {"met": cq3["met"]},
+    "q4": {k: {"rate": v["same_classification"], "identical_probability": v["identical_probability"]} for k, v in cres["q4"].items()},
+    "q5": {n.split()[-1]: {"correct": v["correct"], "decisions": v["decisions"], "wrong": v["decisions"] - v["correct"], "reliability": v["reliability"], "low": v["interval"][0], "high": v["interval"][1], "families": v["families"]} for n, v in cres["q5"].items()},
+    "q6": {"underlying_sd_points": pts(cres["q6"]["estimated_underlying_sd"]), "largest_decision_model_gap_points": max(abs(pts(v[0])) for v in cres["q6"]["gaps"].values())},
+    "systems_worse_than_constant": sum(1 for k, m in cmodels.items() if k not in ("logistic", "xgboost") and m["brier"] > .25),
+    "verdicts_changed": int((cq1["verdict"] != q1["verdict"]) + (cres["q2"]["met"] != res["q2"]["met"]) + (cq3["met"] != q3["met"]) + ((cres["q4"]["decider"]["same_classification"] >= .98) != (res["q4"]["decider"]["same_classification"] >= .98))),
+    "spend_usd": sum(ccost.values()) + sum(ccost2.values()), "cap_usd": cfz["cap_usd"],
+}
+_g = ccmp["decider_minus_gpt_pooled"]
+_gap = lambda t: {"points": pts(t[0]), "low": pts(t[1]), "high": pts(t[2])}
+locked["corrected"].update({
+    "change_min_points": min(m["change_points"] for m in cmodels.values()), "change_max_points": max(m["change_points"] for m in cmodels.values()),
+    "pooled_gap": {sub: {"locked_text": _gap(_g[sub]["locked_text"]), "corrected_text": _gap(_g[sub]["corrected_text"])} for sub in ("all", "corrected", "unchanged")},
+    "abstracts_with_flattened_notation": sum(1 for l in open(ROOT / "abstract-check/sample-raw.jsonl") if re.search(r"<su[bp]\b", json.loads(l).get("abstract_raw") or "", flags=re.I)),
+    "comparison_script_added": cfz["added_before_results_were_read"]["at"],
+})
+assert locked["corrected"]["q1"]["verdict"] == "NON-INFERIORITY ESTABLISHED" and locked["corrected"]["q2"]["met"] is True and locked["corrected"]["q3"]["met"] is False
+for m in cmodels.values():
+    m["chart"] = {"balanced_accuracy_pct": round(m["balanced_accuracy"] * 100, 1), "low_pct": round(m["low"] * 100, 1), "high_pct": round(m["high"] * 100, 1)}
+
 # the two counts typed above are checked against the sensitivity text output
 txt = open(TP / "final-sensitivity.txt").read()
 assert "registration number: 531 of 1210" in txt and "families involved: 9; records involved: 16" in txt and "sample records affected: 11)" in txt

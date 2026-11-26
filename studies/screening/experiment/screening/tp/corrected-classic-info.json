@@ -1,0 +1,28 @@
+{
+ "training_rows": 5067,
+ "training_text": {
+  "abstract unchanged": 3685,
+  "abstract corrected": 1382,
+  "title corrected": 1
+ },
+ "settings": {
+  "logistic": {
+   "features": "all",
+   "params": [
+    3
+   ],
+   "cv_family_balanced_accuracy": 0.5829575577746616,
+   "cv_mean_family_auc": 0.6288408962286359
+  },
+  "xgboost": {
+   "features": "all",
+   "params": [
+    4,
+    200,
+    1
+   ],
+   "cv_family_balanced_accuracy": 0.5903542688671346,
+   "cv_mean_family_auc": 0.6416860086133547
+  }
+ }
+}

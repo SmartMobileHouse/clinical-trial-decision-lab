@@ -1,0 +1,41 @@
+{
+ "frozen_at": "2026-11-26T16:13:48+0100",
+ "note": "Frozen before any model was called on the corrected text. After-the-fact check; not confirmatory.",
+ "files": {
+  "reports/Corrected-text rerun plan.md": "c129248354a9e9e89e2a5b6258823699b25f61d950a3afb5f47830bae04a738d",
+  "screening-check/trialpanorama/final-corrected/sample.jsonl": "1b5c689139b5f2c495bd254d8d9f0f07604e4bfcef541554ccc5b43bd4ec64a2",
+  "screening-check/trialpanorama/final-corrected/reviews.json": "599c670381d24ff07b5eb86c46ef7af55d00e931c06f272ab9d4cf0e29d5356e",
+  "screening-check/trialpanorama/final-corrected/manifest.json": "19e4c90f55102b747d8b6949945c5fe4b17523af54cf3e5b81a3e247f79eff72",
+  "screening-check/trialpanorama/final-corrected/build_corrected_sample.py": "18d0e4bd1886415579ec06b6f136d2f3bf066039825cd3133900848c8c50c604",
+  "abstract-check/fetch_raw.py": "96e673c4f945b45522535bc80d0bbd659de959ab6b1f1d187d9991c13668ea1b",
+  "experiment/screening/tp/corrected_text_analysis.py": "dcb67a3fc9fc69e8b2ebbd225c91a643b89a787d508463803afe8ee6e3e4018a",
+  "experiment/screening/tp/corrected_text_classic.py": "28970c014745e7dc38439e5c0f234f6086437cb2f1a0e17029fab547892d1507",
+  "experiment/screening/tp/questions.json": "173b80ecbdc9c8a7fca7657bec29b3e5e3b0619c72b8dd31338109679c36ea6e",
+  "experiment/screening/tp/run.py": "ddd0176c8302c9575c67ef9f2715b97cd38cdab15f18d10492a10b2f4fa5d259",
+  "experiment/screening/tp/run_openrouter.py": "7ae972a2941983ca0641cae662146406d8487602ab6ec4f130801e820fe3d6c6",
+  "experiment/screening/tp/run_llm_probability.py": "ac286e98c407888783248f6511bbb0ecb1995da79559951c938007741035e6b4",
+  "experiment/screening/tp/classic_final.py": "34041c79ecb3682d0a9531609cc4eabee5cfaecae0b6218e7162e08c68c06bdc"
+ },
+ "unchanged_since_locked_freeze": {
+  "experiment/screening/tp/questions.json": true,
+  "experiment/screening/tp/run.py": true,
+  "experiment/screening/tp/run_openrouter.py": true,
+  "experiment/screening/tp/run_llm_probability.py": true
+ },
+ "reviews_json_identical_to_locked": true,
+ "locked_results_sha256": "bb3e54bba608a1b1c50a7f6ac5c45118a66515d1c7ade9fc2152844d201c0596",
+ "seed": 20261122,
+ "bootstrap_draws": 10000,
+ "margin": -0.05,
+ "cutoffs": {
+  "exclude_le": 0.019619440825558058,
+  "include_ge": 0.96434342645985
+ },
+ "cap_usd": 3,
+ "added_before_results_were_read": {
+  "at": "2026-11-26T16:33:27+0100",
+  "file": "experiment/screening/tp/corrected_text_compare.py",
+  "sha256": "71b7432c5e5ae366fc51ef6bfbc4b87ca600f613ff3d9f01449f6e06302c6146",
+  "note": "Hosted-model answers had been collected but no corrected-text result had been computed or read."
+ }
+}

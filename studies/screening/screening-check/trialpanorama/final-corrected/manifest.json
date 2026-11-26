@@ -1,0 +1,18 @@
+{
+ "records": 1210,
+ "abstracts_changed": 325,
+ "titles_changed": 0,
+ "characters_restored": {
+  "median": 332,
+  "mean": 397,
+  "max": 1392
+ },
+ "share_of_corrected_abstract_restored_median": 0.1673,
+ "changed_by_label": {
+  "included": 169,
+  "excluded": 156
+ },
+ "reviews_with_a_changed_abstract": 79,
+ "labels_identical": true,
+ "sample_sha256": "1b5c689139b5f2c495bd254d8d9f0f07604e4bfcef541554ccc5b43bd4ec64a2"
+}

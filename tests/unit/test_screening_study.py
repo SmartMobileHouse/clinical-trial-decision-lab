@@ -72,6 +72,44 @@ def test_balanced_accuracy_reproduces_from_saved_predictions(system: str) -> Non
     assert recomputed == pytest.approx(reported, abs=1e-9)
 
 
+CORRECTED = STUDY / "screening-check" / "trialpanorama" / "final-corrected"
+
+
+def test_corrected_rerun_files_match_their_fingerprints() -> None:
+    freeze = json.loads((CORRECTED / "freeze.json").read_text())
+    missing = {"screening-check/trialpanorama/final-corrected/sample.jsonl"}  # holds titles and abstracts
+    for name, expected in freeze["files"].items():
+        if name not in missing:
+            assert hashlib.sha256((STUDY / name).read_bytes()).hexdigest() == expected, name
+    added = freeze["added_before_results_were_read"]
+    assert hashlib.sha256((STUDY / added["file"]).read_bytes()).hexdigest() == added["sha256"]
+    assert all(freeze["unchanged_since_locked_freeze"].values())
+
+
+def test_corrected_sample_manifest_is_consistent() -> None:
+    manifest = json.loads((CORRECTED / "manifest.json").read_text())
+    changed = json.loads((CORRECTED / "changed.json").read_text())
+    labels = _labels()
+    assert manifest["records"] == len(labels) and manifest["labels_identical"] and manifest["titles_changed"] == 0
+    assert manifest["abstracts_changed"] == len(changed) == sum(manifest["changed_by_label"].values())
+    assert {f"{c['review']}|{c['pmid']}" for c in changed} <= set(labels)
+    by_label = [labels[f"{c['review']}|{c['pmid']}"][1] for c in changed]
+    assert sum(by_label) == manifest["changed_by_label"]["included"]
+
+
+@pytest.mark.parametrize("system", sorted(SYSTEMS))
+def test_corrected_rerun_accuracy_reproduces_from_saved_predictions(system: str) -> None:
+    labels = _labels()
+    probabilities = _probabilities(SYSTEMS[system].replace("final-", "corrected-"))
+    assert set(probabilities) == set(labels)
+    by_review: dict[str, dict[int, list[bool]]] = defaultdict(lambda: {0: [], 1: []})
+    for case_id, (review, label) in labels.items():
+        by_review[review][label].append((probabilities[case_id] >= 0.5) == bool(label))
+    per_review = [(sum(v[1]) / len(v[1]) + sum(v[0]) / len(v[0])) / 2 for v in by_review.values()]
+    reported = json.loads((TP / "corrected-results.json").read_text())["systems"][system]["balanced_accuracy"]
+    assert sum(per_review) / len(per_review) == pytest.approx(reported, abs=1e-9)
+
+
 def test_no_raw_provider_output_is_stored() -> None:
     assert not [p.name for p in STUDY.rglob("*.jsonl") if p.name in ("predictions.jsonl", "attempts.jsonl")]
-    assert not list(TP.glob("final-pass*"))
+    assert not list(TP.glob("final-pass*")) and not list(TP.glob("corrected-pass*"))
