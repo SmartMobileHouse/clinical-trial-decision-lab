@@ -41,6 +41,9 @@ in their original relative paths. Do not reformat or move them: the fingerprints
 | `experiment/export_report_data.py` | Builds the report's evidence file from the saved results |
 | `experiment/screening/tp/*-scores.json`, `prompt-comparison.json`, `experiment/screening/pilot-scores.json`, `experiment/scores-human-checked-regenerated.json`, `review/` | Aggregate results of the exploratory pilots |
 
+The same identifiers and labels are on Hugging Face as a loadable dataset:
+[smartmobilehouse/clinical-trial-decision-lab-screening](https://huggingface.co/datasets/smartmobilehouse/clinical-trial-decision-lab-screening).
+
 ## What is not here
 
 - **Abstracts and paper titles.** `sample.jsonl` is not redistributed. `sample-ids.jsonl` lists each

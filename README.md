@@ -14,6 +14,7 @@
 
 [![License](https://img.shields.io/github/license/SmartMobileHouse/clinical-trial-decision-lab)](LICENSE)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24562228.svg)](https://doi.org/10.5281/zenodo.24562228)
+[![Dataset on Hugging Face](https://img.shields.io/badge/dataset-Hugging%20Face-FFD21E)](https://huggingface.co/datasets/smartmobilehouse/clinical-trial-decision-lab-screening)
 [![Smart Mobile House](https://img.shields.io/badge/built%20by-Smart%20Mobile%20House-1F3A38)](https://smartmobilehouse.com)
 
 </div>
@@ -65,6 +66,8 @@ Every hosted model received the same review title, paper title, abstract and que
 | `src/triallab/`, `data/synthetic/` | The benchmark software, and an earlier synthetic benchmark for triage of enrollment-eligibility and informed-consent issues (600 fictional cases, eight frozen questions, a rules baseline) | Rules baseline only; no AI model has been run on it |
 
 The two are separate. The report's results come only from the screening study.
+
+The screening sample (identifiers and labels for the 1,210 papers, no abstracts) is also on Hugging Face, ready to load: [smartmobilehouse/clinical-trial-decision-lab-screening](https://huggingface.co/datasets/smartmobilehouse/clinical-trial-decision-lab-screening).
 
 Not in this repository: paper abstracts (fetch them again from Europe PMC by identifier), the hosted models' per-paper answers (held back until each provider's terms on publishing raw outputs are confirmed; available on request, subject to each provider's terms), and any regulatory or patient-level material.
 
