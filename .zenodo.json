@@ -1,0 +1,39 @@
+{
+  "title": "Clinical Trial Decision Lab: a reproducible benchmark of AI decision models for clinical-trial evidence work",
+  "description": "<p>A reproducible benchmark of AI decision models, general-purpose LLMs and trained classifiers for clinical-trial evidence work. The screening study predicts whether a systematic review included or excluded a paper from the review title and the paper's title and abstract. The repository also holds a synthetic benchmark for triage of enrollment-eligibility and informed-consent issues. Research only; not validated by clinical experts.</p><p>Report: <a href=\"https://smartmobilehouse.com/research/clinical-trial-decision-lab/\">https://smartmobilehouse.com/research/clinical-trial-decision-lab/</a></p><p>Dataset: <a href=\"https://huggingface.co/datasets/smartmobilehouse/clinical-trial-decision-lab-screening\">https://huggingface.co/datasets/smartmobilehouse/clinical-trial-decision-lab-screening</a></p>",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "mit",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Pietruszewski, Jerzy",
+      "affiliation": "Smart Mobile House"
+    }
+  ],
+  "keywords": [
+    "clinical trials",
+    "systematic reviews",
+    "study screening",
+    "benchmark",
+    "decision models",
+    "large language models"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://smartmobilehouse.com/research/clinical-trial-decision-lab/",
+      "relation": "isDocumentedBy",
+      "resource_type": "publication-report"
+    },
+    {
+      "identifier": "https://huggingface.co/datasets/smartmobilehouse/clinical-trial-decision-lab-screening",
+      "relation": "isSupplementedBy",
+      "resource_type": "dataset"
+    }
+  ],
+  "communities": [
+    {
+      "identifier": "smart-mobile-house"
+    }
+  ]
+}
