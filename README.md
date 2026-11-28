@@ -25,7 +25,7 @@
 
 ## Results
 
-Report v1.0 (locked run of 25 November 2026). Full write-up with charts and ranges: [Where AI Decision Models Earn Their Place in Clinical-Trial Evidence Work, and Where They Do Not](https://smartmobilehouse.com/research/clinical-trial-decision-lab/).
+Report v1.1 (locked run of 25 November 2026; version 1.1 adds the repeat check of 28 November). Full write-up with charts and ranges: [Where AI Decision Models Earn Their Place in Clinical-Trial Evidence Work, and Where They Do Not](https://smartmobilehouse.com/research/clinical-trial-decision-lab/).
 
 **The task.** A systematic review considered a paper. Given the review's title and the paper's title and abstract, did the review include the paper or exclude it?
 
@@ -186,7 +186,9 @@ Run `make check` before every push. Tests can never reach the network; tests tha
 
 If you use this benchmark or its results, please cite the report:
 
-> Pietruszewski, J. (2026). *Clinical Trial Decision Lab: Where AI Decision Models Earn Their Place in Clinical-Trial Evidence Work, and Where They Do Not* (report version 1.0). Smart Mobile House. https://smartmobilehouse.com/research/clinical-trial-decision-lab/
+> Pietruszewski, J. (2026). *Clinical Trial Decision Lab: Where AI Decision Models Earn Their Place in Clinical-Trial Evidence Work, and Where They Do Not* (report version 1.1). Smart Mobile House. https://smartmobilehouse.com/research/clinical-trial-decision-lab/
+
+The report is archived on Zenodo: [doi:10.5281/zenodo.24631268](https://doi.org/10.5281/zenodo.24631268) (all versions).
 
 The code is archived on Zenodo: [doi:10.5281/zenodo.24562228](https://doi.org/10.5281/zenodo.24562228) (all versions). GitHub's **Cite this repository** button gives APA and BibTeX.
 
@@ -197,7 +199,8 @@ The code is archived on Zenodo: [doi:10.5281/zenodo.24562228](https://doi.org/10
   institution = {Smart Mobile House},
   year        = {2026},
   type        = {Report},
-  number      = {version 1.0},
+  number      = {version 1.1},
+  doi         = {10.5281/zenodo.24631268},
   url         = {https://smartmobilehouse.com/research/clinical-trial-decision-lab/}
 }
 
