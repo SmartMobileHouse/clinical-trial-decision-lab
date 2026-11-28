@@ -29,6 +29,8 @@ in their original relative paths. Do not reformat or move them: the fingerprints
 | `reports/Corrected-text rerun plan.md`, `results.txt`, `.json`, `comparison.json` | The rerun of 26 November 2026 with the deleted passages restored: its plan, results and comparison with the locked run |
 | `screening-check/trialpanorama/final-corrected/` | Builder of the corrected sample, its manifest, the list of repaired papers and the rerun's fingerprints |
 | `experiment/screening/tp/corrected_text_*.py`, `corrected-*` | The rerun's analysis scripts, aggregate results and the classifiers' per-paper predictions |
+| `reports/Same-day repeat check plan.md`, `results.json`; `experiment/screening/tp/same_day_repeat_analysis.py` | A check of 28 November 2026: the two general models asked the same frozen requests twice within the hour |
+| `experiment/screening/tp/info_work_saved.py`, `info-work-saved.json` | Exploratory: in the small title-versus-rules test, how much of the rejected pile each decision model could remove at a 5% or 10% loss |
 | `abstract-check/fetch_raw.py` | Script that downloads raw titles and abstracts from Europe PMC by identifier |
 | `screening-check/trialpanorama/final/` | Sample builder, record fetcher, fingerprints, sample manifest, review list, `sample-ids.jsonl` |
 | `screening-check/trialpanorama/classic-final/selection.json` | Chosen settings of the trained classifiers |

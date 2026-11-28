@@ -86,6 +86,15 @@ def test_corrected_rerun_files_match_their_fingerprints() -> None:
     assert all(freeze["unchanged_since_locked_freeze"].values())
 
 
+def test_same_day_repeat_files_match_their_fingerprints() -> None:
+    freeze = json.loads((CORRECTED / "same-day-repeat-freeze.json").read_text())
+    missing = {"screening-check/trialpanorama/final-corrected/sample.jsonl"}  # holds titles and abstracts
+    for name, expected in freeze["files"].items():
+        if name not in missing:
+            assert hashlib.sha256((STUDY / name).read_bytes()).hexdigest() == expected, name
+    assert all(freeze["unchanged_since_rerun_freeze"].values())
+
+
 def test_corrected_sample_manifest_is_consistent() -> None:
     manifest = json.loads((CORRECTED / "manifest.json").read_text())
     changed = json.loads((CORRECTED / "changed.json").read_text())

@@ -1,0 +1,19 @@
+{
+ "frozen_at": "2026-11-28T15:55:17+0100",
+ "note": "Frozen before any request of the same-day repeat check was sent. After the fact; descriptive.",
+ "files": {
+  "reports/Same-day repeat check plan.md": "0b9aab80feb343bc63b4f3bb7402772ca9f9d45722328075af92444823050c22",
+  "experiment/screening/tp/same_day_repeat_analysis.py": "135e9f93ca1e48be59031f3093f0b4bf9d60366a353ef9920b39d92a7d9fe5b1",
+  "experiment/screening/tp/run_llm_probability.py": "ac286e98c407888783248f6511bbb0ecb1995da79559951c938007741035e6b4",
+  "experiment/screening/tp/questions.json": "173b80ecbdc9c8a7fca7657bec29b3e5e3b0619c72b8dd31338109679c36ea6e",
+  "screening-check/trialpanorama/final-corrected/sample.jsonl": "1b5c689139b5f2c495bd254d8d9f0f07604e4bfcef541554ccc5b43bd4ec64a2",
+  "screening-check/trialpanorama/final-corrected/reviews.json": "599c670381d24ff07b5eb86c46ef7af55d00e931c06f272ab9d4cf0e29d5356e"
+ },
+ "unchanged_since_rerun_freeze": {
+  "experiment/screening/tp/run_llm_probability.py": true,
+  "experiment/screening/tp/questions.json": true,
+  "screening-check/trialpanorama/final-corrected/sample.jsonl": true,
+  "screening-check/trialpanorama/final-corrected/reviews.json": true
+ },
+ "cap_usd": 1.5
+}

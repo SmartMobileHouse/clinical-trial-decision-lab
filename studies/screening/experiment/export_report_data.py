@@ -174,6 +174,18 @@ assert locked["corrected"]["q1"]["verdict"] == "NON-INFERIORITY ESTABLISHED" and
 for m in cmodels.values():
     m["chart"] = {"balanced_accuracy_pct": round(m["balanced_accuracy"] * 100, 1), "low_pct": round(m["low"] * 100, 1), "high_pct": round(m["high"] * 100, 1)}
 
+# ---------- same-day repeat check of 28 November 2026 for the two general models (after the fact) ----------
+sd, sdfz = J(TP / "same-day-repeat.json"), J(CD / "same-day-repeat-freeze.json")
+for f, h in sdfz["files"].items(): assert sha(ROOT / f) == h, f"changed since the same-day repeat freeze: {f}"
+def _cmp(c):
+    return {"answers_changed": c["answers_changed"], "records": c["records"], "share_changed": c["share_changed"], "low": c["range"][0], "high": c["range"][1],
+            "toward_label": c["toward_label"], "away_from_label": c["away_from_label"], "identical_probability": c["identical_probability"],
+            "accuracy_first": c["accuracy_first"], "accuracy_second": c["accuracy_second"], "missing_or_invalid": c["missing_or_invalid"]}
+_sdcost = sum(json.loads(l).get("cost_usd") or 0 for d_ in ("same-day-a-prob", "same-day-b-prob") for f_ in ("llm_openai_prob.jsonl", "llm_anthropic_prob.jsonl") for l in open(TP / d_ / f_))
+locked["same_day"] = {"run_id": "same-day-repeat-20261128", "status": "after the fact, descriptive", "plan_frozen": sdfz["frozen_at"], "papers": sd["papers"], "same_text_papers": sd["same_text_papers"],
+                      "models": {m: {k: _cmp(v) for k, v in comps.items()} for m, comps in sd["models"].items()}, "spend_usd": _sdcost, "cap_usd": sdfz["cap_usd"],
+                      "decider_across_days_share": cmodels["decider"]["share_changed_unchanged"], "decision_models_within_day_rate": min(v["same_classification"] for v in cres["q4"].values())}
+
 # the two counts typed above are checked against the sensitivity text output
 txt = open(TP / "final-sensitivity.txt").read()
 assert "registration number: 531 of 1210" in txt and "families involved: 9; records involved: 16" in txt and "sample records affected: 11)" in txt
