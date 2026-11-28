@@ -150,7 +150,7 @@ Files: `Corrected-text rerun plan.md`, `Corrected-text rerun results.txt` and `.
 
 Section 8 reported that on 885 identical requests sent a day apart, GPT-6 Luna changed 9.3% of its include-or-exclude answers and Claude Haiku 4.2%, and said we could not tell whether the models vary from call to call or had been changed between the two days. A reader pointed out that this needs a same-day repeat, and a count of which way the answers moved. We ran that check.
 
-**What was done.** A plan was written and fingerprinted first (2026-11-28T15:55:17+0100; `Same-day repeat check plan.md`). The same 1,210 frozen requests of the rerun were then sent to the two general models twice, one pass after the other (the passes started 40 minutes apart). Same question file and runner.
+**What was done.** A plan was written and fingerprinted first (2026-11-28T15:55:17+0100; `Same-day repeat check plan.md`). The same 1,210 frozen requests of the rerun were then sent to the two general models twice, one pass after the other (the passes started 40 minutes apart). Same question file and runner. The records (case lists, token counts, file fingerprints) are consistent with identical requests; the request bodies themselves were not saved. The first pass was interrupted for about half an hour by timeouts, so the same paper was asked between about 6 and 40 minutes apart.
 
 **Result.** Share of include-or-exclude answers that differ, on the 885 papers whose requests were identical on all three days:
 
@@ -163,12 +163,21 @@ Section 8 reported that on 885 identical requests sent a day apart, GPT-6 Luna c
 
 On all 1,210 papers the within-the-hour figures are 7.4% (90 of 1210) for GPT-6 Luna (range 5.7% to 9.4%) and 4.5% (54 of 1210) for Claude Haiku (3.3% to 5.7%).
 
-**Reading, by the rule fixed in the plan.** The within-the-hour share overlaps the across-day shares for both models. The differences between days reported in section 8 are therefore ordinary run-to-run variation, not evidence that the models changed between days. Both models ran with reasoning switched off and a strict output format.
+**Reading.** Both models change some of their answers when asked the same thing twice within the hour, so a difference between two days cannot, on its own, be called a change between days.
 
-**Direction.** In the within-the-hour repeat, GPT-6 Luna's changed answers moved toward the reviewers' label 26 times and away 35 times; for Claude Haiku the figures were 21 and 19. There is no direction, and accuracy did not move (62.2% and 61.2% for GPT-6 Luna; 61.1% and 61.3% for Claude Haiku, counting papers equally).
+- **Claude Haiku 5.5:** the within-the-hour share and all three across-day shares agree. Its differences between days are consistent with ordinary run-to-run variation.
+- **GPT-6 Luna:** the later comparisons (26 against 28 November, 25 against 28) match the within-the-hour share. The first one, 25 against 26 November, is unusually high. Compared paper by paper on the same 885 papers, it shows +2.26 points more disagreement than the within-the-hour repeat (range +0.35 to +4.06). For Claude Haiku the same comparison gives -0.34 (-2.01 to +1.41). This paired comparison was added after an independent review and is exploratory.
+
+So most of what section 8 reported for GPT-6 Luna is run-to-run variation, and part of the 9.3% is not explained. These runs cannot identify the cause, and they cannot rule out a change on the provider's side. Both models ran with reasoning switched off and a strict output format.
+
+The plan's reading rule ("ranges overlap") was too loose for measurements made on the same papers; the paired comparison above is the better test.
+
+**Direction.** In the within-the-hour repeat, GPT-6 Luna had 60 real answer flips: 25 moved toward the reviewers' label and 35 away. (The count of 62 changed answers above also includes two papers with an invalid answer in one pass.) Claude Haiku had 40 flips: 21 toward and 19 away. There is no clear direction. Accuracy, counting papers equally, moved a little between the two passes: 62.3% to 61.2% for GPT-6 Luna and 61.1% to 61.4% for Claude Haiku.
 
 **What stands.** The decision models changed 0.5% or fewer of their answers across days and none in the rerun's same-day repeat. They are far more repeatable than the two general models on this task. Repeatable is not the same as right: they repeat the same answers at about 61% accuracy.
 
 **Limits.** One day, two passes, one location. One GPT-6 Luna answer in each pass was invalid and is counted as a changed answer, as planned. Decided after the earlier results were known. Recorded API spend: $0.50.
 
-Files: `Same-day repeat check plan.md`, `Same-day repeat check results.json`; script `same_day_repeat_analysis.py`.
+**Independent check.** A separate AI model (GPT-6.1 Sol, highest reasoning setting) recomputed all 146 numbers of this check and they agree. Its points on the reading, the direction counts and the accuracy label are included above.
+
+Files: `Same-day repeat check plan.md`, `Same-day repeat check results.json`; scripts `same_day_repeat_analysis.py` and `same_day_repeat_addendum.py` (the second added after the review).

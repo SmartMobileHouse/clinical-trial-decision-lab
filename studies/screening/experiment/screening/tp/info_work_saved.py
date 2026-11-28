@@ -12,7 +12,7 @@ def load(pat):
             p = json.loads(l)
             if p.get("status", "ok") != "ok": continue
             pr = (p.get("probabilities") or {}).get("included")
-            if isinstance(pr, (int, float)) and p["case_id"] in R: A[p["provider"]][p["case_id"]] = pr
+            if isinstance(pr, (int, float)) and 0 <= pr <= 1 and p["case_id"] in R: A[p["provider"]][p["case_id"]] = pr
     return A
 def removed(sc, miss):
     pos = sorted(sc[i] for i in sc if y[i]); neg = [sc[i] for i in sc if not y[i]]

@@ -1,0 +1,839 @@
+{
+ "decision_models": 32,
+ "median_worst_review_loss_rules": 0.5,
+ "models_removing_something_at_zero_loss_rules": 18,
+ "models": {
+  "clef": {
+   "title": {
+    "removed": 0.20634920634920634,
+    "removed_count": 39,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.2,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.005291005291005291,
+    "removed_at_zero_loss_count": 1
+   },
+   "rules": {
+    "removed": 0.2962962962962963,
+    "removed_count": 56,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0,
+    "removed_at_zero_loss_count": 0
+   }
+  },
+  "clef_flash": {
+   "title": {
+    "removed": 0.14285714285714285,
+    "removed_count": 27,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.3333333333333333,
+    "reviews_losing_more_than_5pct": 7,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.010582010582010581,
+    "removed_at_zero_loss_count": 2
+   },
+   "rules": {
+    "removed": 0.12169312169312169,
+    "removed_count": 23,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 6,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.010582010582010581,
+    "removed_at_zero_loss_count": 2
+   }
+  },
+  "jev": {
+   "title": {
+    "removed": 0.2275132275132275,
+    "removed_count": 43,
+    "excluded": 189,
+    "included_lost": 9,
+    "included": 203,
+    "worst_review_loss": 0.6666666666666666,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.015873015873015872,
+    "removed_at_zero_loss_count": 3
+   },
+   "rules": {
+    "removed": 0.2857142857142857,
+    "removed_count": 54,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 5,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0,
+    "removed_at_zero_loss_count": 0
+   }
+  },
+  "liquid_d1_ultra": {
+   "title": {
+    "removed": 0.13227513227513227,
+    "removed_count": 25,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.010582010582010581,
+    "removed_at_zero_loss_count": 2
+   },
+   "rules": {
+    "removed": 0.24867724867724866,
+    "removed_count": 47,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.4,
+    "reviews_losing_more_than_5pct": 5,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0,
+    "removed_at_zero_loss_count": 0
+   }
+  },
+  "microsoft_decision": {
+   "title": {
+    "removed": 0.19576719576719576,
+    "removed_count": 37,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.6,
+    "reviews_losing_more_than_5pct": 3,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.005291005291005291,
+    "removed_at_zero_loss_count": 1
+   },
+   "rules": {
+    "removed": 0.31216931216931215,
+    "removed_count": 59,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.4,
+    "reviews_losing_more_than_5pct": 5,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0,
+    "removed_at_zero_loss_count": 0
+   }
+  },
+  "morph_reflex": {
+   "title": {
+    "removed": 0.2328042328042328,
+    "removed_count": 44,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.4,
+    "reviews_losing_more_than_5pct": 5,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.026455026455026454,
+    "removed_at_zero_loss_count": 5
+   },
+   "rules": {
+    "removed": 0.24338624338624337,
+    "removed_count": 46,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.6,
+    "reviews_losing_more_than_5pct": 3,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0,
+    "removed_at_zero_loss_count": 0
+   }
+  },
+  "nimble": {
+   "title": {
+    "removed": 0.13227513227513227,
+    "removed_count": 25,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.6,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.005291005291005291,
+    "removed_at_zero_loss_count": 1
+   },
+   "rules": {
+    "removed": 0.26455026455026454,
+    "removed_count": 50,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 5,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.005291005291005291,
+    "removed_at_zero_loss_count": 1
+   }
+  },
+  "openai_decisions": {
+   "title": {
+    "removed": 0.0,
+    "removed_count": 0,
+    "excluded": 189,
+    "included_lost": 0,
+    "included": 203,
+    "worst_review_loss": 0.0,
+    "reviews_losing_more_than_5pct": 0,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0,
+    "removed_at_zero_loss_count": 0
+   },
+   "rules": {
+    "removed": 0.0,
+    "removed_count": 0,
+    "excluded": 189,
+    "included_lost": 0,
+    "included": 203,
+    "worst_review_loss": 0.0,
+    "reviews_losing_more_than_5pct": 0,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0,
+    "removed_at_zero_loss_count": 0
+   }
+  },
+  "or_bison_1": {
+   "title": {
+    "removed": 0.1164021164021164,
+    "removed_count": 22,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.7,
+    "reviews_losing_more_than_5pct": 3,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.005291005291005291,
+    "removed_at_zero_loss_count": 1
+   },
+   "rules": {
+    "removed": 0.20105820105820105,
+    "removed_count": 38,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.6,
+    "reviews_losing_more_than_5pct": 5,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0,
+    "removed_at_zero_loss_count": 0
+   }
+  },
+  "or_clef_omni": {
+   "title": {
+    "removed": 0.24867724867724866,
+    "removed_count": 47,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.4,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.07407407407407407,
+    "removed_at_zero_loss_count": 14
+   },
+   "rules": {
+    "removed": 0.1746031746031746,
+    "removed_count": 33,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.4,
+    "reviews_losing_more_than_5pct": 3,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.026455026455026454,
+    "removed_at_zero_loss_count": 5
+   }
+  },
+  "or_d1_1": {
+   "title": {
+    "removed": 0.21693121693121692,
+    "removed_count": 41,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.4,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.015873015873015872,
+    "removed_at_zero_loss_count": 3
+   },
+   "rules": {
+    "removed": 0.19576719576719576,
+    "removed_count": 37,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.4,
+    "reviews_losing_more_than_5pct": 5,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.005291005291005291,
+    "removed_at_zero_loss_count": 1
+   }
+  },
+  "or_d1_2_ultra": {
+   "title": {
+    "removed": 0.14814814814814814,
+    "removed_count": 28,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.6,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0,
+    "removed_at_zero_loss_count": 0
+   },
+   "rules": {
+    "removed": 0.3492063492063492,
+    "removed_count": 66,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.4,
+    "reviews_losing_more_than_5pct": 5,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0,
+    "removed_at_zero_loss_count": 0
+   }
+  },
+  "or_drex_max": {
+   "title": {
+    "removed": 0.15873015873015872,
+    "removed_count": 30,
+    "excluded": 189,
+    "included_lost": 9,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 5,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0,
+    "removed_at_zero_loss_count": 0
+   },
+   "rules": {
+    "removed": 0.2275132275132275,
+    "removed_count": 43,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.010582010582010581,
+    "removed_at_zero_loss_count": 2
+   }
+  },
+  "or_drex_v1_5": {
+   "title": {
+    "removed": 0.1746031746031746,
+    "removed_count": 33,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.4,
+    "reviews_losing_more_than_5pct": 2,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.047619047619047616,
+    "removed_at_zero_loss_count": 9
+   },
+   "rules": {
+    "removed": 0.26455026455026454,
+    "removed_count": 50,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.005291005291005291,
+    "removed_at_zero_loss_count": 1
+   }
+  },
+  "or_drex_v2_0": {
+   "title": {
+    "removed": 0.15873015873015872,
+    "removed_count": 30,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.6666666666666666,
+    "reviews_losing_more_than_5pct": 3,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.06349206349206349,
+    "removed_at_zero_loss_count": 12
+   },
+   "rules": {
+    "removed": 0.24338624338624337,
+    "removed_count": 46,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.4,
+    "reviews_losing_more_than_5pct": 6,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0,
+    "removed_at_zero_loss_count": 0
+   }
+  },
+  "or_elephant_1": {
+   "title": {
+    "removed": 0.18518518518518517,
+    "removed_count": 35,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 6,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.042328042328042326,
+    "removed_at_zero_loss_count": 8
+   },
+   "rules": {
+    "removed": 0.3439153439153439,
+    "removed_count": 65,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 5,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.005291005291005291,
+    "removed_at_zero_loss_count": 1
+   }
+  },
+  "or_gemini_decision_1": {
+   "title": {
+    "removed": 0.21164021164021163,
+    "removed_count": 40,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.7,
+    "reviews_losing_more_than_5pct": 3,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.042328042328042326,
+    "removed_at_zero_loss_count": 8
+   },
+   "rules": {
+    "removed": 0.38095238095238093,
+    "removed_count": 72,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.6,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.021164021164021163,
+    "removed_at_zero_loss_count": 4
+   }
+  },
+  "or_groundhog_1": {
+   "title": {
+    "removed": 0.2328042328042328,
+    "removed_count": 44,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.2,
+    "reviews_losing_more_than_5pct": 6,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0582010582010582,
+    "removed_at_zero_loss_count": 11
+   },
+   "rules": {
+    "removed": 0.36507936507936506,
+    "removed_count": 69,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.4,
+    "reviews_losing_more_than_5pct": 6,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.010582010582010581,
+    "removed_at_zero_loss_count": 2
+   }
+  },
+  "or_heygen_decision_1": {
+   "title": {
+    "removed": 0.10052910052910052,
+    "removed_count": 19,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 5,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.021164021164021163,
+    "removed_at_zero_loss_count": 4
+   },
+   "rules": {
+    "removed": 0.17989417989417988,
+    "removed_count": 34,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.6,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0,
+    "removed_at_zero_loss_count": 0
+   }
+  },
+  "or_heygen_decision_1_turbo": {
+   "title": {
+    "removed": 0.13756613756613756,
+    "removed_count": 26,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.026455026455026454,
+    "removed_at_zero_loss_count": 5
+   },
+   "rules": {
+    "removed": 0.20634920634920634,
+    "removed_count": 39,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 5,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.005291005291005291,
+    "removed_at_zero_loss_count": 1
+   }
+  },
+  "or_jev_1_13": {
+   "title": {
+    "removed": 0.20634920634920634,
+    "removed_count": 39,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.4,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.010582010582010581,
+    "removed_at_zero_loss_count": 2
+   },
+   "rules": {
+    "removed": 0.3439153439153439,
+    "removed_count": 65,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.005291005291005291,
+    "removed_at_zero_loss_count": 1
+   }
+  },
+  "or_joey_1": {
+   "title": {
+    "removed": 0.164021164021164,
+    "removed_count": 31,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.4,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.021164021164021163,
+    "removed_at_zero_loss_count": 4
+   },
+   "rules": {
+    "removed": 0.2698412698412698,
+    "removed_count": 51,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.4,
+    "reviews_losing_more_than_5pct": 6,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.021164021164021163,
+    "removed_at_zero_loss_count": 4
+   }
+  },
+  "or_mammoth_1": {
+   "title": {
+    "removed": 0.19576719576719576,
+    "removed_count": 37,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.6,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.021164021164021163,
+    "removed_at_zero_loss_count": 4
+   },
+   "rules": {
+    "removed": 0.20105820105820105,
+    "removed_count": 38,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.7,
+    "reviews_losing_more_than_5pct": 3,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0,
+    "removed_at_zero_loss_count": 0
+   }
+  },
+  "or_microsoft_decision_1": {
+   "title": {
+    "removed": 0.14814814814814814,
+    "removed_count": 28,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 5,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0,
+    "removed_at_zero_loss_count": 0
+   },
+   "rules": {
+    "removed": 0.1693121693121693,
+    "removed_count": 32,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0,
+    "removed_at_zero_loss_count": 0
+   }
+  },
+  "or_solar_decide": {
+   "title": {
+    "removed": 0.0582010582010582,
+    "removed_count": 11,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.3,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0,
+    "removed_at_zero_loss_count": 0
+   },
+   "rules": {
+    "removed": 0.12169312169312169,
+    "removed_count": 23,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.3333333333333333,
+    "reviews_losing_more_than_5pct": 5,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0,
+    "removed_at_zero_loss_count": 0
+   }
+  },
+  "or_solar_decide_flash": {
+   "title": {
+    "removed": 0.1693121693121693,
+    "removed_count": 32,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.2,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.031746031746031744,
+    "removed_at_zero_loss_count": 6
+   },
+   "rules": {
+    "removed": 0.18518518518518517,
+    "removed_count": 35,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0,
+    "removed_at_zero_loss_count": 0
+   }
+  },
+  "or_span_02": {
+   "title": {
+    "removed": 0.14814814814814814,
+    "removed_count": 28,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.4,
+    "reviews_losing_more_than_5pct": 5,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.015873015873015872,
+    "removed_at_zero_loss_count": 3
+   },
+   "rules": {
+    "removed": 0.09523809523809523,
+    "removed_count": 18,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 5,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.010582010582010581,
+    "removed_at_zero_loss_count": 2
+   }
+  },
+  "or_tev1_4b_experimental": {
+   "title": {
+    "removed": 0.08465608465608465,
+    "removed_count": 16,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.25,
+    "reviews_losing_more_than_5pct": 2,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.047619047619047616,
+    "removed_at_zero_loss_count": 9
+   },
+   "rules": {
+    "removed": 0.21164021164021163,
+    "removed_count": 40,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.4,
+    "reviews_losing_more_than_5pct": 6,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.010582010582010581,
+    "removed_at_zero_loss_count": 2
+   }
+  },
+  "pplx_decider": {
+   "title": {
+    "removed": 0.15343915343915343,
+    "removed_count": 29,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 5,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0,
+    "removed_at_zero_loss_count": 0
+   },
+   "rules": {
+    "removed": 0.20105820105820105,
+    "removed_count": 38,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.005291005291005291,
+    "removed_at_zero_loss_count": 1
+   }
+  },
+  "pplx_decider_flash": {
+   "title": {
+    "removed": 0.12698412698412698,
+    "removed_count": 24,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.6666666666666666,
+    "reviews_losing_more_than_5pct": 3,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.06349206349206349,
+    "removed_at_zero_loss_count": 12
+   },
+   "rules": {
+    "removed": 0.13756613756613756,
+    "removed_count": 26,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.4,
+    "reviews_losing_more_than_5pct": 5,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.005291005291005291,
+    "removed_at_zero_loss_count": 1
+   }
+  },
+  "pplx_decider_flash_v13": {
+   "title": {
+    "removed": 0.12169312169312169,
+    "removed_count": 23,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.047619047619047616,
+    "removed_at_zero_loss_count": 9
+   },
+   "rules": {
+    "removed": 0.164021164021164,
+    "removed_count": 31,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.5,
+    "reviews_losing_more_than_5pct": 5,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.010582010582010581,
+    "removed_at_zero_loss_count": 2
+   }
+  },
+  "pplx_decider_v13": {
+   "title": {
+    "removed": 0.21693121693121692,
+    "removed_count": 41,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.6,
+    "reviews_losing_more_than_5pct": 4,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.0,
+    "removed_at_zero_loss_count": 0
+   },
+   "rules": {
+    "removed": 0.3862433862433862,
+    "removed_count": 73,
+    "excluded": 189,
+    "included_lost": 10,
+    "included": 203,
+    "worst_review_loss": 0.4,
+    "reviews_losing_more_than_5pct": 6,
+    "reviews": 11,
+    "removed_at_zero_loss": 0.005291005291005291,
+    "removed_at_zero_loss_count": 1
+   }
+  }
+ }
+}
